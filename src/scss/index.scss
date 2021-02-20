@@ -64,27 +64,7 @@ body{
     body.submenu-active{
         overflow-y: scroll;
     }
-    body:not(.ordering-process):not(.type-detail) .overall-wrapper{
-        padding-top: 160px;
-    }
-    body:not(.ordering-process):not(.type-detail) #header{
-        position: fixed;
-        width: 100%;
-        z-index: 2;
-        top: 0;
-    }
 }
-@media (min-width: 992px){
-    body.ordering-process::after{
-        content: "";
-        height: 300px;
-        width: 100%;
-        display: flex;
-        background-image: url("../img/bg.png");
-        background-position: center top;
-    }
-}
-
 
 ::selection {
     background: $green-200;
@@ -140,3 +120,14 @@ a{
         padding-left: 10px;
     }
 }
+
+
+@import "partials/_img";
+@import "partials/_btn";
+@import "partials/_user-action";
+@import "partials/_admin-bar";
+@import "partials/_top-navigation-bar";
+@import "partials/_header";
+@import "partials/_header-top";
+@import "partials/_menu";
+@import "partials/_content-wrapper";
