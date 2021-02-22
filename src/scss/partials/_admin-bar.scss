@@ -7,6 +7,7 @@
 }
 .admin-bar a, .admin-bar span{
     color: $white;
+    font-size: 13px;
     padding: 5px 10px;
     cursor: pointer;
     display: flex;
@@ -27,9 +28,13 @@
     cursor: pointer;
     font-size: 14px;
 }
+.admin-bar > div > ul > li:hover{
+    background: $gray-900;
+}
 .admin-bar > div > ul > li:hover > ul{
     display: flex;
     flex-direction: column;
+    background: $gray-900;
 }
 .admin-bar > div > ul > li > ul{
     list-style: none;
