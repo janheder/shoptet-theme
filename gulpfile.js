@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
 let uglify = require('gulp-uglify-es').default;
 var pump = require('pump');
 var concat = require('gulp-concat');
@@ -17,6 +18,7 @@ gulp.task('sass', function () {
   return gulp.src('./src/scss/index.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(autoprefixer())
     .pipe(concat('style.min.css'))
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./dist/css'));
@@ -34,7 +36,6 @@ gulp.task('sass:watch', function () {
 gulp.task('minifyjs', function (cb) {
   pump([
         gulp.src(['./src/js/*.js']),
-
         uglify(),
         gulp.dest('./dist/js')
     ],
