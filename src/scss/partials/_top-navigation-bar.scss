@@ -17,7 +17,7 @@
 }
 .top-navigation-menu li{
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 0 0 15px;
     font-size: 14px;
 }
 .top-navigation-menu li a{
@@ -30,7 +30,8 @@
 
 }
 .top-navigation-bar-menu-helper{
-    
+    margin: 0;
+    padding: 0;
 }
 .top-navigation-tools{
     text-align: right;
@@ -43,7 +44,7 @@
 }
 
 @media screen and (max-width: 991px){
-    .top-navigation-tools{
+    .top-navigation-bar{
         display: none;
     }
 }
