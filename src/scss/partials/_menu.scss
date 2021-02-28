@@ -120,7 +120,6 @@
     padding: 0 40px 0 20px;
 }
 
-
 .menu-helper{
     display: none;
 }
@@ -202,6 +201,24 @@
         height: 100%;
     }
     .menu-level-3{
+        display: none;
+    }
+    .menu-helper{
+        position: fixed;
+        top: 0px;
+        display: none;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(black,0.8);
+        z-index: 3;
+    }
+    @media screen and (max-width: 991px){
+        body.--menuActive .menu-helper{
+            display: flex;
+        }   
+    }
+    .menu-helper *{
         display: none;
     }
 }
