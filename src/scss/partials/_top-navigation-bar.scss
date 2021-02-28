@@ -1,6 +1,6 @@
 .top-navigation-bar{
     display: flex;
-    
+    height: 40px;
 }
 .top-navigation-bar .container{
     display: flex;
@@ -21,6 +21,15 @@
     font-size: 14px;
 }
 .top-navigation-menu li a{
+    
+}
+.top-navigation-bar-menu{
+    margin: 0;
+}
+.top-navigation-menu-trigger{
+
+}
+.top-navigation-bar-menu-helper{
     
 }
 .top-navigation-tools{
