@@ -1,0 +1,272 @@
+.products-inline{
+    display: flex;
+    flex-wrap: wrap;
+}
+.products-top{
+    display: none;
+}
+.product{
+    position: relative;
+    width: 25%;
+    padding: 0;
+}
+.p{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100% !important; //todo: delete js that sets .p height
+    padding: 20px 10px;
+}
+.p .image{
+    padding-bottom: 75%;
+    position: relative;
+    background: $gray-300;
+    background-image: url("../img/symbol-benlemi-bw.svg");
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: center;
+
+    img{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &:hover, &:active, &:focus{
+        
+        & + .p-in .name{
+            text-decoration: none;
+        }
+    }
+}
+.p .flags{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.p .flags .flag{
+    font-size: 12px;
+    margin-bottom: 3px;
+    margin-right: 5px;
+    padding: 0 5px;
+    height: 18px;
+    background: $white;
+    color: $gray-800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.flag-action{
+        background: #cf4823;
+        color: $white;
+    }
+    &.flag-new{
+        background: #d86329;
+        color: $white;
+    }
+    &.flag-tip{
+        background: #eb8959;
+        color: $white;
+    }
+    &.flag-gift{
+        background: #a0cd54;
+        color: $white;
+    }
+    &.flag-custom3{
+        background: #78aa66;
+        color: $white;
+    }
+    .price-standard{
+        display: none;
+    }
+}
+.p .flags.flags-extra{
+    left: auto;
+    right: 0;
+}
+.p .flags.flags-extra .flag-discount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $white;
+    background: $orange-700;
+    height: auto;
+    font-size: 14px;
+    padding: 2px 8px;
+}
+
+@media screen and (max-width: 991px){
+    .p .flags{
+        top: 5px;
+        left: 5px;
+    }
+    .p .image .flags-default{
+        display: none;
+    }
+}
+
+.p-in .flags-default{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    flex-direction: row;
+    padding-bottom: 5px;
+}
+
+.p-in{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    height: 100%;
+}
+.p-in-in{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.p-in-in .name{
+    text-decoration: none;
+    color: $gray-800;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 0;
+
+    &:hover, &:active, &:focus{
+        text-decoration: none
+    }
+
+}
+
+.p-in-in .name .p-variants{
+    display: none;
+    color: $gray-700;
+  }
+.p-in-in .name .p-variants:last-child{
+    display: flex;
+}
+.p .p-bottom{
+
+}
+.p .p-bottom > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.p .prices{
+    color: $red-700;
+    display: flex;
+    flex-direction: column;
+}
+.p .prices span{
+    color: $gray-700;
+    text-decoration: line-through;
+    font-size: 13px;
+    line-height: 1;
+}
+.p .price-final{
+    display: flex;
+    align-items: baseline;
+}
+.p .price-final strong{
+    position: relative;
+    display: flex;
+    align-items: baseline;
+}
+.p .price-final strong small{
+    padding-right: 3px;
+}
+
+.p .p-tools {
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: rgba($black, 0.6);*/
+    opacity: 1;
+    z-index: 1;
+    transition: 0.3s ease opacity;
+
+}
+.p .p-tools .btn{
+    height: 32px;
+    font-size: 13px;
+    margin-left: 10px;
+    transition: 0.3s ease opacity;
+    background: $gray-300;
+    color: $gray-900;
+
+    &:hover, &:active, &:focus{
+        background: $gray-400;
+        border: 0;
+    }
+}
+.p:hover .p-tools .btn{
+    opacity: 1;
+    pointer-events: auto;
+}
+.p .image:hover .p-tools {
+    opacity: 1;
+}
+.p .ratings-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.p .stars-wrapper{
+    margin: 0;
+}
+.p .stars-placeholder{
+
+}
+.p .availability{
+    display: flex;
+    font-size: 12px;
+    flex-grow: 1;
+    color: $green-700;
+}
+.p .availability span{
+
+}
+.p .availability .availability-amount{
+    display: none;
+}
+.p-code{
+    display: none;
+}
+
+.products-page .product{
+    width: 33.333%;
+}
+
+@media screen and (max-width: 991px){
+    .product{
+        width: 33.333%;
+    } 
+    .products-page .product{
+        width: 33.333%;
+    }
+    .p .p-tools{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px){
+    .product{
+        width: 50%;
+    } 
+    .p{
+        padding: 10px 5px;
+    }   
+    .p-in{
+        border-bottom: 1px solid $gray-400;
+        padding-bottom: 20px;
+    }
+    .products-page .product{
+        width: 50%;
+    }
+}
