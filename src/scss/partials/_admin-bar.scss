@@ -1,10 +1,35 @@
+
 .admin-bar{
+    position: fixed;
+    right: 0;
+    font-size: 0;
+    width: 36px;
+    height: 36px;
+}
+.admin-bar::before{
+    content: "";
+    width: 36px;
+    height: 36px;
+    backgorund-image: url($i-arrow-left-white);
+    backgorund-repeat: no-repeat;
+    backgorund-size: 18px;
+    background-position: center center;
+}
+.admin-bar #div-bar-menu{
+    display: none;
+}
+.admin-bar.active{
     background: $gray-800;
     z-index: 10;
     position: relative;
     height: 30px;
     display: flex;
+    width: 100%;
 }
+.admin-bar.active #div-bar-menu{
+    display: block;
+}
+
 .admin-bar a, .admin-bar span{
     color: $white;
     font-size: 13px;
