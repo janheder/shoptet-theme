@@ -35,3 +35,7 @@ $(".header-top").prepend('<div class="nav-menu-toggle" id="js-menuToggle"><span>
 $("#js-menuToggle, .menu-helper").click(function(){
     $("body").toggleClass("--menuActive");
 });
+
+$(".admin-bar").click(function(){
+    $(".admin-bar").toggleClass("--active");
+});

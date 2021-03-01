@@ -8,17 +8,18 @@
 }
 .admin-bar::before{
     content: "";
+    position: absolute;
     width: 36px;
     height: 36px;
-    backgorund-image: url($i-arrow-left-white);
-    backgorund-repeat: no-repeat;
-    backgorund-size: 18px;
+    background-image: url($i-arrow-left-white);
+    background-repeat: no-repeat;
+    background-size: 18px;
     background-position: center center;
 }
 .admin-bar #div-bar-menu{
     display: none;
 }
-.admin-bar.active{
+.admin-bar.--active{
     background: $gray-800;
     z-index: 10;
     position: relative;
@@ -26,7 +27,7 @@
     display: flex;
     width: 100%;
 }
-.admin-bar.active #div-bar-menu{
+.admin-bar.--active #div-bar-menu{
     display: block;
 }
 
