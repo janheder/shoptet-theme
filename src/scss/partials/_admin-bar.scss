@@ -3,14 +3,17 @@
     position: fixed;
     right: 0;
     font-size: 0;
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
 }
 .admin-bar::before{
     content: "";
     position: absolute;
-    width: 36px;
-    height: 36px;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: $gray-800;
     background-image: url($i-arrow-left-white);
     background-repeat: no-repeat;
     background-size: 18px;
