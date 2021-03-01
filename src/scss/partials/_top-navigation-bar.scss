@@ -11,6 +11,12 @@
     flex-grow: 1;
     font-size: 14px;
 }
+.top-navigation-contacts strong{
+    display: none;
+}
+.top-navigation-contacts a{
+    padding-right: 15px;
+}
 .top-navigation-menu{
     align-items: center;
     display: flex;

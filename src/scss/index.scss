@@ -55,7 +55,7 @@ body{
 }
 
 @media screen and (max-width: 991px){
-    body.--noScroll{
+    body.--menuActive{
         overflow: hidden;
     }
     body.--active{

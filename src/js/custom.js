@@ -27,3 +27,11 @@
 // =============================================================================
 // MENU TOGGLES
 // =============================================================================
+
+/* add hamburger menu on mobile */
+$(".header-top").prepend('<div class="nav-menu-toggle" id="js-menuToggle"><span></span></div>');
+
+/* toggle control of responsive menu */
+$("#js-menuToggle, .menu-helper").click(function(){
+    $("body").toggleClass("--menuActive");
+});
