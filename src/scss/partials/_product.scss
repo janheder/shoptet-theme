@@ -21,7 +21,7 @@
     padding-bottom: 75%;
     position: relative;
     background: $gray-300;
-    background-image: url("../img/symbol-benlemi-bw.svg");
+    background-image: url("../img/loading-symbol.svg");
     background-repeat: no-repeat;
     background-size: 80px;
     background-position: center;
@@ -155,6 +155,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .p .prices{
     color: $red-700;
@@ -211,6 +212,13 @@
     opacity: 1;
     pointer-events: auto;
 }
+.p .p-desc{
+    font-size: 13px;
+    margin: 0;
+    padding-top: 10px;
+    display: none;
+}
+
 .p .image:hover .p-tools {
     opacity: 1;
 }
@@ -240,17 +248,11 @@
     display: none;
 }
 
-.products-page .product{
-    width: 33.333%;
-}
 
 @media screen and (max-width: 991px){
     .product{
         width: 33.333%;
     } 
-    .products-page .product{
-        width: 33.333%;
-    }
     .p .p-tools{
         display: none;
     }
@@ -265,8 +267,5 @@
     .p-in{
         border-bottom: 1px solid $gray-400;
         padding-bottom: 20px;
-    }
-    .products-page .product{
-        width: 50%;
     }
 }

@@ -17,20 +17,20 @@
         background: $white;
         transition: 0.3s ease all;
         box-shadow: 0px 3px 8px 0px rgba($black,0.05);
-        
-        &.--menuActive{
-            span{
-                background: none;
-            }
-            span::before{
-                transform: rotate(-45deg);
-            }
-            span::after{
-                transform: rotate(45deg);
-            }
+    }
+    body.--menuActive .header-top{
+        span{
+            background: none;
+        }
+        span::before{
+            transform: rotate(-45deg);
+        }
+        span::after{
+            transform: rotate(45deg);
         }
     }
 }
+
 @media screen and (min-width: 992px){
     .header-top .search{
         display: none;

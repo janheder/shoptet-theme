@@ -68,7 +68,7 @@
     flex-shrink: 0;
     height: 80px;
     width: 110px;
-    background-image: url("../img/symbol-benlemi-bw.svg");
+    background-image: url("../img/loading-symbol.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50px;
@@ -138,8 +138,12 @@
         transform: translate3d(-260px,0,0);
         transition: 0.3s ease transform;
         background: $white;
-        padding-top: 0px;
+        padding-top: 56px;
     }
+    body.--menuActive .menu{{
+        transform: translate3d(0,0,0);
+    }
+    
     .menu-level-1{
         flex-direction: column;
     }
