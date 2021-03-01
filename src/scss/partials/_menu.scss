@@ -127,9 +127,6 @@
 
 
 @media screen and (max-width: 991px){
-    body.--menuActive .menu{
-        transform: translate(0%, 0);
-    }
     .menu{
         position: fixed;
         left: 0;
@@ -138,7 +135,7 @@
         overflow-y: auto;
         height: 100%;
         width: 260px;
-        transform: translate(-100%, 0);
+        transform: translate3d(-260px,0,0);
         transition: 0.3s ease transform;
         background: $white;
         padding-top: 56px;

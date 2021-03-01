@@ -83,7 +83,7 @@
     left: auto;
     right: 10px;
     background-image: url("../icons/arrow-left-white.svg");
-    transform: rotate(180deg) translateY(-50%);
+    transform: translateY(-50%) rotate(180deg);
 }
 .carousel-control:hover,.carousel-control:focus {
     outline: 0;

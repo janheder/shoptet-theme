@@ -57,9 +57,7 @@ body{
 @media screen and (max-width: 991px){
     body.--menuActive{
         overflow: hidden;
-    }
-    body.--active{
-        transform: translateX(200px);
+        transform: translate3d(260px,0,0);
     }
 }
 @media screen and (min-width: 992px){
