@@ -102,12 +102,12 @@ a{
     margin-right: -10px;
     margin-left: -10px;
 }
-@media (min-width: 1220px){
+@media (min-width: 1340px){
     .container {
-        max-width: 1220px;
+        max-width: 1340px;
     }
 }
-@media (max-width: 1219px){
+@media (max-width: 1339px){
     .container {
         max-width: 100%;
     }
@@ -118,6 +118,10 @@ a{
         padding-right: 10px;
         padding-left: 10px;
     }
+}
+
+.content {
+    width: 100%;
 }
 
 
