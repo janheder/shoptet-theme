@@ -35,6 +35,23 @@
         background: $white;
     }
 }
+
+.menu-level-1 > li.ext > a{
+    position: relative;
+    padding: 0 40px 0 20px;
+
+    &::before{
+        content: "";
+        height: 12px;
+        width: 12px;
+        background-image: url($i-arrow-left);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        transform: rotate(270deg);
+    }
+}
+
 .menu-level-1 > li > a > b{
     font-weight: 500;
 }
@@ -115,10 +132,6 @@
     color: $gray-700;
 }
 
-.menu-level-1>li.ext >a{
-    position:relative;
-    padding: 0 40px 0 20px;
-}
 
 .menu-helper{
     display: none;
