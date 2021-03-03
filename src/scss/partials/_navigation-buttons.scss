@@ -22,11 +22,9 @@
     background: transparent;
     color: $gray-800;
     padding: 0;
-    width: 56px;
-    margin-left: 10px;
     line-height: 1.2;
     height: 50px;
-    margin-top: 5px;
+    padding: 0 20px 0 60px;
 
     &::before{
         content: "";
@@ -34,7 +32,7 @@
         width: 36px;
         position: absolute;
         top: 50%;
-        right: 10px;
+        left: 10px;
         background-image: url($i-cart);
         background-repeat: no-repeat;
         background-size: 100%;
@@ -73,7 +71,7 @@
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    right: 14px;
+    left: 30px;
     top: 55%;
     text-align: center;
     display: flex;
