@@ -7,6 +7,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
+    background: $gray-100;
 }
 .carousel .item{
 
@@ -62,4 +63,7 @@
 .next-to-carousel-banners .banner-wrapper{
     width: 50%;
     padding: 10px;
+}
+.next-to-carousel-banners .banner-wrapper a{
+    background: $gray-100;
 }
