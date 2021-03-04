@@ -48,14 +48,19 @@ $("#js-menuToggle, .menu-helper").click(function(){
 });
 
 /* add search and user icons to header area */
-$(".navigation-buttons").prepend('<div class="nav-search" id="js-searchToggle"></div><div class="nav-user" id="js-navUser"></div>');
+$(".navigation-buttons").prepend('<div class="nav-search" id="js-searchToggle"></div><div class="nav-user" id="js-userToggle"></div>');
 
 /* toggle user login modal */
-$("#js-navUser").click(function(){
+$("#js-userToggle").click(function(){
     $("body").toggleClass("--navUserActive");
 });
 $('.user-action-login').on('click',function(e){
     if (e.target !== this)
     return;
     $("body").toggleClass("--navUserActive");
+});
+
+/* toggle control of responsive search */
+$("#js-searchToggle").click(function(){
+    $("body").toggleClass("--searchActive");
 });

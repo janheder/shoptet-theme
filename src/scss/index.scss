@@ -53,7 +53,7 @@ body.--navUserActive{
 }
 
 @media screen and (max-width: 991px){
-    body.--menuActive{
+    body.--menuActive, body.--searchActive{
         overflow: hidden;
     }
 }
@@ -143,3 +143,4 @@ a{
 @import "partials/_product";
 
 @import "partials/_footer";
+@import "partials/_newsletter";

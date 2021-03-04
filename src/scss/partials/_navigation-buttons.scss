@@ -109,13 +109,15 @@
     background-position: center center;
     margin: 0 20px;
     transition: 0.2s ease background-color;
+    cursor: pointer;
 
     &:hover, &:active, &:focus{
         background-color: $gray-100;
     }
 }
 .nav-search{
-    width: 46px;
+    width: 50px;
+    height: 50px;
     background-image: url($i-search);
     background-repeat: no-repeat;
     background-size: 24px;
