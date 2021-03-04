@@ -48,6 +48,10 @@ body{
     transition: 0.3s ease transform;
 }
 
+body.--navUserActive{
+    overflow: hidden;
+}
+
 @media screen and (max-width: 991px){
     body.--menuActive{
         overflow: hidden;
