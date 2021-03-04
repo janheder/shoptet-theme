@@ -54,3 +54,8 @@ $(".navigation-buttons").prepend('<div class="nav-search" id="js-searchToggle"><
 $("#js-navUser").click(function(){
     $("body").toggleClass("--navUserActive");
 });
+$('.user-action-login').on('click',function(e){
+    if (e.target !== this)
+    return;
+    $("body").toggleClass("--navUserActive");
+});
