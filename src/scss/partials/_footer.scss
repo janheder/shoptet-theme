@@ -10,6 +10,19 @@ footer {
 .footer-rows{
 
 }
+
+.custom-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.custom-footer > div{
+    width: 33.333%;
+}
+.custom-footer > .extended{
+    width: 100%;
+}
+
+
 .footer-bottom{
     display: flex;
     font-size: 14px;
@@ -29,7 +42,9 @@ footer {
     flex-grow: 1;
     justify-content: flex-end;
 }
-
+.copyright strong{
+    padding-left: 5px;
+}
 
 .footer-banners{
 
