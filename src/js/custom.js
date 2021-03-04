@@ -48,4 +48,9 @@ $("#js-menuToggle, .menu-helper").click(function(){
 });
 
 /* add search and user icons to header area */
-$(".navigation-buttons").prepend('<div class="nav-search" id="js-searchToggle"></div><a href="/login" class="nav-user"></a>');
+$(".navigation-buttons").prepend('<div class="nav-search" id="js-searchToggle"></div><div class="nav-user" id="js-navUser"></div>');
+
+/* toggle user login modal */
+$("#js-navUser").click(function(){
+    $("body").toggleClass("--navUserActive");
+});

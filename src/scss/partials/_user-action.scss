@@ -21,30 +21,26 @@
 .user-action .login-widget{
     z-index: 99;
     position: absolute;
-    transform: translate(-50%);
+    height: 100%;
+    width: 100%;
+    background: rgba($black,0.8);
+    display: none;
+}
+.user-action .login-widget::after{
+
+}
+body.--navUserActive .user-action .login-widget{
+    display: flex;
+}
+.user-action .login-widget .popup-widget-inner{
     left: 50%;
     background: $white;
     top: 20px;
+    transform: translate(-50%);
     overflow-y: auto;
     height: auto;
     min-width: 700px;
     box-shadow: 0px 4px 15px rgba($black,0.08);
-}
-.user-action .login-widget::after{
-    content: "";
-    width: 260px;
-    display: flex;
-    background-color: $gray-300;
-    background-image: url("../img/bg-login.jpg");
-    background-size: cover;
-    background-position: center center;
-}
-.login-window-visible .user-action .login-widget{
-    display: flex;
-}
-.login-window-visible .user-action .login-widget .popup-widget-inner{
-    flex-grow: 1;
-    padding: 60px 40px;
 }
 .login-widget h2{
     position: relative;
