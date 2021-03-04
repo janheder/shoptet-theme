@@ -5,14 +5,35 @@
     display: flex;
 }
 .newsletter-header{
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.newsletter-header h4{
+    margin: 0;
+}
+ .subscribe-form{
 
 }
-.custom-footer .extended .subscribe-form{
-
+.subscribe-form fieldset{
+    display: flex;
+    flex-wrap: wrap;
 }
-.custom-footer .extended .subscribe-form fieldset{
-    
-}
-.custom-footer .extended .subscribe-form .no-display{
+.subscribe-form .no-display{
     display: none;
+}
+.subscribe-form fieldset .validator-msg-holder{
+    display: flex;
+    flex-wrap: wrap;
+}
+.subscribe-form fieldset .btn{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+.subscribe-form fieldset div:nth-last-child(2){
+    display: flex;
+    width: 100%;
+    order: 2;
 }
