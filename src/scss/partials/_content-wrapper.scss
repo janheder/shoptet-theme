@@ -6,8 +6,13 @@
     padding: 0px 0;
     flex-wrap: wrap; /*should be here*/
 }
-.content{
-    
+
+.content {
+    width: 100%;
+}
+
+.sidebar + .content{
+    width: 75%;
 }
 
 @media screen and (min-width: 992px){

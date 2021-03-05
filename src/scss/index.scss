@@ -117,9 +117,6 @@ a{
     }
 }
 
-.content {
-    width: 100%;
-}
 
 
 @import "partials/_img";
@@ -133,6 +130,7 @@ a{
 @import "partials/_navigation-buttons";
 @import "partials/_content-wrapper";
 @import "partials/_form";
+@import "partials/_sidebar";
 
 @import "partials/_homepage";
 @import "partials/_carousel";
