@@ -14,8 +14,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 100% !important; //todo: delete js that sets .p height
+    height: 100%;
     padding: 0;
+    content-visibility: auto; //test it out
 }
 .p .image{
     padding-bottom: 80%;

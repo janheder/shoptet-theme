@@ -34,6 +34,7 @@ before-carousel{
     display: flex;
 }
 
+
 .carousel-control {
     position: absolute;
     top: 50%;
@@ -50,6 +51,11 @@ before-carousel{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 24px 24px;
+    transition: 0.3s ease opacity;
+    opacity: 0;
+}
+.glider ~ .carousel-control{
+    opacity: 1;
 }
 .carousel-control.left {
     background-image: url("../icons/arrow-left-white.svg");
