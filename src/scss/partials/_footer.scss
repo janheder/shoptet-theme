@@ -2,7 +2,7 @@ footer {
     background: $white;
     display: flex;
     flex-direction: column;
-    padding: 60px 0;
+    padding: 60px 0 0 0;
 }
 .footer-links-icons{
 
@@ -26,12 +26,14 @@ footer {
 .footer-bottom{
     display: flex;
     font-size: 14px;
+    padding: 40px;
+    border-top: 1px solid $gray-400;
 }
 #signature{
 
 }
 #signature::after{
-    content: 'Šablonu "Starter" nakódoval a připravil Jan Heder';
+    content: 'Šablonu "Zen" připravil Jan Heder';
     padding-left: 5px;
 }
 #signature img{
