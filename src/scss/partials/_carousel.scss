@@ -17,9 +17,17 @@ before-carousel{
     background: $gray-100;
     border-radius: $border-radius-primary;
 }
-.carousel .item{
 
+.carousel .item{
+    display: none;
 }
+.carousel .item:first-child{
+    display: flex;
+}
+.carousel .item.glider-slide{
+    display: flex;
+}
+
 .carousel .item a{
     justify-content: center;
     align-items: center;
