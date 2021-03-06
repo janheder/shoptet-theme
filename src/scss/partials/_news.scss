@@ -19,6 +19,7 @@
     display: flex;
     overflow: hidden;
     background: $black;
+    border-radius: $border-radius-primary;
 }
 .news-item > .image > a > img{
     object-fit: cover;
@@ -50,7 +51,8 @@
     top: 20px;
     right: 20px;
     background: $white;
-    padding: 5px 10px
+    padding: 5px 10px;
+    border-radius: $border-radius-primary;
 }
 .news-item .description{
     font-size: 14px;
@@ -123,5 +125,5 @@
 
 
 .hp-blog{
-    padding: 40px 0;
+    padding: 40px 0 0 0;
 }
