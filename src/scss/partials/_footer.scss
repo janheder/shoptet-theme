@@ -10,6 +10,9 @@ footer {
 .footer-rows{
 
 }
+.footer-rows .site-name{
+    display: none;
+}
 
 .custom-footer{
     display: flex;
@@ -21,7 +24,6 @@ footer {
 .custom-footer > .extended{
     width: 100%;
 }
-
 
 .footer-bottom{
     display: flex;
@@ -53,4 +55,18 @@ footer {
 }
 .footer-banner{
     text-align: center;
+}
+
+@media screen and (max-width: 991px){
+    .custom-footer > div{
+        width: 50%;
+        padding: 10px;
+        max-width: none;
+    }
+    .custom-footer > .extended{
+        width: 100%;
+    }
+    .footer-rows .custom-footer > div > h4, .footer-rows .banner-wrapper h4{
+        font-size: 16px;
+    }
 }
