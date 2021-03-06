@@ -15,16 +15,17 @@
     position: relative;
 }
 .news-item > .image > a{
-    height: 220px;
+    height: 260px;
     display: flex;
     overflow: hidden;
+    background: $black;
 }
 .news-item > .image > a > img{
     object-fit: cover;
-    transition: 1s ease transform;
+    transition: 0.5s ease opacity;
 }
 .news-item > .image > a:hover > img{
-    transform: scale(1.05);
+    opacity: 0.7;
 }
 .news-item > .text{
     display: flex;
