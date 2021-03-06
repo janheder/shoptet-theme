@@ -10,3 +10,107 @@
     flex-direction: column;
     position: relative;
 }
+
+.news-item > .image{
+    position: relative;
+}
+.news-item > .image > a{
+    height: 220px;
+    display: flex;
+    overflow: hidden;
+}
+.news-item > .image > a > img{
+    object-fit: cover;
+    transition: 1s ease transform;
+}
+.news-item > .image > a:hover > img{
+    transform: scale(1.05);
+}
+.news-item > .text{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+.news-item .title{
+    font-size: 16px;
+    font-weight: 500;
+    color: $gray-800;
+    padding: 10px 0;
+    order: 0;
+}
+.news-item time{
+    font-size: 13px;
+    color: $gray-700;
+    order: 2;
+    font-weight: 400;
+    padding-top: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: $white;
+    padding: 5px 10px
+}
+.news-item .description{
+    font-size: 14px;
+    order: 1;
+    color: $gray-700;
+}
+.news-item .description p{
+    margin: 0;
+}
+@media screen and (max-width: 767px){
+    .news-item{
+        width: 100% !important;
+        flex-direction: row;
+    }
+    .news-item > .image {
+        width: 100px;
+        height: 100px;
+        flex-shrink: 0;
+    }
+    .news-item > .image > a {
+        height: 100px;
+    }
+    .news-item .title {
+        padding: 0px 0 10px 0;
+    }
+    .news-item > .text {
+        padding-left: 20px;
+    }
+    .news-item time{
+        position: relative;
+        top: 0px;
+        right: 0px;
+        padding: 5px 0px
+    }
+}
+@media screen and (max-width: 500px){
+    .news-item > .image {
+        width: 60px;
+        height: 60px;
+    }
+    .news-item > .image > a {
+        height: 60px;
+    }
+    .news-item > .text {
+        padding-left: 10px;
+    }
+}
+
+.news-item-detail{
+    margin: 0 auto;
+}
+.news-item-detail time{
+    color: $gray-700;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 40px;
+    display: flex;
+}
+.news-item-detail .next-prev{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}

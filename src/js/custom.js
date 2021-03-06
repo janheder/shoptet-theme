@@ -4,7 +4,7 @@
 
 
 
-$('<div class="hp-blog"><div class="container"><div class="news-wrapper"></div></div></div>').insertBefore("#footer");
+$('<div class="hp-blog"><div class="container"><div class="news-wrapper"></div></div></div>').insertBefore(".in-index #footer");
 $(".hp-blog .news-wrapper").load("/blog/ .news-wrapper .news-item:nth-child(-n+3)");
 
 // =============================================================================
