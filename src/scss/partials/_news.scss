@@ -1,0 +1,12 @@
+.news-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+.news-item {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}

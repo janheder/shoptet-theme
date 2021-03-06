@@ -4,6 +4,9 @@
 
 
 
+$('<div class="hp-blog"><div class="container"><div class="news-wrapper"></div></div></div>').insertBefore("#footer");
+$(".hp-blog .news-wrapper").load("/blog/ .news-wrapper .news-item:nth-child(-n+3)");
+
 // =============================================================================
 // LOAD INSTAGRAM FEED
 // =============================================================================
