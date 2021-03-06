@@ -2,7 +2,7 @@ footer {
     background: $white;
     display: flex;
     flex-direction: column;
-    padding: 60px 0 0 0;
+    padding: 40px 0 0 0;
 }
 .footer-links-icons{
 
@@ -26,7 +26,7 @@ footer {
 .footer-bottom{
     display: flex;
     font-size: 14px;
-    padding: 40px;
+    padding: 40px 0;
     border-top: 1px solid $gray-400;
 }
 #signature{
