@@ -5,11 +5,12 @@ before-carousel{
 .banners-row .col-sm-8, .banners-row .col-sm-4{
     width: 100%;
 }
-/*
+
 .carousel {
     position: relative;
     padding: 20px 0;
 }
+
 .carousel-inner {
     position: relative;
     overflow: hidden;
@@ -33,41 +34,7 @@ before-carousel{
     align-items: center;
     display: flex;
 }
-*/
 
-.carousel-inner {
-    display: flex;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent
-}
-
-.carousel-inner,.carousel-inner .item {
-    overflow: hidden;
-    position: relative
-}
-
-.carousel-inner .item {
-    width: 100%;
-    min-height: 100%
-}
-
-.carousel-inner[data-keen-slider-v] {
-    flex-wrap: wrap
-}
-
-.carousel-inner[data-keen-slider-v] .item {
-    width: 100%
-}
-
-.carousel-inner[data-keen-slider-moves] * {
-    pointer-events: none
-}
 
 .carousel-control {
     position: absolute;
@@ -88,9 +55,7 @@ before-carousel{
     transition: 0.3s ease opacity;
     opacity: 0;
 }
-.glider ~ .carousel-control{
-    opacity: 1;
-}
+
 .carousel-control.left {
     background-image: url("../icons/arrow-left-white.svg");
 }
