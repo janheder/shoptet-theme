@@ -67,3 +67,67 @@ $('.user-action-login').on('click',function(e){
 $("#js-searchToggle").click(function(){
     $("body").toggleClass("--searchActive");
 });
+
+
+// =============================================================================
+// VOICE SEARCH
+// =============================================================================
+
+$("#formSearchForm .query-input").attr("id","searchbox");
+$("<div id='speechToggle' onclick='startDictation()'></div>").insertBefore(".search-form .btn");
+
+function startDictation() {
+    if (window.hasOwnProperty('webkitSpeechRecognition')) {
+
+        var recognition = new webkitSpeechRecognition();
+
+        recognition.continuous = false;
+        recognition.interimResults = false;
+
+        recognition.lang = "cs-CZ";
+        recognition.start();
+
+        recognition.onresult = function(e) {
+            document.getElementById('searchbox').value = e.results[0][0].transcript;
+            recognition.stop();
+            document.getElementById('formSearchForm').submit();
+        };
+
+        recognition.onerror = function(e) {
+            recognition.stop();
+        }
+    }
+}
+
+
+
+// =============================================================================
+// ADVANCED ORCDER SUMMARY
+// =============================================================================
+function advanceOrderCustom() {
+    var img = $(".p-detail-inner .p-image-wrapper a").html();
+    var name = $(".p-detail-inner .p-detail-inner-header h1").html();
+    if($(".p-detail-inner .parameter-dependent").length){
+        var stock = $(".p-detail-inner .availability-value .parameter-dependent:not(.noDisplay) span").html();
+    }else{
+        var stock = $(".p-detail-inner .availability-value").html();
+    }
+    var amount = parseInt($(".p-detail-inner .add-to-cart .amount").val());
+    var priceSingle = $(".p-detail-inner .p-final-price-wrapper .price-final-holder:not(.noDisplay)").html();
+
+    for (i = 0; i < amount; i++) {
+        $(".extras-wrap").prepend('<div class="extras-product">' +
+        '<div class="extras-product-img">' + img + '</div>' +
+        '<div class="extras-product-name">' + name + '</div>' +
+        '<div class="extras-product-stock">' + stock + '</div>' +
+        '<div class="extras-product-amount">' + amount + 'x</div>' +
+        '<div class="extras-product-priceSingle">' + priceSingle + '</div>' +
+        '</div>');
+    }
+
+}
+
+/* call functions after order modal loaded */
+document.addEventListener('ShoptetDOMAdvancedOrderLoaded', function () {
+advanceOrderCustom();
+});
