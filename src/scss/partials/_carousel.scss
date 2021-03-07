@@ -38,6 +38,8 @@ before-carousel{
 */
 
 .carousel {
+    position: relative;
+    padding: 20px 0;
     overflow: hidden;
   }
   .carousel-inner  {
