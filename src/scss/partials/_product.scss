@@ -19,7 +19,7 @@
     padding: 0;
 }
 .p .image{
-    padding-bottom: 80%;
+    padding-bottom: 75%;
     position: relative;
     background: $gray-100;
     /*background-image: url("../img/loading-symbol.svg");*/
@@ -33,7 +33,7 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
-        max-height: 70%;
+        max-height: 100%;
         mix-blend-mode: multiply;
     }
     &:hover, &:active, &:focus{
