@@ -3,12 +3,32 @@
 // =============================================================================
 
 
-
 $('<div class="hp-blog"><div class="container"><div class="news-wrapper"></div></div></div>').insertBefore(".in-index #footer");
 $(".hp-blog .news-wrapper").load("/blog/ .news-wrapper .news-item:nth-child(-n+3)");
 
+// =============================================================================
+// LOAD INSTAGRAM FEED
+// =============================================================================
 
-
+(function(){
+    new InstagramFeed({
+        'username': 'jan.heder',
+        'container': document.getElementById("instagramSectionContent"),
+        'display_profile': false,
+        'display_biography': false,
+        'display_gallery': true,
+        'display_captions': false,
+        'max_tries': 8,
+        'callback': null,
+        'styling': true,
+        'items': 8,
+        'items_per_row': 8,
+        'image_size': 150,
+        'margin': 0.5,
+        'lazy_load': true,
+        'on_error': console.error
+    });
+})();
 
 // =============================================================================
 // MENU TOGGLES
