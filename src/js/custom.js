@@ -113,17 +113,18 @@ function advanceOrderCustom() {
         var stock = $(".p-detail-inner .availability-value").html();
     }
     var amount = parseInt($(".p-detail-inner .add-to-cart .amount").val());
-    var priceSingle = $(".p-detail-inner .p-final-price-wrapper .price-final-holder:not(.noDisplay)").html();
 
-    for (i = 0; i < amount; i++) {
+    var priceSingle = $(".p-detail-inner .p-final-price-wrapper .price-final-holder").html();
+    var priceTotal = parseFloat(priceSingle)*amount;
+
         $(".extras-wrap").prepend('<div class="extras-product">' +
         '<div class="extras-product-img">' + img + '</div>' +
         '<div class="extras-product-name">' + name + '</div>' +
         '<div class="extras-product-stock">' + stock + '</div>' +
         '<div class="extras-product-amount">' + amount + 'x</div>' +
-        '<div class="extras-product-priceSingle">' + priceSingle + '</div>' +
+        '<div class="extras-product-priceTotal">' + priceTotal + ' Kč</div>' +
         '</div>');
-    }
+
 
 }
 
