@@ -12,7 +12,7 @@ $(".hp-blog .news-wrapper").load("/blog/ .news-wrapper .news-item:nth-child(-n+3
 
 (function(){
     new InstagramFeed({
-        'username': 'jan.heder',
+        'username': 'instagram',
         'container': document.getElementById("instagramSectionContent"),
         'display_profile': false,
         'display_biography': false,

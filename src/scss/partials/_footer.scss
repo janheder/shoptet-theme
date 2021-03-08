@@ -37,6 +37,17 @@ footer {
     line-height: 1.8;
 }
 
+#instagramSectionContent{
+    padding-bottom: 40px;
+}
+#instagramSectionContent .instagram_gallery{
+    margin: 0 -0.5%;
+}
+#instagramSectionContent .instagram_gallery a{
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
 .footer-bottom{
     display: flex;
     font-size: 14px;
