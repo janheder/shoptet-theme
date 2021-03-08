@@ -134,7 +134,7 @@
 .p-in-in{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    /*flex-grow: 1;*/
 }
 .p-in-in .name{
     text-decoration: none;
@@ -241,8 +241,8 @@
 
 }
 .p .availability{
-    display: flex;
-    font-size: 12px;
+    display: none;
+    font-size: 14px;
     flex-grow: 1;
     color: $green-700;
 }
@@ -270,10 +270,8 @@
         width: 50%;
     } 
     .p{
-        padding: 10px 5px;
+
     }   
     .p-in{
-        border-bottom: 1px solid $gray-400;
-        padding-bottom: 20px;
     }
 }

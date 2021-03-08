@@ -85,3 +85,21 @@
 .step.step-3 strong::before, .step.step-3 a::before{
     content: "3";
 }
+
+
+@media screen and (max-width: 991px){
+    .cart-header {
+        margin: -10px;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    .cart-header .step a, .cart-header .step strong{
+        padding: 10px;
+        padding-bottom: 20px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .cart-header .step-4{
+        display: none;
+    }
+}

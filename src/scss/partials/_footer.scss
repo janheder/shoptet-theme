@@ -24,6 +24,18 @@ footer {
 .custom-footer > .extended{
     width: 100%;
 }
+.custom-footer > div > h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.custom-footer > div > ul{
+    list-style: none;
+    padding: 0;
+}
+.custom-footer > div > ul > li{
+    line-height: 1.8;
+}
 
 .footer-bottom{
     display: flex;
@@ -72,5 +84,13 @@ footer {
     }
     .footer-rows .custom-footer > div > h4, .footer-rows .banner-wrapper h4{
         font-size: 16px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .copyright{
+        padding-top: 10px;
     }
 }

@@ -104,6 +104,7 @@ function startDictation() {
 // =============================================================================
 // ADVANCED ORCDER SUMMARY
 // =============================================================================
+
 function advanceOrderCustom() {
     var img = $(".p-detail-inner .p-image-wrapper a").html();
     var name = $(".p-detail-inner .p-detail-inner-header h1").html();
@@ -132,3 +133,12 @@ function advanceOrderCustom() {
 document.addEventListener('ShoptetDOMAdvancedOrderLoaded', function () {
 advanceOrderCustom();
 });
+
+
+
+// -----------------------------------------------------------------------------
+// PRODUCT PAGE
+// -----------------------------------------------------------------------------
+
+/* relocate product title */
+$(".p-detail-inner-header").insertBefore(".p-final-price-wrapper");
