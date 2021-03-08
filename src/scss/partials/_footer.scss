@@ -21,7 +21,7 @@ footer {
 .custom-footer > div{
     width: 33.333%;
 }
-.custom-footer > .extended{
+.custom-footer > .extended, .custom-footer > div:first-child{
     width: 100%;
 }
 .custom-footer > div > h4{
