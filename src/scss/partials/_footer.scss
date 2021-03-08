@@ -33,12 +33,17 @@ footer {
 #signature{
 
 }
+#signature a:first-child{
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+}
 #signature::after{
     content: 'Šablonu "Zen" připravil Jan Heder';
     padding-left: 5px;
 }
 #signature img{
-    height: 26px;
+    height: 22px;
 }
 .copyright{
     display: flex;
