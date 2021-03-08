@@ -29,16 +29,25 @@ footer {
     font-weight: 600;
     margin-bottom: 20px;
 }
-.custom-footer > div > ul{
+.custom-footer > div  ul{
     list-style: none;
     padding: 0;
 }
-.custom-footer > div > ul > li{
+.custom-footer > div  ul > li{
     line-height: 1.8;
 }
 
-#instagramSectionContent{
+
+.instagramSection{
     padding-bottom: 40px;
+}
+.instagramSection__title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+#instagramSectionContent{
+
 }
 #instagramSectionContent .instagram_gallery{
     margin: 0 -0.5%;
@@ -46,7 +55,7 @@ footer {
 #instagramSectionContent .instagram_gallery a{
     border-radius: 4px;
     overflow: hidden;
-  }
+}
 
 .footer-bottom{
     display: flex;
