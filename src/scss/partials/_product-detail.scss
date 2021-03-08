@@ -39,7 +39,7 @@
         display: flex;
         order: 2;
         font-size: 13px;
-        padding: 0 20px;
+        padding: 0 20px 0 0;
 
         .p-code-label{
             padding-right: 2px;
@@ -530,11 +530,11 @@
 .add-to-cart .quantity{
     margin-right: 10px;
     position: relative;
-    max-width: 120px;
+    max-width: 140px;
 }
 .add-to-cart .amount{
-    height: 46px;
-    line-height: 46px;
+    height: 60px;
+    line-height: 60px;
     padding: 0 10px;
     width: 100%;
     border: 0;
@@ -543,13 +543,13 @@
 }
 .add-to-cart .increase, .add-to-cart .decrease{
     position: absolute;
-    right: 1px;
-    top: 1px;
-    height: 44px;
+    right: 0px;
+    top: 0px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
+    width: 60px;
     cursor: pointer;
 
     &::before, &::after{
@@ -578,7 +578,8 @@
     }
 }
 .add-to-cart .add-to-cart-button{
-    padding: 0 30px;
+    padding: 0 60px;
+    height: 60px;
 }
 .p-short-description{
     order: 5;
