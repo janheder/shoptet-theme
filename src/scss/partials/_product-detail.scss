@@ -91,8 +91,9 @@
 }
 .p-detail-info .flag{
     margin-bottom: 5px;
-    padding: 0 5px;
-    height: 22px;
+    padding: 0 10px;
+    height: 24px;
+    border-radius: 12px;
     background: $white;
     white-space: nowrap;
     color: $gray-800;
@@ -530,7 +531,9 @@
 .add-to-cart .quantity{
     margin-right: 10px;
     position: relative;
-    max-width: 140px;
+    max-width: 150px;
+    border-radius: 4px;
+    overflow: hidden;
 }
 .add-to-cart .amount{
     height: 60px;
@@ -540,6 +543,7 @@
     border: 0;
     background: $gray-100;
     text-align: center;
+    font-weight: 600;
 }
 .add-to-cart .increase, .add-to-cart .decrease{
     position: absolute;
@@ -549,7 +553,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
+    width: 50px;
     cursor: pointer;
 
     &::before, &::after{
@@ -567,7 +571,7 @@
         width: 2px;
     }
     &:hover, &:active, &:focus{
-        background: $gray-300;
+        background: $gray-200;
     }
 }
 .add-to-cart .decrease{
