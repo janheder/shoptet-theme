@@ -18,6 +18,7 @@
     background: $white;
     z-index: 10;
     display: flex;
+    border-radius: $border-radius-primary;
 }
 #colorbox > #cboxWrapper{
     position: relative;
@@ -169,8 +170,8 @@
 }
 #colorbox #cboxClose{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
     border: 0;
     background-color: $gray-300;
     background-image: url("../icons/close.svg");
@@ -180,6 +181,7 @@
     font-size: 0;
     height: 48px;
     width: 48px;
+    border-radius: $border-radius-primary;
     padding: 0;
     cursor: pointer;
 }

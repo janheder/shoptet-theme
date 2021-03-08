@@ -778,9 +778,10 @@
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba($black, 0.4);
-    height: 36px;
-    width: 36px;
+    background: $white;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
     border: 0;
     -webkit-appearance: none;
     background-image: url($i-arrow-left);
@@ -792,7 +793,7 @@
 #cboxNext{
     left: auto;
     right: 10px;
-    background-image: url($i-arrow-left);
+    transform: translateY(-50%) rotate(180deg);
 }
 #cboxCurrent{
     display: none;
