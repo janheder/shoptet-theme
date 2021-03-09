@@ -34,6 +34,13 @@ before-carousel{
     display: flex;
 }
 
+.carousel .carousel-inner > .item:first-child{
+    display: flex;
+}
+
+.carousel .carousel-inner > .item{
+    display: none;
+}
 
 .carousel-control {
     position: absolute;
@@ -61,7 +68,7 @@ before-carousel{
     left: auto;
     right: 10px;
     background-image: url($i-arrow-right-white);
-    transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%);
 }
 .carousel-control:hover,.carousel-control:focus {
     outline: 0;
