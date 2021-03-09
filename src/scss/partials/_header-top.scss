@@ -451,17 +451,6 @@
 }
 
 
-#continue-order-button{
-
-    height: 42px;
-    font-size: 13px;
-    transition: 0.3s ease opacity;
-
-    &:hover, &:active, &:focus{
-
-        border: 0;
-    }
-}
 .user-action-cart .cart-free-shipping strong{
     color: $green-700;
     padding: 10px 0;
