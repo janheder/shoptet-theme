@@ -1,44 +1,46 @@
 // =============================================================================
 // INIT HOMEPAGE CAROUSEL
 // =============================================================================
+if ($("#carousel").length){
+    const mySiema = new Siema({
+        selector: '.carousel-inner',
+        duration: 200,
+        easing: 'ease-out',
+        perPage: 1,
+        startIndex: 0,
+        draggable: true,
+        multipleDrag: true,
+        threshold: 20,
+        loop: true,
+        rtl: false,
+        onInit: () => {},
+        onChange: () => {},
+        });
+        
+        document.querySelector('.left').addEventListener('click', () => mySiema.prev());
+        document.querySelector('.right').addEventListener('click', () => mySiema.next());
+        
+    $(function () {
+        var isDragging = false;
+        $("a")
+            .mousedown(function () {
+            isDragging = false;
+            })
+            .mousemove(function () {
+            isDragging = true;
+            })
+            .mouseup(function () {
+            var wasDragging = isDragging;
+            isDragging = false;
+            if (!wasDragging) {
+                $(".item").click();
+            } else {
+                $(".item").one("click", false);
+            }
+            });
+        });
+}
 
-const mySiema = new Siema({
-    selector: '.carousel-inner',
-    duration: 200,
-    easing: 'ease-out',
-    perPage: 1,
-    startIndex: 0,
-    draggable: true,
-    multipleDrag: true,
-    threshold: 20,
-    loop: true,
-    rtl: false,
-    onInit: () => {},
-    onChange: () => {},
-  });
-  
-  document.querySelector('.left').addEventListener('click', () => mySiema.prev());
-  document.querySelector('.right').addEventListener('click', () => mySiema.next());
-  
-  $(function () {
-    var isDragging = false;
-    $("a")
-      .mousedown(function () {
-        isDragging = false;
-      })
-      .mousemove(function () {
-        isDragging = true;
-      })
-      .mouseup(function () {
-        var wasDragging = isDragging;
-        isDragging = false;
-        if (!wasDragging) {
-          $(".item").click();
-        } else {
-          $(".item").one("click", false);
-        }
-      });
-  });
 
 // =============================================================================
 // HOMEPAGE NEWS
