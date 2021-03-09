@@ -116,6 +116,14 @@
     margin-bottom: 40px;
     display: flex;
 }
+.news-item-detail img{
+    margin: 40px 0;
+}
+.news-item-detail .text{
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 500;
+}
 .news-item-detail .next-prev{
     margin-top: 40px;
     display: flex;

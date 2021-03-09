@@ -44,7 +44,8 @@
 
 @media screen and (max-width: 991px){
     .breadcrumbs-wrapper{
-        background: $gray-100;
+        background: $white;
+        padding-bottom: 0;
     }
     .breadcrumbs > span{
         display: none;
