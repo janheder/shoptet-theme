@@ -20,10 +20,6 @@
         width: 40px;
         background: $green-200;
     }
-    
-    & + h4{
-        display: none;
-    }
 }
 
 .category-perex{
@@ -149,4 +145,15 @@
     .category-perex{
         margin-top: 0px;
     }
+}
+
+.category-title + h4 {
+
+}
+.products-top{
+    display: none;
+}
+.products-inline{
+    display: flex;
+    flex-wrap: wrap;
 }

@@ -18,7 +18,12 @@
 .cart-content{
     margin: 0;
 }
-
+.cart-content.checkout-box-wrapper{
+    display: none;
+}
+.back-shopping-link{
+    display: none;
+}
 
 .cart-header{
     display: flex;
@@ -117,7 +122,7 @@
 
 }
 .removeable td{
-    padding: 20px 0;
+    padding: 10px 0;
 }
 .cart-p-image{
     height: 80px;
@@ -132,7 +137,7 @@
     mix-blend-mode: multiply;
 }
 .p-name{
-    padding: 0 20px;
+    padding-left: 20px;
 }
 .p-availability{
 
@@ -149,12 +154,21 @@
 .p-quantity{
 
 }
+.p-quantity .p-label{
+    display: none;
+}
+.p-quantity .quantity{
+
+}
 .p-price{
 
 }
 .p-total{
     display: flex;
     justify-content: space-between;
+}
+.p-total .p-label{
+    display: none;
 }
 .p-total .remove-item{
     font-size: 0;
@@ -169,12 +183,10 @@
     background-repeat: no-repeat;
 }
 
-
-
-
-
-
-
 .related{
     display: none;
+}
+
+.cart-content.summary-wrapper{
+
 }

@@ -42,7 +42,8 @@ footer {
 }
 
 .custom-footer .news-item-widget{
-    padding-bottom: 10px;
+    padding-bottom: 0px;
+    line-height: 1.8;
 }   
 .custom-footer .news-item-widget:last-child{
     padding-bottom: 0px;
@@ -58,6 +59,7 @@ footer {
 .custom-footer .news-item-widget time{
     font-size: 13px;
     font-weight: 500;
+    display: none;
 }
 
 
@@ -74,11 +76,18 @@ footer {
 
 }
 #instagramSectionContent .instagram_gallery{
-    margin: 0 -0.5%;
+    margin: 0 -5px;
 }
 #instagramSectionContent .instagram_gallery a{
     border-radius: 4px;
     overflow: hidden;
+    padding: 5px;
+    width: 12.5%;
+}
+@media screen and (max-width: 991px){
+    #instagramSectionContent .instagram_gallery a{
+        width: 25%;
+    }
 }
 
 .footer-bottom{

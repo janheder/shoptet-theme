@@ -155,6 +155,7 @@
         transition: 0.3s ease transform;
         background: $white;
         padding-top: 56px;
+        border-radius: 0;
     }
     body.--menuActive .menu{
         transform: translate3d(0,0,0);

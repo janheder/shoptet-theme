@@ -69,7 +69,8 @@ $(".hp-blog .news-wrapper").load("/blog/ .news-wrapper .news-item:nth-child(-n+3
         'image_size': 150,
         'margin': 0.5,
         'lazy_load': true,
-        'on_error': console.error
+        'on_error': false,
+        'styling': false
     });
 })();
 
