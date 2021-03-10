@@ -61,7 +61,7 @@ $(".hp-blog .news-wrapper").load("/blog/ .news-wrapper .news-item:nth-child(-n+3
         'display_biography': false,
         'display_gallery': true,
         'display_captions': false,
-        'max_tries': 8,
+        'max_tries': 4,
         'callback': null,
         'styling': true,
         'items': 8,
@@ -69,8 +69,7 @@ $(".hp-blog .news-wrapper").load("/blog/ .news-wrapper .news-item:nth-child(-n+3
         'image_size': 150,
         'margin': 0.5,
         'lazy_load': true,
-        'on_error': false,
-        'styling': false
+        'on_error': false
     });
 })();
 

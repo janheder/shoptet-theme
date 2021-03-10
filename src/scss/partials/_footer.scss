@@ -77,16 +77,21 @@ footer {
 }
 #instagramSectionContent .instagram_gallery{
     margin: 0 -5px;
+    display: flex;
+    flex-wrap: wrap;
 }
 #instagramSectionContent .instagram_gallery a{
-    border-radius: 4px;
     overflow: hidden;
     padding: 5px;
-    width: 12.5%;
+    width: 12.5% !important;
+    margin: 0 !important;
+}
+#instagramSectionContent .instagram_gallery a img{
+    border-radius: 4px;
 }
 @media screen and (max-width: 991px){
     #instagramSectionContent .instagram_gallery a{
-        width: 25%;
+        width: 25% !important;
     }
 }
 
