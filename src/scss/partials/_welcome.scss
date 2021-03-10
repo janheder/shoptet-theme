@@ -13,3 +13,8 @@
 .welcome p{
 
 }
+.welcome-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
