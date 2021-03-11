@@ -46,7 +46,7 @@ if ($("#carousel").length){
 // HOMEPAGE NEWS
 // =============================================================================
 
-$('<section class="hp-blog"><div class="container"><h1>Na našem blogu</h1><div class="news-wrapper"></div><a href="/blog" class="hp-blog-btn">Více článků</a></div></section>').insertBefore(".in-index #footer");
+$('<section class="hp-blog"><div class="container"><h1>Na našem blogu</h1><div class="news-wrapper"></div><div class="hp-blog-bottom"><a href="/blog" class="btn">Více článků</a></div></div></section>').insertBefore(".in-index #footer");
 $(".hp-blog .news-wrapper").load("/blog/ .news-wrapper .news-item:nth-child(-n+3)");
 
 // =============================================================================
