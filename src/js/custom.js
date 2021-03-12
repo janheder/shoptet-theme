@@ -182,3 +182,21 @@ advanceOrderCustom();
 
 /* relocate product title */
 $(".p-detail-inner-header").insertBefore(".p-final-price-wrapper");
+
+
+
+// -----------------------------------------------------------------------------
+// CATEGORY CAROUSEL INIT
+// -----------------------------------------------------------------------------
+
+new Siema({
+    selector: '#productsTop',
+    duration: 200,
+    easing: 'ease-out',
+    perPage: 5,
+    startIndex: 0,
+    draggable: true,
+    multipleDrag: true,
+    threshold: 20,
+    loop: true
+});

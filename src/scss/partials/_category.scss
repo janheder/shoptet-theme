@@ -154,6 +154,15 @@
     display: none;
 }
 .products-inline{
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    margin: 0 -10px;
+    padding-bottom: 40px;
+}
+.products-inline > .product {
+    display: none; /* hide products before carousel init */
+}
+.products-inline .product {
+    position: relative;
+    width: 100%;
+    padding: 0;
 }
