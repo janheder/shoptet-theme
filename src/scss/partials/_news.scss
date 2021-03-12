@@ -108,6 +108,7 @@
 
 .news-item-detail{
     margin: 0 auto;
+    max-width: 760px;
 }
 .news-item-detail time{
     color: $gray-700;
@@ -144,5 +145,6 @@
 .hp-blog-bottom{
     text-align: center;
     display: flex;
-    padding-top: 20px
+    padding-top: 20px;
+    justify-content: center;
 }
