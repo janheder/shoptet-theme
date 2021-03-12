@@ -30,6 +30,7 @@
     width: 120px;
     height: auto;
     flex-shrink: 0;
+    mix-blend-mode: multiply;
 }
 .subcategories li a .text{
     display: flex;
