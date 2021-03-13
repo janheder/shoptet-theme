@@ -20,16 +20,16 @@ if ($("#carousel").length){
         document.querySelector('.left').addEventListener('click', () => mySiema.prev());
         document.querySelector('.right').addEventListener('click', () => mySiema.next());
         
-    $(function () {
+    $(function(){
         var isDragging = false;
         $("a")
-            .mousedown(function () {
+        .mousedown(function () {
             isDragging = false;
-            })
-            .mousemove(function () {
+        })
+        .mousemove(function () {
             isDragging = true;
-            })
-            .mouseup(function () {
+        })
+        .mouseup(function () {
             var wasDragging = isDragging;
             isDragging = false;
             if (!wasDragging) {
@@ -37,8 +37,8 @@ if ($("#carousel").length){
             } else {
                 $(".item").one("click", false);
             }
-            });
         });
+    });
 }
 
 
@@ -199,4 +199,23 @@ new Siema({
     multipleDrag: true,
     threshold: 20,
     loop: true
+});
+$(function(){
+    var isDragging = false;
+    $("a")
+    .mousedown(function () {
+        isDragging = false;
+    })
+    .mousemove(function () {
+        isDragging = true;
+    })
+    .mouseup(function () {
+        var wasDragging = isDragging;
+        isDragging = false;
+        if (!wasDragging) {
+            $(".p").click();
+        } else {
+            $(".p").one("click", false);
+        }
+    });
 });

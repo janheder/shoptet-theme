@@ -147,8 +147,11 @@
     }
 }
 
-.category-title + h4 {
-
+.category-title + .subcategories + h4 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 .products-top{
     display: none;
