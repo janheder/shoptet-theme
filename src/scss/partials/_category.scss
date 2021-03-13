@@ -153,16 +153,19 @@
 .products-top{
     display: none;
 }
-.products-inline{
+.products-top{
     display: block;
     margin: 0 -10px;
     padding-bottom: 40px;
 }
-.products-inline > .product {
+.products-top > .product {
     display: none; /* hide products before carousel init */
 }
-.products-inline .product {
+.products-top .product {
     position: relative;
     width: 100%;
     padding: 0;
+}
+.products-top .button-wrapper{
+    display: none;
 }
