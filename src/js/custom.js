@@ -189,6 +189,8 @@ $(".p-detail-inner-header").insertBefore(".p-final-price-wrapper");
 // CATEGORY CAROUSEL INIT
 // -----------------------------------------------------------------------------
 
+$(".button-wrapper").remove();
+
 new Siema({
     selector: '#productsTop',
     duration: 200,
