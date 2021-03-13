@@ -110,6 +110,9 @@ before-carousel{
     .carousel {
         padding: 0px 0;
     }
+    .carousel-inner {
+        border-radius: 0px;
+    }
     .carousel-control {
         display: none;
     }
