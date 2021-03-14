@@ -323,6 +323,9 @@
         position: relative;
         flex-shrink: 0;
     }
+    body.--menuActive .nav-menu-toggle{
+        order: 1;
+    }
     .nav-menu-toggle span{
         display: flex;
         position: absolute;
