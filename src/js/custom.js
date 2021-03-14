@@ -189,35 +189,37 @@ $(".p-detail-inner-header").insertBefore(".p-final-price-wrapper");
 // CATEGORY CAROUSEL INIT
 // -----------------------------------------------------------------------------
 
-$(".button-wrapper").remove();
+if ($("#productsTop").length){
+    $(".button-wrapper").remove();
 
-new Siema({
-    selector: '#productsTop',
-    duration: 200,
-    easing: 'ease-out',
-    perPage: 5,
-    startIndex: 0,
-    draggable: true,
-    multipleDrag: true,
-    threshold: 20,
-    loop: true
-});
-$(function(){
-    var isDragging = false;
-    $("a")
-    .mousedown(function () {
-        isDragging = false;
-    })
-    .mousemove(function () {
-        isDragging = true;
-    })
-    .mouseup(function () {
-        var wasDragging = isDragging;
-        isDragging = false;
-        if (!wasDragging) {
-            $(".p").click();
-        } else {
-            $(".p").one("click", false);
-        }
+    new Siema({
+        selector: '#productsTop',
+        duration: 200,
+        easing: 'ease-out',
+        perPage: 5,
+        startIndex: 0,
+        draggable: true,
+        multipleDrag: true,
+        threshold: 20,
+        loop: true
     });
-});
+    $(function(){
+        var isDragging = false;
+        $("a")
+        .mousedown(function () {
+            isDragging = false;
+        })
+        .mousemove(function () {
+            isDragging = true;
+        })
+        .mouseup(function () {
+            var wasDragging = isDragging;
+            isDragging = false;
+            if (!wasDragging) {
+                $(".p").click();
+            } else {
+                $(".p").one("click", false);
+            }
+        });
+    });
+}

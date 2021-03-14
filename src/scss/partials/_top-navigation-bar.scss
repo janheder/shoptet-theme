@@ -56,7 +56,7 @@
 }
 .top-navigation-contacts .project-phone, .top-navigation-contacts .project-email{
     position: relative;
-    padding-right: 30px;
+    display: flex;
 
     &::before{
         content: "";
@@ -66,6 +66,8 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
+        display: flex;
+        margin-right: 5px;
     }
 }
 .top-navigation-contacts .project-email::before{

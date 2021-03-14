@@ -38,12 +38,13 @@
 
 .menu-level-1 > li.ext > a{
     position: relative;
+    padding: 0 42px 0 20px;
 
     &::before{
         content: "";
         height: 12px;
         width: 12px;
-        background-image: url($i-arrow-left);
+        background-image: url($i-arrow-left-white);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
