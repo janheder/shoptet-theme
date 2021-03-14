@@ -1,7 +1,7 @@
 .top-navigation-bar{
     display: flex;
-    height: 40px;
-    background: $white;
+    height: 36px;
+    background: $gray-100;
 }
 .top-navigation-bar .container{
     display: flex;
@@ -25,10 +25,11 @@
 .top-navigation-menu li{
     display: inline-block;
     padding: 0 0 0 15px;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 500;
 }
 .top-navigation-menu li a{
-    
+    color: $black;
 }
 .top-navigation-bar-menu{
     margin: 0;
@@ -48,6 +49,27 @@
     font-size: 14px;
     color: $gray-900;
     padding-left: 10px;
+}
+.top-navigation-contacts {
+    font-weight: 500;
+    font-size: 14px;
+}
+.top-navigation-contacts .project-phone, .top-navigation-contacts .project-email{
+    position: relative;
+    padding-right: 30px;
+
+    &::before{
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-image: url($i-phone);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+.top-navigation-contacts .project-email::before{
+    background-image: url($i-envelope);
 }
 
 @media screen and (max-width: 991px){
