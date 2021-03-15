@@ -196,7 +196,11 @@ if ($("#productsTop").length){
         selector: '#productsTop',
         duration: 200,
         easing: 'ease-out',
-        perPage: 5,
+        perPage: {
+            0: 2,
+            500: 3,
+            991: 5,
+        },
         startIndex: 0,
         draggable: true,
         multipleDrag: true,
