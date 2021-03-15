@@ -202,45 +202,15 @@
     overflow: hidden;
 }
 .p-thumbnails-inner > div{
-    display: flex;
     margin: 0 -5px;
     overflow: hidden;
-    flex-wrap: wrap;
 }
-#thumbnailsShowMore{
-    width: 20%;
-    padding: 5px;
-    display: none;
-    flex-shrink: 0;
-    cursor: pointer;
-}
-.p-thumbnail:nth-child(1n+18) ~ #thumbnailsShowMore{
-    display: flex;
-}
-.thumbnailsShowMore-inner{
-    background: $gray-300;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-}
-@media screen and (max-width: 991px){
-    .p-thumbnails-wrapper{
-        margin-top: 5px;
-    }
-}
-
 .p-thumbnail{
     position: relative;
     display: block;
     padding: 5px;
     width: 100%;
 }
-
-
 .p-thumbnail img{
     min-width: 100%;
 }
@@ -261,10 +231,14 @@
 }
 
 @media screen and (max-width: 991px){
+    .p-thumbnails-wrapper{
+        margin-top: 5px;
+    }
     .p-image-wrapper{
         width: 100%;
     }
 }
+
 
 
 
