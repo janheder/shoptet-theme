@@ -1,4 +1,4 @@
-.ordering-process #navigation{
+.ordering-process #navigation, .ordering-process #header::before{
     display: none;
 }
 #cart-wrapper{
@@ -177,10 +177,14 @@
     height: 36px;
     width: 36px;
     border-radius: 50%;
-    background: url($i-close);
+    background-image: url($i-close);
     background-position: center;
     background-size: 20px;
     background-repeat: no-repeat;
+    transition: 0.2s ease transform;
+}
+.p-total .remove-item:hover{
+    transform: rotate(-90deg);
 }
 
 .related{
