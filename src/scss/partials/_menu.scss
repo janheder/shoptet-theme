@@ -29,10 +29,14 @@
     justify-content: center;
     color: $white;
     padding: 0 20px 0 20px;
+    font-weight: 500;
 
     &:hover, &:active, &:focus{
         text-decoration: none;
         background: $white;
+    }
+    b{
+        font-weight: 500;
     }
 }
 
@@ -168,7 +172,7 @@
     }
     .menu-level-1 > li > a{
         justify-content: flex-start;
-        height: 50px;
+        height: 52px;
         padding: 0 20px;
         width: 100%;
     }
