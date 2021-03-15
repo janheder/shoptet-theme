@@ -57,11 +57,13 @@
 .top-navigation-contacts .project-phone, .top-navigation-contacts .project-email{
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     &::before{
         content: "";
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
         background-image: url($i-phone);
         background-position: center;
         background-repeat: no-repeat;
