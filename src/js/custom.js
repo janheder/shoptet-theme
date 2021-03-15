@@ -202,6 +202,25 @@ if ($(".p-thumbnails-inner").length){
         threshold: 20,
         loop: true, onInit: () => {$("img").unveil()}
     });
+    $(function(){
+        var isDragging = false;
+        $(".p-thumbnail")
+        .mousedown(function () {
+            isDragging = false;
+        })
+        .mousemove(function () {
+            isDragging = true;
+        })
+        .mouseup(function () {
+            var wasDragging = isDragging;
+            isDragging = false;
+            if (!wasDragging) {
+                $(".p-thumbnail").click();
+            } else {
+                $(".p-thumbnail").one("click", false);
+            }
+        });
+    });
 }
 
 
