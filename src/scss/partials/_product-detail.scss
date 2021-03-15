@@ -198,9 +198,6 @@
 .p-thumbnails-wrapper{
     margin-top: 15px;
 }
-.p-thumbnails{
-    position: relative;
-}
 .p-thumbnails-inner{
     overflow: hidden;
 }
@@ -237,24 +234,13 @@
 }
 
 .p-thumbnail{
-    display: flex;
+    position: relative;
+    display: block;
     padding: 5px;
-    width: 20%;
-    flex-shrink: 0;
+    width: 100%;
 }
-@media screen and (min-width: 992px){
-    .p-thumbnail:nth-child(1n+18){
-        display: none;
-    }
-}
-@media screen and (max-width: 991px){
-    .p-thumbnail:nth-child(1n+8){
-        display: none;
-    }
-}
-.p-thumbnail[href*="infografika"]{
-    display: none;
-}
+
+
 .p-thumbnail img{
     min-width: 100%;
 }
@@ -272,15 +258,6 @@
 .thumbnail-next{
     left: auto;
     right: 10px;
-}
-
-.p-thumbnails-inner.--active{
-    & > div > .p-thumbnail{
-        display: flex !important;
-    }
-    #thumbnailsShowMore{
-        display: none;
-    }
 }
 
 @media screen and (max-width: 991px){

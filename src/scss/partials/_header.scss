@@ -23,7 +23,10 @@
 
 @media screen and (max-width: 991px){
     #header {
-        height: 56px;
+        height: 52px;
+    }
+    #header::before{
+        content: none;
     }
     #header .container {
         padding: 0;
