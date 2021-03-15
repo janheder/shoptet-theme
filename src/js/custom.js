@@ -193,8 +193,8 @@ if ($(".p-thumbnails-inner").length){
         easing: 'ease-out',
         perPage: {
             0: 1,
-            500: 2,
-            991: 4,
+            500: 4,
+            991: 6,
         },
         startIndex: 0,
         draggable: true,
