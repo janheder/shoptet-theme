@@ -186,7 +186,9 @@ $(".p-detail-inner-header").insertBefore(".p-final-price-wrapper");
 
 /* init thumbnail carousel */
 if ($(".p-thumbnails-inner").length){
+
     $(".cbox-gal").remove();
+
     new Siema({
         selector: '.p-thumbnails-inner>div',
         duration: 200,
@@ -200,7 +202,8 @@ if ($(".p-thumbnails-inner").length){
         draggable: true,
         multipleDrag: true,
         threshold: 20,
-        loop: true, onInit: () => {$("img").unveil()}
+        loop: false, 
+        onInit: () => {$("img").unveil()}
     });
     $(function(){
         var isDragging = false;
