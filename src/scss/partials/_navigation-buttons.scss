@@ -24,17 +24,17 @@
     padding: 0;
     line-height: 1.2;
     height: 50px;
-    padding: 0 20px 0 60px;
+    padding: 0 20px 0 55px;
     text-align: left;
     margin-left: 20px;
 
     &::before{
         content: "";
-        height: 28px;
-        width: 28px;
+        height: 26px;
+        width: 26px;
         position: absolute;
         top: 50%;
-        left: 16px;
+        left: 14px;
         background-image: url($i-shopping-bag);
         background-repeat: no-repeat;
         background-size: 100%;
@@ -107,7 +107,7 @@
     border-radius: $border-radius-primary;
     background-image: url($i-user);
     background-repeat: no-repeat;
-    background-size: 28px;
+    background-size: 26px;
     background-position: center center;
     margin: 0 0 0 20px;
     transition: 0.2s ease background-color;
