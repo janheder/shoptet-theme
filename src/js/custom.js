@@ -226,11 +226,12 @@ if ($(".p-thumbnails-inner").length){
     });
 }
 
-$('.p-thumbnail img').each(function() {
-    var src = $(this).attr('src').replace('related','big');
-    $(this).attr('src', src);   
-});
-
+if ($(".mobile").length){
+    $('.p-thumbnail img').each(function() {
+        var src = $(this).attr('data-src').replace('related','big');
+        $(this).attr('data-src', src);   
+    });
+}
 
 // -----------------------------------------------------------------------------
 // CATEGORY CAROUSEL INIT

@@ -236,6 +236,7 @@
     }
     .p-image-wrapper{
         width: 100%;
+        padding: 0;
     }
 }
 @media screen and (max-width: 500px){
@@ -266,6 +267,8 @@
 @media screen and (max-width: 991px){
     .p-info-wrapper{
         width: 100%;
+        padding-left: 10px;
+        padding-top: 40px;
     }
 }
 
@@ -612,12 +615,7 @@
     
 
 @media screen and (max-width: 991px){
-    .p-image-wrapper {
-        padding: 0;
-    }
-    .p-info-wrapper{
-        padding-left: 10px;
-    }
+
     .p-detail-inner-header h1 {
         font-size: 24px;
     }
