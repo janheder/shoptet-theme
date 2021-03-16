@@ -238,7 +238,22 @@
         width: 100%;
     }
 }
-
+@media screen and (max-width: 500px){
+    .p-image{
+        display: none;
+    }
+    .p-thumbnails-wrapper{
+        margin: 0;
+    }
+    .p-thumbnail{
+        padding: 0px;
+        width: 100%;
+        background: $gray-100;
+    }
+    .p-thumbnail img {
+        mix-blend-mode: multiply;
+    }
+}
 
 
 
@@ -598,7 +613,7 @@
 
 @media screen and (max-width: 991px){
     .p-image-wrapper {
-        padding-right: 10px;
+        padding: 0;
     }
     .p-info-wrapper{
         padding-left: 10px;

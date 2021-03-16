@@ -226,6 +226,10 @@ if ($(".p-thumbnails-inner").length){
     });
 }
 
+$('.p-thumbnail img').each(function() {
+    var src = $(this).attr('src').replace('related','big');
+    $(this).attr('src', src);   
+});
 
 
 // -----------------------------------------------------------------------------
