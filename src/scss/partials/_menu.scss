@@ -168,9 +168,26 @@
         height: 52px;
         display: flex;
         flex-shrink: 0;
+        order: 0;
+        position: relative;
+
+        &::before{
+            content: "Zavřit menu";
+            background-image: url($i-close);
+            background-position: 10px center;
+            background-size: 16px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 100%;
+            padding-left: 30px;
+        }
     }
     .menu{
         background: $white;
+        order: 1;
     }
     .menu-level-1{
         flex-direction: column;
