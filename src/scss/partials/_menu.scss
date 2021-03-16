@@ -144,7 +144,7 @@
 
 
 @media screen and (max-width: 991px){
-    .menu{
+    #navigation{
         position: fixed;
         left: 0;
         top: 0;
@@ -158,11 +158,20 @@
         background: $white;
         padding-top: 0;
         border-radius: 0;
+        display: flex;
+        flex-direction: column;
     }
-    body.--menuActive .menu{
+    body.--menuActive #navigation{
         transform: translate3d(0,0,0);
     }
-    
+    .navigation-close{
+        height: 52px;
+        display: flex;
+        flex-shrink: 0;
+    }
+    .menu{
+        background: $white;
+    }
     .menu-level-1{
         flex-direction: column;
     }
@@ -175,9 +184,13 @@
         height: 52px;
         padding: 0 20px;
         width: 100%;
+        color: $black;
     }
     .menu-level-1 > li.ext > a{
         padding: 0 20px 0 20px;
+    }
+    .menu-level-1 > li.ext > a::before{
+        background-image: url($i-arrow-left);
     }
     .menu-level-1 > li > a > b{
         font-weight: 600;

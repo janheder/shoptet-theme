@@ -46,6 +46,7 @@
     .breadcrumbs-wrapper{
         background: $white;
         padding-bottom: 0;
+
     }
     .breadcrumbs > span{
         display: none;
@@ -72,5 +73,11 @@
     }
     .breadcrumbs > span:nth-last-child(2) a::after{
         content: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .breadcrumbs-wrapper{
+        display: none;
     }
 }
