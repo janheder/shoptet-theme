@@ -193,7 +193,8 @@ if ($(".p-thumbnails-inner").length){
         $(".p-thumbnails-indicators").append('<div class="p-thumbnails-indicator ' + x + '"></div>');
         x++;
     });
-
+    $(".p-thumbnails-indicator.0").addClass("active");
+    
     $(".cbox-gal").remove();
 
     function printSlideIndex() {
@@ -239,6 +240,7 @@ if ($(".p-thumbnails-inner").length){
         });
     });
 }
+
 
 
 if ($(".mobile").length){
