@@ -86,7 +86,7 @@ $(".admin-bar").click(function(){
 $(".header-top").prepend('<div class="nav-menu-toggle" id="js-menuToggle"><span></span></div>');
 
 /* toggle control of responsive menu */
-$("#js-menuToggle, .menu-helper").click(function(){
+$("#js-menuToggle, .menu-helper, .navigation-close").click(function(){
     $("body").toggleClass("--menuActive");
 });
 
@@ -189,6 +189,12 @@ if ($(".p-thumbnails-inner").length){
 
     $(".cbox-gal").remove();
 
+    function printSlideIndex() {
+        var x = this.currentSlide;
+        $(".p-thumbnails-indicator").removeClass("active");
+        $(".p-thumbnails-indicator."+x).addClass("active");
+    }
+
     new Siema({
         selector: '.p-thumbnails-inner>div',
         duration: 200,
@@ -203,7 +209,8 @@ if ($(".p-thumbnails-inner").length){
         multipleDrag: true,
         threshold: 20,
         loop: false, 
-        onInit: () => {$("img").unveil()}
+        onInit: () => { $("img").unveil(), printSlideIndex },
+        onChange: printSlideIndex,
     });
     $(function(){
         var isDragging = false;
@@ -226,11 +233,20 @@ if ($(".p-thumbnails-inner").length){
     });
 }
 
+$('<div class="p-thumbnails-indicators"></div>').insertAfter(".p-thumbnails-inner");
+var x=0;
+$('.p-thumbnail img').each(function() {
+    $(".p-thumbnails-indicators").append('<div class="p-thumbnails-indicator ' + x + '"></div>');
+    x++;
+});
+
 if ($(".mobile").length){
+
     $('.p-thumbnail img').each(function() {
         var src = $(this).attr('data-src').replace('related','big');
         $(this).attr('data-src', src);   
     });
+
 }
 
 // -----------------------------------------------------------------------------
