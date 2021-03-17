@@ -2,10 +2,9 @@
     position: relative;
     display: flex;
     font-size: 30px;
-    font-weight: 600;
-    padding-top: 20px;
+    font-weight: 700;
+    padding: 0px;
     margin: 0px 0 40px 0;
-    padding-bottom: 15px;
     color: $black;
 }
 
@@ -135,7 +134,7 @@
 }
 
 .category-title + .subcategories + h4 {
-    text-align: center;
+    text-align: left;
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 20px;

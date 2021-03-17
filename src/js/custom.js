@@ -254,7 +254,7 @@ if ($(".mobile").length){
 // CATEGORY CAROUSEL INIT
 // -----------------------------------------------------------------------------
 
-if ($("#productsTop").length){
+if ($("#productsTop .product").length > 5){
     $(".button-wrapper").remove();
 
     new Siema({
