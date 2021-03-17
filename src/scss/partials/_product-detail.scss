@@ -272,10 +272,10 @@
         display: flex;
       }
     .p-thumbnails-indicator{
-        height: 12px;
-        width: 12px;
-        background: rgba($black,0.3);
-        margin: 5px;
+        height: 8px;
+        width: 8px;
+        background: rgba($black,0.2);
+        margin: 3px;
         border-radius: 50%;
         transition: 0.3s ease background;
     }
