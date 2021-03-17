@@ -198,9 +198,6 @@
     .menu-level-1 > li{
         height: auto;
         position: relative;
-        &:active, &:focus{
-            background: transparent;
-        }
     }
     .menu-level-1 > li > a{
         justify-content: flex-start;
@@ -208,6 +205,10 @@
         padding: 0 20px;
         width: 100%;
         color: $black;
+        
+        &:active, &:focus{
+            background: transparent;
+        }
     }
     .menu-level-1 > li.ext{
 
@@ -215,7 +216,7 @@
             background: $gray-100;
             padding-bottom: 10px;
         }
-        &.--active li > a::before{
+        &.--active > a::before{
             transform: translateY(-50%) rotate(90deg);
         }
         &.--active .menu-level-2{
