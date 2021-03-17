@@ -270,7 +270,7 @@ if ($("#productsTop").length){
         draggable: true,
         multipleDrag: true,
         threshold: 20,
-        loop: true
+        loop: false
     });
     $(function(){
         var isDragging = false;
