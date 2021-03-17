@@ -298,6 +298,7 @@ if ($("#productsTop").length){
 // =============================================================================
 
 $('.menu-level-1>li.ext>a').click(function() {
+    $(".menu-level-1 .ext").removeClass("--active");
     $(this).parent(".ext").toggleClass("--active");
     return false;
 });
