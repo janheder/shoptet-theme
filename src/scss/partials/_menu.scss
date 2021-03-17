@@ -206,6 +206,15 @@
         width: 100%;
         color: $black;
     }
+    .menu-level-1 > li.ext{
+        
+        &.--active{
+            background: $gray-100;
+        }
+        &.--active .menu-level-2{
+            display: flex;
+        }
+    }
     .menu-level-1 > li.ext > a{
         padding: 0 20px 0 20px;
     }
@@ -223,10 +232,6 @@
         flex-direction: column;
         padding: 0;
         display: none;
-
-        &.--active{
-            display: flex;
-        }
     }
     .menu-level-2 > li {
         justify-content: flex-start;

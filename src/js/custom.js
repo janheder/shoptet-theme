@@ -194,7 +194,7 @@ if ($(".p-thumbnails-inner").length){
         x++;
     });
     $(".p-thumbnails-indicator.0").addClass("active");
-    
+
     $(".cbox-gal").remove();
 
     function printSlideIndex() {
@@ -293,5 +293,11 @@ if ($("#productsTop").length){
     });
 }
 
+// =============================================================================
+// RESPONSIVE MENU TOGGLE
+// =============================================================================
 
-
+$('.menu-level-1>li.ext>a').click(function() {
+    $(this).parent(".ext").toggleClass("--active");
+    return false;
+});
