@@ -198,6 +198,9 @@
     .menu-level-1 > li{
         height: auto;
         position: relative;
+        &:active, &:focus{
+            background: transparent;
+        }
     }
     .menu-level-1 > li > a{
         justify-content: flex-start;
@@ -212,6 +215,9 @@
             background: $gray-100;
             padding-bottom: 10px;
         }
+        &.--active li > a::before{
+            transform: translateY(-50%) rotate(90deg);
+        }
         &.--active .menu-level-2{
             display: flex;
         }
@@ -221,6 +227,7 @@
     }
     .menu-level-1 > li.ext > a::before{
         background-image: url($i-arrow-left);
+        transition: 0.3s ease transform;
     }
     .menu-level-1 > li > a > b{
         font-weight: 600;
@@ -228,7 +235,7 @@
     .menu-level-2{
         position: relative;
         flex-direction: column;
-        background: $white;
+        background: transparent;
         display: flex;
         flex-direction: column;
         padding: 0;
