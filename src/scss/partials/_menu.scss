@@ -290,6 +290,10 @@
             pointer-events: auto;
             opacity: 1;
         }   
+        body.--searchActive .menu-helper{
+            pointer-events: auto;
+            opacity: 1;
+        }   
     }
     .menu-helper *{
         display: none;

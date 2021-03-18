@@ -86,7 +86,7 @@ $(".admin-bar").click(function(){
 $(".header-top").prepend('<div class="nav-menu-toggle" id="js-menuToggle"><span></span></div>');
 
 /* toggle control of responsive menu */
-$("#js-menuToggle, .menu-helper, .navigation-close").click(function(){
+$("#js-menuToggle, .navigation-close").click(function(){
     $("body").toggleClass("--menuActive");
 });
 
@@ -106,6 +106,11 @@ $('.user-action-login').on('click',function(e){
 /* toggle control of responsive search */
 $("#js-searchToggle").click(function(){
     $("body").toggleClass("--searchActive");
+});
+
+
+$(".menu-helper").click(function(){
+    $("body").removeClass("--menuActive, --searchActive");
 });
 
 
