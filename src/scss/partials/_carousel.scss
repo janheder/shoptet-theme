@@ -58,9 +58,11 @@ before-carousel{
     background-repeat: no-repeat;
     background-size: 24px 24px;
     transition: 0.3s ease opacity;
-    opacity: 0.8;
+    opacity: 0;
 }
-
+#carousel:hover .carousel-control{
+    opacity: 0.6;
+}
 .carousel-control.left {
     background-image: url($i-arrow-left-white);
 }

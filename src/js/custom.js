@@ -106,6 +106,7 @@ $('.user-action-login').on('click',function(e){
 /* toggle control of responsive search */
 $("#js-searchToggle").click(function(){
     $("body").toggleClass("--searchActive");
+    $(".header-top .search .form-control").focus(); 
 });
 
 

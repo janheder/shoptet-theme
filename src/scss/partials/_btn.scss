@@ -1,7 +1,7 @@
 .btn{
     height: 50px;
     padding: 0 20px;
-    background: $pink-500;
+    background: $black;
     color: $white;
     display: inline-flex;
     flex-direction: column;
@@ -17,7 +17,7 @@
 
     &:hover, &:active, &:focus{
         color: $white;
-        background: $pink-600;
+        background: #282828;
         text-decoration: none;
     }
 }
