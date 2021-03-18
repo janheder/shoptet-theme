@@ -1,6 +1,6 @@
 .breadcrumbs-wrapper{
     background: $white;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 .breadcrumbs{
     padding: 10px 0;
@@ -45,33 +45,7 @@
 @media screen and (max-width: 991px){
     .breadcrumbs-wrapper{
         background: $gray-100;
-        padding-bottom: 0;
-    }
-    .breadcrumbs > span{
-        display: none;
-    }
-    .breadcrumbs > span:nth-last-child(2){
-        display: flex;
-    }
-    .breadcrumbs > span:nth-last-child(2) a{
-        padding-left: 0;
-        display: flex;
-        align-items: center;
-        line-height: 1;
-    }
-    .breadcrumbs > span:nth-last-child(2) a::before{
-        content: "";
-        display: flex;
-        background-image: url($i-arrow-left);
-        background-repeat: no-repeat;
-        background-position: left center;
-        background-size: 100%;
-        height: 14px;
-        width: 14px;
-        margin-right: 5px;
-    }
-    .breadcrumbs > span:nth-last-child(2) a::after{
-        content: none;
+        margin-bottom: 20px;
     }
 }
 
