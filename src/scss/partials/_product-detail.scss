@@ -540,10 +540,10 @@
     padding: 0 10px;
     width: 100%;
     border: 0;
-    background: $gray-100;
+    background: $white;
     text-align: center;
     font-weight: 600;
-    //border: 1px solid $black;
+    border: 1px solid $gray-300;
 }
 .add-to-cart .increase, .add-to-cart .decrease{
     position: absolute;
@@ -571,7 +571,7 @@
         width: 2px;
     }
     &:hover, &:active, &:focus{
-        background: $gray-200;
+        background: transparent;
     }
 }
 .add-to-cart .decrease{

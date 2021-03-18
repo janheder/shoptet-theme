@@ -31,23 +31,10 @@
     position: relative;
     display: flex;
     justify-content: center;
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 700;
     margin: 0 auto;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
     text-align: center;
-
-    &::after{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 6px;
-        width: 40px;
-        background: $green-200;
-    }
 }
 #colorbox .advanced-order .advanced-order-suggestion{
     padding: 40px 50px 10px 50px;
@@ -69,7 +56,7 @@
 }
 #colorbox .delivery{
     text-align: center;
-    padding: 0px 10px;
+    padding: 15px 20px;
     width: 100%;
     margin-bottom: 20px;
     color: $green-700;
@@ -77,18 +64,6 @@
     justify-content: center;
     align-items: center;
     background: $green-100;
-
-    &::before{
-        content: "";
-        display: flex;
-        height: 100px;
-        width: 180px;
-        margin-right: 10px;
-        background-image: url("../img/delivery-truck.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
 }
 #colorbox .delivery span{
     font-weight: 600;
@@ -173,10 +148,10 @@
     top: 10px;
     right: 10px;
     border: 0;
-    background-color: $gray-300;
+    background-color: $white;
     background-image: url("../icons/close.svg");
     background-repeat: no-repeat;
-    background-size: 18px;
+    background-size: 24px;
     background-position: center center;
     font-size: 0;
     height: 48px;
@@ -223,8 +198,9 @@
 
 .extras-product{
     display: flex;
-    background: $gray-100;
-    padding: 10px 0;
+    background: $white;
+    padding: 10px;
+    border: 1px solid $gray-300;
     margin-bottom: 20px;
     width: 100%;
     font-size: 14px;
