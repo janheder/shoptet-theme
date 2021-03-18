@@ -297,7 +297,9 @@ if ($("#productsTop .product").length > 5){
 // RESPONSIVE MENU TOGGLE
 // =============================================================================
 
-$('.menu-level-1>li.ext>a').click(function() {
-    $(this).parent(".ext").toggleClass("--active");
-    return false;
-});
+if ($(".mobile").length){
+    $('.menu-level-1>li.ext>a').click(function() {
+        $(this).parent(".ext").toggleClass("--active");
+        return false;
+    });
+}
