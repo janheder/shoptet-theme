@@ -110,7 +110,7 @@ $("#js-searchToggle").click(function(){
 
 
 $(".menu-helper").click(function(){
-    $("body").removeClass("--menuActive, --searchActive");
+    $("body").removeClass("--menuActive --searchActive");
 });
 
 
