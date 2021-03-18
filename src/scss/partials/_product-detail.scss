@@ -361,11 +361,13 @@
     font-weight: 600;
     color: $green-900;
     order: 24;
-    padding-top: 10px;
+    padding: 5px 20px;
     display: flex;
+    background: #E5F3E6;
 }
 .availability-label{
     display: flex;
+    padding-right: 5px;
     
     &::before{
         content: "";
@@ -373,7 +375,7 @@
         height: 22px;
         width: 22px;
         margin-right: 10px;
-        background-image: url("../icons/delivery-green.svg");
+        background-image: url("../icons/check-circle-green.svg");
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -646,8 +648,12 @@
 
     .p-detail-inner-header h1 {
         font-size: 24px;
+        margin: 0;
     }
     .p-short-description{
+        display: none;
+    }
+    .p-short-description + p{
         display: none;
     }
     .p-detail-tabs-wrapper .responsive-nav{
@@ -735,7 +741,6 @@
     }
 
     .detail-parameters{
-        order: 0;
         font-size: 14px;
         display: table;
         
