@@ -61,6 +61,9 @@ body.--navUserActive .user-action .login-widget{
 .login-widget .user-action-tabs, #affiliateLogin{
     display: none;
 }
+.login-widget .form-group{
+    padding: 10px 0;
+}
 .login-widget .btn{
     width: 100%;
     margin-bottom: 20px;
