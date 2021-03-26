@@ -53,25 +53,27 @@ $(".hp-blog .news-wrapper").load("/blog/ .news-wrapper .news-item:nth-child(-n+3
 // LOAD INSTAGRAM FEED
 // =============================================================================
 
-(function(){
-    new InstagramFeed({
-        'username': 'instagram',
-        'container': document.getElementById("instagramSectionContent"),
-        'display_profile': false,
-        'display_biography': false,
-        'display_gallery': true,
-        'display_captions': false,
-        'max_tries': 4,
-        'callback': null,
-        'styling': true,
-        'items': 8,
-        'items_per_row': 8,
-        'image_size': 150,
-        'margin': 0.5,
-        'lazy_load': true,
-        'on_error': false
-    });
-})();
+if ($("#footer").length){
+    (function(){
+        new InstagramFeed({
+            'username': 'instagram',
+            'container': document.getElementById("instagramSectionContent"),
+            'display_profile': false,
+            'display_biography': false,
+            'display_gallery': true,
+            'display_captions': false,
+            'max_tries': 4,
+            'callback': null,
+            'styling': true,
+            'items': 8,
+            'items_per_row': 8,
+            'image_size': 150,
+            'margin': 0.5,
+            'lazy_load': true,
+            'on_error': false
+        });
+    })();
+}
 
 // =============================================================================
 // MENU TOGGLES
@@ -110,12 +112,10 @@ $("#js-searchToggle").click(function(){
 });
 
 
-/* call functions after order modal loaded */
-document.addEventListener('shoptet.menu.showMenuHelper', function () {
-        $("body").toggleClass("--cartActive");
+$(".cart-count").on('touchstart mousedown', function(e) {
+  $("body").toggleClass("--cartActive");
 });
     
-
 
 $(".menu-helper").click(function(){
     $("body").removeClass("--menuActive --searchActive --cartActive");
