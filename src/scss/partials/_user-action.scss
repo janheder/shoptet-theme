@@ -212,16 +212,20 @@ body.--cartActive .user-action-cart{
 }
 
 
+
+.user-action-cart .cart-free-shipping{
+    font-size: 14px;
+    font-weight: 600;
+    color: $green-900;
+    margin-top: 20px;
+    padding: 10px 20px;
+    display: flex;
+    background: #E5F3E6;
+}
 .user-action-cart .cart-free-shipping strong{
     color: $green-700;
-    padding: 10px 0;
-    padding-top: 20px;
     display: flex;
 }
-.cart-free-shipping{
-    display: none;
-}
-
 .user-action-cart .cart-widget-button{
     display: flex;
     justify-content: flex-end;
