@@ -9,7 +9,7 @@
 }
 .admin-bar::before{
     content: "";
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
     width: 30px;
@@ -19,17 +19,22 @@
     background-repeat: no-repeat;
     background-size: 18px;
     background-position: center center;
+    transform: rotate(-90deg);
+    transition: 0.3s ease transform;
 }
 .admin-bar #div-bar-menu{
     display: none;
 }
 .admin-bar.--active{
-    background: $gray-800;
+    background: $black;
     z-index: 10;
     position: relative;
     height: 30px;
     display: flex;
     width: 100%;
+}
+.admin-bar.--active::before{
+    transform: rotate(90deg);
 }
 .admin-bar.--active #div-bar-menu{
     display: block;
@@ -59,18 +64,18 @@
     font-size: 14px;
 }
 .admin-bar > div > ul > li:hover{
-    background: $gray-900;
+    background: $black;
 }
 .admin-bar > div > ul > li:hover > ul{
     display: flex;
     flex-direction: column;
-    background: $gray-900;
+    background: $black;
 }
 .admin-bar > div > ul > li > ul{
     list-style: none;
     padding: 0;
     position: absolute;
-    background: $gray-800;
+    background: $black;
     top: 100%;
     display: none;
     width: 100%;
