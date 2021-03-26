@@ -153,6 +153,9 @@
     z-index: 10;
     transition: 0.3s ease opacity;
 }
+.menu-helper *{
+    display: none;
+}
 
 
 @media screen and (max-width: 991px){
@@ -306,9 +309,6 @@
             pointer-events: auto;
             opacity: 1;
         }   
-    }
-    .menu-helper *{
-        display: none;
     }
 }
 

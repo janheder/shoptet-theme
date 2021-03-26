@@ -123,11 +123,11 @@ body.--navUserActive .user-action .login-widget{
     overflow-y: scroll;
     transition: 0.3s ease transform;
 }
-body.cart-window-visible .menu-helper{
+body.--cartActive .menu-helper{
     opacity: 1;
     pointer-events: auto;
 }
-body.cart-window-visible .user-action-cart{
+body.--cartActive .user-action-cart{
     transform: translate3d(0%, 0, 0);
 }
 @media screen and (min-width: 992px){

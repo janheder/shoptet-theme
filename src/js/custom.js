@@ -108,15 +108,17 @@ $("#js-searchToggle").click(function(){
     $("body").toggleClass("--searchActive");
     $(".header-top .search .form-control").focus(); 
 });
- 
-/*
-$(".cart-count").click(function(){
-    $("body").toggleClass("--cartActive");
+
+
+/* call functions after order modal loaded */
+document.addEventListener('shoptet.menu.showMenuHelper', function () {
+        $("body").toggleClass("--cartActive");
 });
-*/
+    
+
 
 $(".menu-helper").click(function(){
-    $("body").removeClass("--menuActive --searchActive cart-window-visible");
+    $("body").removeClass("--menuActive --searchActive --cartActive");
 });
 
 
