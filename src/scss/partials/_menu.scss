@@ -137,10 +137,22 @@
 }
 
 
-.menu-helper, #nav-manufacturers{
+#nav-manufacturers{
     display: none;
 }
-
+.menu-helper{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    pointer-events: none;
+    opacity: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(black,0.3);
+    z-index: 10;
+    transition: 0.3s ease opacity;
+}
 
 
 @media screen and (max-width: 991px){
