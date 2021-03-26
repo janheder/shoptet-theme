@@ -108,11 +108,12 @@ $("#js-searchToggle").click(function(){
     $("body").toggleClass("--searchActive");
     $(".header-top .search .form-control").focus(); 
 });
-
+ 
+/*
 $(".cart-count").click(function(){
     $("body").toggleClass("--cartActive");
 });
-
+*/
 
 $(".menu-helper").click(function(){
     $("body").removeClass("--menuActive --searchActive --cartActive");
