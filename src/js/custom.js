@@ -116,7 +116,7 @@ $(".cart-count").click(function(){
 */
 
 $(".menu-helper").click(function(){
-    $("body").removeClass("--menuActive --searchActive --cartActive");
+    $("body").removeClass("--menuActive --searchActive cart-window-visible");
 });
 
 
