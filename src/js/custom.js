@@ -109,9 +109,13 @@ $("#js-searchToggle").click(function(){
     $(".header-top .search .form-control").focus(); 
 });
 
+$(".cart-count").click(function(){
+    $("body").toggleClass("--cartActive");
+});
+
 
 $(".menu-helper").click(function(){
-    $("body").removeClass("--menuActive --searchActive");
+    $("body").removeClass("--menuActive --searchActive --cartActive");
 });
 
 
