@@ -363,6 +363,7 @@
     display: flex;
     background: #E5F3E6;
     order: 20;
+    margin-bottom: 40px;
 }
 .availability-label{
     display: flex;
@@ -597,6 +598,7 @@
     font-size: 14px;
     padding-bottom: 40px;
     color: $gray-700;
+    font-weight: 500;
 }
 .p-short-description p{
     margin-bottom: 0px;
@@ -675,7 +677,7 @@
     .p-detail-tabs-wrapper .responsive-nav{
         position: sticky;
         top: 0;
-        z-index: 2;
+        z-index: 1;
     }
 }
 
@@ -684,21 +686,12 @@
 
     .shp-tabs-holder{
         width: 100%;
-        background: $gray-300;
+        background: $white;
+        border-bottom: 1px solid $gray-300;
         margin-bottom: 20px;
     }
     .p-detail-tabs li{
         position: relative;
-        &::after{
-            content: "";
-            width: 1px;
-            height: 20px;
-            background: #e1e1e1;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            position: absolute;
-        }
 
         &.active{
        
@@ -711,8 +704,7 @@
     .p-detail-tabs a{
         padding: 12px 20px;  
         display: flex;
-        color: $gray-900;
-        text-transform: uppercase;
+        color: $black;
         font-weight: 600;
         font-size: 15px;
 
@@ -721,12 +713,6 @@
             color: $gray-800;
             background: $gray-400;
         }
-    }
-    .p-detail-tabs a[href="#ratingTab"]{
-        background-image: url("../icons/star-full.svg");
-        background-repeat: no-repeat;
-        background-position: right 8px top 8px;
-        background-size: 12px;
     }
     .navigation-btn{
         display: none !important;
