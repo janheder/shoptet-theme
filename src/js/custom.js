@@ -252,6 +252,11 @@ if ($(".p-thumbnails-inner").length){
             }
         });
     });
+
+    $("p-image").addClass("--noDisplay");
+    
+}else{
+
 }
 
 

@@ -249,8 +249,8 @@
     .p-detail-info .flags{
         left: 0;
     }
-    .p-image{
-        display: none;
+    .p-image.--noDisplay{
+        display: none !important;
     }
     .p-thumbnails-wrapper{
         margin: 0;
