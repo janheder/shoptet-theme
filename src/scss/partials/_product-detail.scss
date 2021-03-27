@@ -1,8 +1,10 @@
 .type-detail{
-    .tooltip{
-        display: none !important;
-    }
+
 }
+.type-detail .tooltip {
+    display: none !important;
+}
+
 .p-detail{
     display: flex;
     flex-direction: column;
@@ -10,6 +12,11 @@
 .p-detail-inner{
     padding: 0px 0 60px 0;
     height: 100%;
+}
+@media screen and (max-width: 991px){
+    .p-detail-inner{
+        padding: 0px 0 20px 0;
+    }
 }
 .p-detail-inner > .p-detail-inner-header{
     display: none;
@@ -27,36 +34,35 @@
     flex-wrap: wrap;
     padding-bottom: 40px;
 
-    h1{
-        width: 100%;
-        order: 0;
-        font-weight: 700;
-        line-height: 1.2;
-        margin-bottom: 20px;
-        font-size: 30px;
-    }
-    .p-code{
-        display: flex;
-        order: 2;
-        font-size: 13px;
-        padding: 0 20px 0 0;
-
-        .p-code-label{
-            padding-right: 2px;
-        }
-    }
-    div:nth-child(3){
-        order: 3;
-        font-size: 13px;
-    }
-    .stars-wrapper{
-        margin: 0;
-        order: 1;
-    }
-    .flags{
-        display: none;
-    }
+.p-detail-inner-header h1{
+    width: 100%;
+    order: 0;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-size: 30px;
 }
+.p-detail-inner-header .p-code{
+    display: flex;
+    order: 2;
+    font-size: 13px;
+    padding: 0 20px 0 0;
+}
+.p-detail-inner-header .p-code-label{
+    padding-right: 2px;
+}
+.p-detail-inner-header div:nth-child(3){
+    order: 3;
+    font-size: 13px;
+}
+.p-detail-inner-header .stars-wrapper{
+    margin: 0;
+    order: 1;
+}
+.p-detail-inner-header .flags{
+    display: none;
+}
+
 @media screen and (max-width: 500px){
     .p-detail-inner-header .stars-wrapper{
         width: 100%;
@@ -395,6 +401,10 @@
     color: $green-900;
     line-height: 1;
 }
+.availability-value .choose-variant.no-display{
+    display: none;
+}
+
 .detail-parameters{
     display: flex;
     order: 20;
@@ -655,7 +665,12 @@
     
 
 @media screen and (max-width: 991px){
-
+    .p-detail-inner-header{
+        padding-bottom: 20px;
+    }
+    .availability-value{
+        padding-bottom: 20px;
+    }
     .p-detail-inner-header h1 {
         font-size: 24px;
         margin: 0;

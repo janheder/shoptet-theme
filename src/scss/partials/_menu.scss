@@ -21,6 +21,11 @@
         text-decoration: none;
         background: $white;
         color: $black;
+        
+        a{
+            background: $white;
+            color: $black;
+        }
     }
 }
 .menu-level-1 > li > a{
