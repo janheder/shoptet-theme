@@ -252,6 +252,9 @@
     .p-image.--noDisplay{
         display: none !important;
     }
+    .p-image.--noPointerEvents{
+        pointer-events: none !important;
+    }
     .p-thumbnails-wrapper{
         margin: 0;
         padding: 0;
