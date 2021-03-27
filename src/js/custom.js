@@ -22,7 +22,7 @@ if ($("#carousel").length){
         
     $(function(){
         var isDragging = false;
-        $("a")
+        $(".item a")
         .mousedown(function () {
             isDragging = false;
         })
