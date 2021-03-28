@@ -21,10 +21,13 @@
         text-decoration: none;
         background: $white;
         color: $black;
-        
+
         a{
             background: $white;
             color: $black;
+        }
+        a::before{
+            background-image: url($i-arrow-left);
         }
     }
 }
@@ -233,10 +236,11 @@
     .menu-level-1 > li{
         height: auto;
         position: relative;
+        border-bottom: 1px solid $gray-300;
     }
     .menu-level-1 > li > a{
         justify-content: flex-start;
-        height: 52px;
+        height: 60px;
         padding: 0 20px;
         width: 100%;
         color: $black;
