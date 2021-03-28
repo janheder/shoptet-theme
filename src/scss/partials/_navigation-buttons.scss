@@ -1,5 +1,5 @@
 .navigation-buttons{
-    color: $gray-800;
+    color: $white;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -120,7 +120,7 @@
 .nav-search{
     width: 50px;
     height: 50px;
-    background-image: url($i-search);
+    background-image: url($i-search-white);
     background-repeat: no-repeat;
     background-size: 26px;
     background-position: center center;
