@@ -328,7 +328,8 @@
     text-decoration: line-through;
     color: $gray-700;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
+    line-height: 1;
 }
 .p-final-price-wrapper .price-standard > span{
     padding-right: 10px;
@@ -404,11 +405,15 @@
 .availability-value .choose-variant.no-display{
     display: none;
 }
+.availability-value .choose-variant{
+    display: flex;
+}
 
 .detail-parameters{
     display: flex;
-    order: 20;
+    order: 15;
     width: 50%;
+    margin-bottom: 40px;
 }
 .detail-parameters tbody{
     width: 100%;
@@ -425,6 +430,7 @@
 }
 .variant-list select{
     width: 360px;
+    font-weight: 500;
     max-width: 100%;
     background: $white;
     height: 48px;
