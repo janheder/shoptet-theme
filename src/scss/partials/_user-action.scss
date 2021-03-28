@@ -120,7 +120,7 @@ body.--navUserActive .user-action .login-widget{
     padding: 0px;
     width: calc(100% - 52px);
     max-width: 400px;
-    overflow-y: scroll;
+    overflow-y: auto;
     transition: 0.3s ease transform;
 }
 body.--cartActive .menu-helper{
