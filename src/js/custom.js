@@ -112,7 +112,7 @@ $("#js-searchToggle").click(function(){
 });
 
 
-$(".cart-count").on('touchstart mouseup', function(e) {
+$(".cart-count").on('touchstart mousedown', function(e) {
   $("body").toggleClass("--cartActive");
 });
     
