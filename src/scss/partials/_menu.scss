@@ -252,7 +252,7 @@
     .menu-level-1 > li.ext{
 
         &.--active{
-            background: $gray-100;
+            background: $white;
             padding-bottom: 10px;
         }
         &.--active > a::before{
