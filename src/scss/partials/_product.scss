@@ -165,9 +165,23 @@
 }
 .p .prices span{
     color: $gray-700;
-    text-decoration: line-through;
     font-size: 13px;
     line-height: 1;
+}
+.p .price-standard-wrapper{
+
+}
+.p .price-standard-wrapper-placeholder{
+    display: none;
+}
+.p .price-standard-label{
+    display: none;
+}
+.p .price-save{
+
+}
+.p .price-standard{
+    text-decoration: line-through;
 }
 .p .price-final{
     display: flex;
