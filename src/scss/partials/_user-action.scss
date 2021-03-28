@@ -217,7 +217,8 @@ body.--cartActive .user-action-cart{
     font-size: 14px;
     font-weight: 600;
     color: $green-900;
-    margin-top: 20px;
+    margin: 20px;
+    margin-bottom: 0;
     padding: 10px 20px;
     display: flex;
     background: #E5F3E6;
@@ -228,6 +229,8 @@ body.--cartActive .user-action-cart{
 }
 .user-action-cart .cart-widget-button{
     display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
+    padding: 20px;
+}
+.user-action-cart .cart-widget-button .btn{
+    flex-grow: 1;
 }
