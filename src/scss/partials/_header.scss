@@ -7,7 +7,9 @@
     position: absolute;
     bottom: 0;
     height: 54px;
-    background: $gray-1000;
+    //background: $gray-1000;
+    background: $black;
+    border-top: 1px solid rgba(255,255,255,0.1);
     left: 0;
     width: 100%;
     z-index: 1;
