@@ -105,6 +105,13 @@ $('.user-action-login').on('click',function(e){
     $("body").toggleClass("--navUserActive");
 });
 
+/* login form close */
+$(".user-action .login-widget .popup-widget-inner").append("<span class='login-close'></span>");
+$(".login-close").click(function(){
+    $("body").removeClass("--navUserActive");
+});
+
+
 /* toggle control of responsive search */
 $("#js-searchToggle").click(function(){
     $("body").toggleClass("--searchActive");
