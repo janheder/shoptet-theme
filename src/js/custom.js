@@ -1,7 +1,6 @@
 // =============================================================================
 // INIT HOMEPAGE CAROUSEL
 // =============================================================================
-/*
 if ($("#carousel").length){
     const mySiema = new Siema({
         selector: '.carousel-inner',
@@ -23,7 +22,7 @@ if ($("#carousel").length){
         }
     $(function(){
         var isDragging = false;
-        $(".item")
+        $(".item a")
         .mousedown(function () {
             isDragging = false;
         })
@@ -41,7 +40,7 @@ if ($("#carousel").length){
         });
     });
 }
-*/
+
 
 // =============================================================================
 // HOMEPAGE NEWS
