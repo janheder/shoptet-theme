@@ -16,10 +16,10 @@ if ($("#carousel").length){
         onInit: () => {},
         onChange: () => {},
         });
-        
+        if ($(".left").length){
         document.querySelector('.left').addEventListener('click', () => mySiema.prev());
         document.querySelector('.right').addEventListener('click', () => mySiema.next());
-        
+        }
     $(function(){
         var isDragging = false;
         $(".item a")
