@@ -112,6 +112,7 @@ body.--navUserActive .user-action .login-widget{
 @media (max-width: 500px){
     .user-action .login-widget .popup-widget-inner{
         padding: 30px;    
+        position: fixed;
     }
 }
 
