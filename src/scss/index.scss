@@ -205,9 +205,26 @@ body.--advancedModal{
     left: 50%;
     background: white;
     z-index: 11;
-    padding: 20px;
+    padding: 0px;
     transform: translateX(-50%);
     width: 900px;
     max-width: calc(100% - 20px);
     transition: 0.3s ease opacity;
+}
+.advancedModal__title{
+    background: $black;
+    color: $white;
+    padding: 20px;
+    margin: 0;
+    text-align:center;
+}
+.advancedModal__content{
+    padding: 20px;
+}
+.advancedModal__relatedTitle{
+    padding: 20px;
+}
+.advancedModal .products-block{
+    margin: 0;
+    padding: 10px;
 }
