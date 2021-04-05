@@ -117,30 +117,43 @@ body.--navUserActive .user-action .login-widget{
 
 .user-action-cart{
     display: flex;
-    position: fixed;
+    position: absolute;
     flex-direction: column;
-    transform: translate3d(100%, 0, 0);
     z-index: 11;
     background: $white;
     top: 0px;
     right: 0;
     bottom: 0;
     padding: 0px;
-    width: calc(100% - 52px);
     max-width: 400px;
-    overflow-y: auto;
     transition: 0.3s ease transform;
+    opacity: 0;
 }
-body.--cartActive .menu-helper{
-    opacity: 1;
-    pointer-events: auto;
+@media screen and (max-width: 991px){
+    .user-action-cart{
+        transform: translate3d(100%, 0, 0);
+        top: 0px;
+        right: 0;
+        bottom: 0;
+        padding: 0px;
+        width: calc(100% - 52px);
+        max-width: 400px;
+        overflow-y: auto;
+        transition: 0.3s ease transform;
+        opacity: 1;
+    }
+    body.--cartActive .menu-helper{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    body.--cartActive .user-action-cart{
+        transform: translate3d(0%, 0, 0);
+    }
 }
-body.--cartActive .user-action-cart{
-    transform: translate3d(0%, 0, 0);
-}
+
 @media screen and (min-width: 992px){
-    .cart-count.full:hover + .user-action-cart, .user-action-cart:hover{
-        display: flex;
+    .cart-window-visible .user-action-cart{
+        opacity: 1;
     }
 }
 .cart-widget-product{
