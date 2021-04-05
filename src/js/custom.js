@@ -125,7 +125,7 @@ $(".cart-count").on('touchstart', function() {
     
 
 $(".menu-helper").click(function(){
-    $("body").removeClass("--menuActive --navUserActiv --searchActive --cartActive --advancedModal");
+    $("body").removeClass("--menuActive --navUserActive --searchActive --cartActive --advancedModal");
 });
 
 
@@ -167,11 +167,12 @@ function startDictation() {
 
 if ($(".type-detail").length){
 
-    $("body").append('<div class="advancedModal"><h2 class="advancedModal__title">Zboží bylo přidáno do košíku</h2</div>');
+    $("body").append('<div class="advancedModal"><h2 class="advancedModal__title">Zboží bylo přidáno do košíku</h2><div class="advancedModal__content"></div></div>');
 
     function advanceOrderCustom() {
     
         $("body").addClass("--advancedModal");
+        $(".advancedModal__content").html("");
     
         var img = $(".p-detail-inner .p-image-wrapper a").html();
         var name = $(".p-detail-inner .p-detail-inner-header h1").html();
@@ -185,7 +186,7 @@ if ($(".type-detail").length){
         var priceSingle = $(".p-detail-inner .p-final-price-wrapper .price-final-holder").html();
         var priceTotal = parseFloat(priceSingle)*amount;
     
-        $(".extras-wrap").prepend('<div class="extras-product">' +
+        $(".advancedModal__content").prepend('<div class="extras-product">' +
         '<div class="extras-product-img">' + img + '</div>' +
         '<div class="extras-product-name">' + name + '</div>' +
         '<div class="extras-product-stock">' + stock + '</div>' +
