@@ -125,7 +125,7 @@ $(".cart-count").on('touchstart', function() {
     
 
 $(".menu-helper").click(function(){
-    $("body").removeClass("--menuActive --searchActive --cartActive --advancedModal");
+    $("body").removeClass("--menuActive --navUserActiv --searchActive --cartActive --advancedModal");
 });
 
 
