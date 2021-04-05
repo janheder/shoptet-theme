@@ -168,7 +168,7 @@ function startDictation() {
 function advanceOrderCustom() {
 
     $("body").addClass("--advancedModal");
-    $("body").apend('<div class="advancedModal"><h2 class="advancedModal__title">Zboží bylo přidáno do košíku</h2</div>');
+    $("body").append('<div class="advancedModal"><h2 class="advancedModal__title">Zboží bylo přidáno do košíku</h2</div>');
 
 
     var img = $(".p-detail-inner .p-image-wrapper a").html();
