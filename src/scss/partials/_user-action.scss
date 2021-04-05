@@ -118,6 +118,9 @@ body.--navUserActive .user-action .login-widget{
 .user-action-cart{
     display: flex;
     position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
     flex-direction: column;
     z-index: 11;
     background: $white;
@@ -126,13 +129,13 @@ body.--navUserActive .user-action .login-widget{
 
 @media screen and (max-width: 991px){
     .user-action-cart{
-        transform: translate3d(100%, 0, 0);
         padding: 0;
         top: 0px;
         right: 0;
         bottom: 0;
         width: calc(100% - 52px);
         max-width: 400px;
+        transform: translate3d(100%, 0, 0);
         overflow-y: auto;
     }
     body.--cartActive .menu-helper{
@@ -144,12 +147,12 @@ body.--navUserActive .user-action .login-widget{
     }
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px){¨
+    .user-action-in{
+        position: relative;
+    }
     .user-action-cart{
         max-width: 500px;
-        top: 0;
-        right: 0;
-        padding: 20px;
         opacity: 0;
         pointer-events: none;
         box-shadow: 0px 4px 15px rgba($black,0.08);
