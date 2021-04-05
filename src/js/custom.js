@@ -165,39 +165,44 @@ function startDictation() {
 // ADVANCED ORCDER SUMMARY
 // =============================================================================
 
-function advanceOrderCustom() {
+if ($(".type-detail").length){
 
-    $("body").addClass("--advancedModal");
     $("body").append('<div class="advancedModal"><h2 class="advancedModal__title">Zboží bylo přidáno do košíku</h2</div>');
 
-
-    var img = $(".p-detail-inner .p-image-wrapper a").html();
-    var name = $(".p-detail-inner .p-detail-inner-header h1").html();
-    if($(".p-detail-inner .parameter-dependent").length){
-        var stock = $(".p-detail-inner .availability-value .parameter-dependent:not(.noDisplay) span").html();
-    }else{
-        var stock = $(".p-detail-inner .availability-value").html();
+    function advanceOrderCustom() {
+    
+        $("body").addClass("--advancedModal");
+    
+        var img = $(".p-detail-inner .p-image-wrapper a").html();
+        var name = $(".p-detail-inner .p-detail-inner-header h1").html();
+        if($(".p-detail-inner .parameter-dependent").length){
+            var stock = $(".p-detail-inner .availability-value .parameter-dependent:not(.noDisplay) span").html();
+        }else{
+            var stock = $(".p-detail-inner .availability-value").html();
+        }
+        var amount = parseFloat($(".p-detail-inner .add-to-cart .amount").val());
+    
+        var priceSingle = $(".p-detail-inner .p-final-price-wrapper .price-final-holder").html();
+        var priceTotal = parseFloat(priceSingle)*amount;
+    
+        $(".extras-wrap").prepend('<div class="extras-product">' +
+        '<div class="extras-product-img">' + img + '</div>' +
+        '<div class="extras-product-name">' + name + '</div>' +
+        '<div class="extras-product-stock">' + stock + '</div>' +
+        '<div class="extras-product-amount">' + amount + 'x</div>' +
+        '<div class="extras-product-priceTotal">' + priceTotal + ' Kč</div>' +
+        '</div>');
+    
+    
     }
-    var amount = parseFloat($(".p-detail-inner .add-to-cart .amount").val());
-
-    var priceSingle = $(".p-detail-inner .p-final-price-wrapper .price-final-holder").html();
-    var priceTotal = parseFloat(priceSingle)*amount;
-
-    $(".extras-wrap").prepend('<div class="extras-product">' +
-    '<div class="extras-product-img">' + img + '</div>' +
-    '<div class="extras-product-name">' + name + '</div>' +
-    '<div class="extras-product-stock">' + stock + '</div>' +
-    '<div class="extras-product-amount">' + amount + 'x</div>' +
-    '<div class="extras-product-priceTotal">' + priceTotal + ' Kč</div>' +
-    '</div>');
-
+    
+    /* call functions after order modal loaded */
+    document.addEventListener('ShoptetCartUpdated', function () {
+        advanceOrderCustom();
+    });    
 
 }
 
-/* call functions after order modal loaded */
-document.addEventListener('ShoptetCartUpdated', function () {
-    advanceOrderCustom();
-});
 
 
 
