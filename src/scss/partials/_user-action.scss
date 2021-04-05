@@ -17,24 +17,6 @@
 
 
 .user-action .login-widget{
-    z-index: 99;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: 0.3s ease opacity;
-    z-index: 11;
-    pointer-events: none;
-}
-body.--navUserActive .menu-helper{
-    opacity: 1;
-    pointer-events: auto;
-}
-body.--navUserActive .user-action .login-widget{
-    opacity: 1;
-    pointer-events: auto;
     position: absolute;
     left: 50%;
     background: $white;
@@ -47,6 +29,18 @@ body.--navUserActive .user-action .login-widget{
     box-shadow: 0px 4px 15px rgba($black,0.08);
     padding: 50px;    
     border-radius: $border-radius-primary;
+    opacity: 0;
+    transition: 0.3s ease opacity;
+    z-index: 11;
+    pointer-events: none;
+}
+body.--navUserActive .menu-helper{
+    opacity: 1;
+    pointer-events: auto;
+}
+body.--navUserActive .user-action .login-widget{
+    opacity: 1;
+    pointer-events: auto;
 }
 .user-action .login-widget .popup-widget-inner{
 
