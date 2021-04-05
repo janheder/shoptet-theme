@@ -125,7 +125,7 @@ $(".cart-count").on('touchstart', function() {
     
 
 $(".menu-helper").click(function(){
-    $("body").removeClass("--menuActive --searchActive --cartActive");
+    $("body").removeClass("--menuActive --searchActive --cartActive --advancedModal");
 });
 
 
@@ -166,6 +166,11 @@ function startDictation() {
 // =============================================================================
 
 function advanceOrderCustom() {
+
+    $("body").addClass("--advancedModal");
+    $("body").apend('<div class="advancedModal"><h2 class="advancedModal__title">Zboží bylo přidáno do košíku</h2</div>');
+
+
     var img = $(".p-detail-inner .p-image-wrapper a").html();
     var name = $(".p-detail-inner .p-detail-inner-header h1").html();
     if($(".p-detail-inner .parameter-dependent").length){
@@ -190,9 +195,10 @@ function advanceOrderCustom() {
 }
 
 /* call functions after order modal loaded */
-document.addEventListener('ShoptetDOMAdvancedOrderLoaded', function () {
+document.addEventListener('ShoptetCartUpdated', function () {
     advanceOrderCustom();
 });
+
 
 
 

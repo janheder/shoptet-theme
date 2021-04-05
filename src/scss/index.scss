@@ -168,6 +168,8 @@ a{
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     background: $gray-100;
 }
@@ -185,4 +187,18 @@ a{
     font-size: 15px;
     margin: 0;
     padding-top: 20px;
+}
+
+
+body.--advancedModal .advancedModal, body.--advancedModal .menu-helper{
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 11;
+}
+body.--advancedModal{
+    overflow: hidden;
+}
+.advancedModal{
+    opacity: 0;
+    pointer-events: none;
 }

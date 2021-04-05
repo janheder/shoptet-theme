@@ -35,8 +35,6 @@ body.--navUserActive .menu-helper{
 body.--navUserActive .user-action .login-widget{
     opacity: 1;
     pointer-events: auto;
-}
-.user-action .login-widget .popup-widget-inner{
     position: absolute;
     left: 50%;
     background: $white;
@@ -49,6 +47,9 @@ body.--navUserActive .user-action .login-widget{
     box-shadow: 0px 4px 15px rgba($black,0.08);
     padding: 50px;    
     border-radius: $border-radius-primary;
+}
+.user-action .login-widget .popup-widget-inner{
+
 }
 .login-widget h2{
     position: relative;
@@ -105,12 +106,12 @@ body.--navUserActive .user-action .login-widget{
     .login-window-visible .user-action .login-widget::after{
         content: none;
     }
-    .login-window-visible .user-action .login-widget .popup-widget-inner{
+    .login-window-visible .user-action .login-widget{
         padding: 40px 40px;
     }
 }
 @media (max-width: 500px){
-    .user-action .login-widget .popup-widget-inner{
+    .user-action .login-widget{
         padding: 30px;    
         position: fixed;
     }
@@ -209,7 +210,7 @@ body.--cartActive .user-action-cart{
     }
 }
 .cart-widget-product-delete{
-    
+
 }
 .cart-widget-product-delete .inline{
     display: flex;
