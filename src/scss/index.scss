@@ -152,3 +152,29 @@ a{
 
 @import "partials/_product-detail";
 @import "partials/_category";
+
+
+.favoriteCategories{
+
+}
+.favoriteCategories__title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0px 0 10px 0;
+}
+.favoriteCategories__single{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: $gray-100;
+}
+.favoriteCategories__single img{
+    mix-blend-mode: multiply;
+}   
+.favoriteCategories__single h2{
+    color: $black;
+    font-size: 15px;
+    padding-top: 20px;
+}
