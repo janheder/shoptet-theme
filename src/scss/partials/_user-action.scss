@@ -156,33 +156,35 @@ body.--cartActive .user-action-cart{
     border-bottom: 1px solid $gray-300;
 }
 .cart-widget-product-image{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     flex-shrink: 0;
 }
 .cart-widget-product-amount{
     padding: 0 10px;
     padding-right: 0;
-
-    .quantity input{
-        width: 26px;
-        height: 36px;
-        text-align: right;
-        border-radius: 0;
-        border: 0;
-        font-size: 14px;
-        background: transparent;
-        pointer-events: none;
-    }
+}
+.cart-widget-product-amount .quantity input{
+    width: 26px;
+    height: 36px;
+    text-align: right;
+    border-radius: 0;
+    border: 0;
+    font-size: 14px;
+    background: transparent;
+    pointer-events: none;
+    font-weight: 500;
 }
 .cart-widget-product-unit{
     display: flex;
-    padding-right: 20px;
-    padding-left: 5px;
+    padding-right: 0px;
+    padding-left: 3px;
+    font-weight: 500;
 }
 .cart-widget-product-name{
     display: flex;
     flex-grow: 1;
+    padding-left: 20px;
     padding-right: 0px;
     justify-content: center;
     align-items: center;
@@ -190,7 +192,7 @@ body.--cartActive .user-action-cart{
     strong{
         padding-right: 20px;
         line-height: 1.2;
-        padding-bottom: 5px;
+        padding-bottom: 0px;
 
         a{
             color: $gray-800;
@@ -207,21 +209,28 @@ body.--cartActive .user-action-cart{
     }
 }
 .cart-widget-product-delete{
-    .inline{
-        display: flex;
-    }
+    
+}
+.cart-widget-product-delete .inline{
+    display: flex;
 }
 .cart-widget-product-delete .remove-item{
-    display: none;
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
     background: $white;
     border: 0;
     background-image: url("../icons/close.svg");
     background-repeat: no-repeat;
-    background-size: 16px;
+    background-size: 18px;
     background-position: center center;
     cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s ease opacity;
+
+    &:hover{
+        opacity: 1;
+    }
 }
 
 

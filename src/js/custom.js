@@ -119,7 +119,7 @@ $("#js-searchToggle").click(function(){
 });
 
 
-$(".cart-count").on('touchstart mousedown', function(e) {
+$(".cart-count").on('touchstart', function() {
   $("body").toggleClass("--cartActive");
 });
     
