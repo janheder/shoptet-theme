@@ -121,26 +121,19 @@ body.--navUserActive .user-action .login-widget{
     flex-direction: column;
     z-index: 11;
     background: $white;
-    top: 0px;
-    right: 0;
-    bottom: 0;
-    padding: 0px;
-    max-width: 400px;
     transition: 0.3s ease transform;
-    opacity: 0;
 }
+
 @media screen and (max-width: 991px){
     .user-action-cart{
         transform: translate3d(100%, 0, 0);
+        padding: 0;
         top: 0px;
         right: 0;
         bottom: 0;
-        padding: 0px;
         width: calc(100% - 52px);
         max-width: 400px;
         overflow-y: auto;
-        transition: 0.3s ease transform;
-        opacity: 1;
     }
     body.--cartActive .menu-helper{
         opacity: 1;
@@ -152,8 +145,29 @@ body.--navUserActive .user-action .login-widget{
 }
 
 @media screen and (min-width: 992px){
+    .user-action-cart{
+        max-width: 500px;
+        top: 0;
+        right: 0;
+        padding: 20px;
+        opacity: 0;
+        pointer-events: none;
+        box-shadow: 0px 4px 15px rgba($black,0.08);
+        transform: translateY(80px);
+    }
+    .user-action-cart::before{
+        content: "";
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        right: 80px;
+        top: -6px;
+        transform: rotate(45deg);
+        background: $white;
+    }
     .cart-window-visible .user-action-cart{
         opacity: 1;
+        pointer-events: auto;
     }
 }
 .cart-widget-product{
