@@ -289,3 +289,13 @@ body.--navUserActive .user-action .login-widget{
 .user-action-cart .cart-widget-button .btn{
     flex-grow: 1;
 }
+@media screen and (min-width: 992px){
+    .user-action-cart .cart-free-shipping{
+        margin: 0px;
+        margin-top: 20px;
+    }
+    .user-action-cart .cart-widget-button{
+        padding: 0px;
+        padding-top: 20px;
+    }  
+}
