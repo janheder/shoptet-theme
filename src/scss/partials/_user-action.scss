@@ -259,10 +259,11 @@ body.--navUserActive .user-action .login-widget{
     background-position: center center;
     cursor: pointer;
     opacity: 0.5;
-    transition: 0.3s ease opacity;
+    transition: 0.3s ease opacity, transform;
 
     &:hover{
         opacity: 1;
+        transform: rotate(180deg);
     }
 }
 

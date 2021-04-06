@@ -149,14 +149,64 @@
 .p-availability .availability-amount{
 
 }
-.p-quantity{
 
-}
 .p-quantity .p-label{
     display: none;
 }
-.p-quantity .quantity{
 
+.p-quantity{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+}
+.p-quantity .quantity{
+    height: 100%;
+    position: relative;
+    display: flex;
+    max-width: 120px;
+
+    .increase, .decrease{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        cursor: pointer;
+
+        &::before, &::after{
+            content: "";
+            background: $gray-800;
+            height: 2px;
+            width: 10px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        &::after{
+            height: 10px;
+            width: 2px;
+        }
+    }
+}
+.p-quantity .quantity .decrease{
+    left: 0;
+    right: auto;
+    &::after{
+        content: none;
+    }
+}
+.p-quantity .quantity .amount{
+    height: 46px;
+    padding: 0 10px;
+    width: 100%;
+    border: 1px solid $gray-400;
+    text-align: center;
+    font-size: 14px;
 }
 .p-price{
 
@@ -184,6 +234,50 @@
 .p-total .remove-item:hover{
     transform: rotate(-90deg);
 }
+
+
+
+
+
+@media screen and (max-width: 991px){
+    .removeable {
+        flex-wrap: wrap;
+    }
+    .removeable:first-child {
+        border: 0;
+    }
+    .p-name {
+        width: calc(100% - 80px);
+        flex-direction: column;
+        justify-content: center;
+    }
+    .p-cell {
+        width: auto;
+    }
+    .p-price{
+        display: none;
+    }
+    .p-availability {
+        padding: 5px 20px 5px 0;
+    }
+    .p-total{
+        width: auto;
+        flex-grow: 1;
+    }
+    .p-quantity {
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 991px){
+    .p-availability {
+        width: 100%;
+    }
+}
+
+
+
+
+
 
 .related{
     display: none;
