@@ -167,7 +167,7 @@ function startDictation() {
 
 if ($(".type-detail").length){
 
-    $("body").append('<div class="advancedModal"><h2 class="advancedModal__title">Zboží bylo přidáno do košíku</h2><div class="advancedModal__content"></div></div>');
+    $("body").append('<div class="advancedModal"><h2 class="advancedModal__title">Zboží bylo přidáno do košíku</h2><div class="advancedModal__content"></div><div class="advancedModal__buttons"><a href="/kosik" class="btn">Přejít do košíku</a></div></div>');
 
     if ($(".products-related").length){
         var related = $(".products-related").html();
