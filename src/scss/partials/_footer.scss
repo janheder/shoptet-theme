@@ -23,6 +23,7 @@ footer {
 }
 .custom-footer > .extended, .custom-footer > div:first-child{
     width: 100%;
+    padding: 0;
 }
 .custom-footer > div > h4{
     font-size: 24px;
@@ -90,6 +91,9 @@ footer {
     border-radius: $border-radius-primary;
 }
 @media screen and (max-width: 991px){
+    .instagramSection{
+        padding-bottom: 15px;
+    }
     #instagramSectionContent .instagram_gallery a{
         width: 25% !important;
     }
