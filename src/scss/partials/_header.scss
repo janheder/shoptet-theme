@@ -1,6 +1,9 @@
 #header{
     background: $black;
     position: relative;
+    display: flex;
+    height: 90px;
+    align-items: center;
 }
 #header::before {
     content: "";

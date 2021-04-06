@@ -352,4 +352,6 @@ if ($(".mobile").length){
 // =============================================================================
 
 /* relocate contact widget to header */
-$(".cart-content.checkout-box-wrapper").insertBefore("#js-userToggle")
+if ($(".contact-box").length){
+    $(".contact-box").insertBefore("#js-userToggle");
+}
