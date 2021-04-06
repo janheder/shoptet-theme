@@ -346,3 +346,10 @@ if ($(".mobile").length){
     });
 
 }
+
+// =============================================================================
+// CART
+// =============================================================================
+
+/* relocate contact widget to header */
+$(".cart-content.checkout-box-wrapper").insertBefore("#js-userToggle")

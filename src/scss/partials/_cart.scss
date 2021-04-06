@@ -1,6 +1,9 @@
 .ordering-process #navigation, .ordering-process #header::before{
     display: none;
 }
+.ordering-process #js-userToggle{
+    display: none;
+}
 #cart-wrapper{
 
 }
@@ -282,7 +285,14 @@
 .related{
     display: none;
 }
+.cart-summary{
+
+}
 
 .cart-content.summary-wrapper{
-
+    border-top: 1px solid $gray-300;
+}
+.cart-content.summary-wrapper .next-step{
+    display: flex;
+    justify-content: space-between;
 }
