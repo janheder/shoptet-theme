@@ -81,6 +81,12 @@
 .product-top{
     position: relative;
 }
+@media screen and (max-width: 991px){
+    .product-top{
+        margin: 0 -10px;
+    }
+}
+
 .p-detail-info{
     z-index: 1;
     position: absolute;
