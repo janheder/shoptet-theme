@@ -26,5 +26,5 @@ FEATURE LIST MOBILE
 
 - vlastní řešení menu a košíku v offcanvas stylu
 
-- detail produktu touch carousel procházení produktovách fotek
+- v detailu produktu použitý touch carousel pro procházení produktovách fotek
 
