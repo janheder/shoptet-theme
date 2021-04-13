@@ -17,8 +17,16 @@
         overflow-x: auto;
         
         .product {
-            width: 40%;
+            width: 30%;
             flex-shrink: 0;
+        }
+    }
+}
+@media screen and (max-width: 500px){
+    .homepage-products-1, .homepage-products-2{
+        
+        .product {
+            width: 40%;
         }
     }
 }
