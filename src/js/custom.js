@@ -206,6 +206,12 @@ if ($(".type-detail").length){
         advanceOrderCustom();
     });    
 
+    $('.advancedModal').on('click',function(e){
+        if (e.target !== this)
+        return;
+        $("body").removeClass("--advancedModal");
+    });
+
 }
 
 // -----------------------------------------------------------------------------
