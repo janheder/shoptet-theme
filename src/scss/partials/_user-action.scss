@@ -64,7 +64,9 @@ body.--navUserActive .user-action .login-widget{
 }
 .login-widget .btn{
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    order: 1;
+    margin-left: 10px;
 }
 .login-widget .password .no-display{
     display: none;
@@ -75,24 +77,24 @@ body.--navUserActive .user-action .login-widget{
     color: $black;
 }
 .login-widget .login-wrapper{
-
+    display: flex;
 }
 .login-widget .password-helper{
     display: flex;
     justify-content: center;
+    flex-shrink: 0;
 }
 .login-widget .password-helper a{
     color: $black;
-    font-size: 14px;
-    padding: 0 5px;
-}
-.login-widget .password-helper a{
+    font-size: 15px;
+    padding: 0 20px;    
     border: 1px solid $black;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 500;
+    width: 100%;
 }
 .login-widget .login-close {
     position: absolute;
