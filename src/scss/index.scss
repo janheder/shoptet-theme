@@ -230,10 +230,14 @@ body.--advancedModal{
     max-width: calc(100% - 20px);
     transition: 0.3s ease opacity;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .advancedModal__inner{
     background: white;
     box-shadow: 0px 4px 15px rgba($black,0.08);
+    width: 100%;
 }
 .advancedModal__title{
     background: $black;
@@ -260,6 +264,7 @@ body.--advancedModal{
 
 @media screen and (max-width: 991px){
     .advancedModal{
-        position: fixed;
+        align-items: flex-start;
+        padding-top: 20px;
     }
 }

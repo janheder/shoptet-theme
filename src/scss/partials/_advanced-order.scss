@@ -200,7 +200,8 @@
     display: flex;
     background: $white;
     padding: 10px;
-    border: 1px solid $gray-300;
+    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
     width: 100%;
     font-size: 14px;
 }
