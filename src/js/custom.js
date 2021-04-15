@@ -356,3 +356,9 @@ if ($(".mobile").length){
 if ($(".contact-box").length){
     $(".contact-box").insertBefore("#js-userToggle");
 }
+
+
+if ($("#customerLogin").length){
+    $("#customerLogin .password-helper a:last-child").insertAfter(".input-wrapper.password");
+}
+

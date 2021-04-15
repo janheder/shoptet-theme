@@ -69,6 +69,11 @@ body.--navUserActive .user-action .login-widget{
 .login-widget .password .no-display{
     display: none;
 }
+.login-widget .input-wrapper.password + a{
+    padding-top: 10px;
+    display: block;
+    color: $black;
+}
 .login-widget .login-wrapper{
 
 }
@@ -80,6 +85,14 @@ body.--navUserActive .user-action .login-widget{
     color: $black;
     font-size: 14px;
     padding: 0 5px;
+}
+.login-widget .password-helper a{
+    border: 1px solid $black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
 }
 .login-widget .login-close {
     position: absolute;
@@ -111,6 +124,9 @@ body.--navUserActive .user-action .login-widget{
 @media (max-width: 500px){
     .user-action .login-widget-inner{
         padding: 30px;    
+    }
+    .user-action .login-widget .popup-widget-inner{
+        padding: 30px;
     }
 }
 
