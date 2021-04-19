@@ -261,6 +261,10 @@ body.--advancedModal{
     margin: 0;
     padding: 10px;
 }
+.advancedModal__buttons{
+    padding: 20px;
+    padding-top: 0;
+}
 
 @media screen and (max-width: 991px){
     .advancedModal{

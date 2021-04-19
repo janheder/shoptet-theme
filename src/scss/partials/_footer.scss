@@ -89,6 +89,7 @@ footer {
 }
 #instagramSectionContent .instagram_gallery a img{
     border-radius: $border-radius-primary;
+    font-size: 0;
 }
 @media screen and (max-width: 991px){
     .instagramSection{

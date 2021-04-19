@@ -4,26 +4,10 @@
     display: flex;
     align-items: center;
 }
-#header::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 54px;
-    //background: $gray-1000;
-    background: $black;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    transition: 0.3s box-shadow ease;
-}
 
 @media screen and (max-width: 991px){
     #header {
         height: 52px;
-    }
-    #header::before{
-        content: none;
     }
     #header .container {
         padding: 0;

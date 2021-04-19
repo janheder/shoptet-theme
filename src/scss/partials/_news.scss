@@ -110,15 +110,22 @@
     margin: 0 auto;
     max-width: 760px;
 }
+.news-item-detail h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
 .news-item-detail time{
     color: $gray-700;
     font-weight: 600;
     font-size: 14px;
     margin-bottom: 40px;
     display: flex;
+    justify-content: center;
 }
 .news-item-detail img{
-    margin: 40px 0;
+    margin: 0px 0 40px 0;
 }
 .news-item-detail .text{
     font-size: 18px;

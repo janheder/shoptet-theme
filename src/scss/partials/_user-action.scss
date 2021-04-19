@@ -55,6 +55,14 @@ body.--navUserActive .user-action .login-widget{
     margin-bottom: 20px;
     padding-bottom: 0px;
     text-align: center;
+    flex-direction: column;
+}
+.login-widget h2::after{
+    content: "Jako člen sbíráte slevy za každý svůj nákup.";
+    font-size: 15px;
+    font-weight: 500;
+    color: grey;
+    padding-top: 10px;
 }
 .login-widget .user-action-tabs, #affiliateLogin{
     display: none;
