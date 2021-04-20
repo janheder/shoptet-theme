@@ -52,7 +52,7 @@ body.--navUserActive .user-action .login-widget{
     font-size: 24px;
     font-weight: 700;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding-bottom: 0px;
     text-align: center;
     flex-direction: column;
@@ -80,7 +80,7 @@ body.--navUserActive .user-action .login-widget{
     display: none;
 }
 .login-widget .input-wrapper.password + a{
-    padding-top: 10px;
+    padding: 10px 0;
     display: block;
     color: $black;
 }
