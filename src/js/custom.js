@@ -49,31 +49,6 @@ if ($("#carousel").length){
 $('<section class="hp-blog"><div class="container"><h1>Na našem blogu</h1><div class="news-wrapper"></div><div class="hp-blog-bottom"><a href="/blog" class="btn">Více článků</a></div></div></section>').insertBefore(".in-index #footer");
 $(".hp-blog .news-wrapper").load("/blog/ .news-wrapper .news-item:nth-child(-n+3)");
 
-// =============================================================================
-// LOAD INSTAGRAM FEED
-// =============================================================================
-
-if ($("#footer").length){
-    (function(){
-        new InstagramFeed({
-            'username': 'instagram',
-            'container': document.getElementById("instagramSectionContent"),
-            'display_profile': false,
-            'display_biography': false,
-            'display_gallery': true,
-            'display_captions': false,
-            'max_tries': 4,
-            'callback': null,
-            'styling': true,
-            'items': 8,
-            'items_per_row': 8,
-            'image_size': 150,
-            'margin': 0.5,
-            'lazy_load': true,
-            'on_error': false
-        });
-    })();
-}
 
 // =============================================================================
 // MENU TOGGLES
@@ -128,6 +103,8 @@ $(".menu-helper").click(function(){
     $("body").removeClass("--menuActive --navUserActive --searchActive --cartActive --advancedModal");
 });
 
+
+$("#navigation").insertBefore(".header-top .search");
 
 // =============================================================================
 // VOICE SEARCH
