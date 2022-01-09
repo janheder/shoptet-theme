@@ -70,6 +70,7 @@ $("#js-menuToggle, .navigation-close").click(function(){
 /* add search and user icons to header area */
 $(".navigation-buttons").prepend('<div class="nav-search" id="js-searchToggle"></div><div class="nav-user" id="js-userToggle"></div>');
 
+
 /* toggle user login modal */
 $("#js-userToggle").click(function(){
     $("body").toggleClass("--navUserActive");
