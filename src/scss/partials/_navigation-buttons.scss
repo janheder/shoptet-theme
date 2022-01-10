@@ -27,7 +27,7 @@
     height: 50px;
     padding: 0 20px 0 55px;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 10px;
 
     &::before{
         content: "";
@@ -126,6 +126,7 @@
     background-position: center center;
     margin: 0 10px;
     display: flex;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 991px){

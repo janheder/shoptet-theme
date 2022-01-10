@@ -2,7 +2,7 @@
 .menu{
     display: flex;
     //background: $gray-1000;
-    position: relative;
+    //position: relative;
     z-index: 4;
     border-radius: $border-radius-primary;
     padding-left: 40px;
@@ -92,6 +92,8 @@
     width: 100%;
     padding: 10px 0;
     flex-wrap: wrap;
+    z-index: 5;
+    top: 100%;
 }
 
 @media screen and (min-width: 992px){
@@ -181,7 +183,7 @@
     .submenu-visible .menu-helper{
         opacity: 1;
         z-index: 2;
-        top: 144px;
+        top: 130px;
         bottom: 0;
         position: absolute;
       }
