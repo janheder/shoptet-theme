@@ -26,6 +26,7 @@
   }
   .siteCookies__links{
     margin: 0;
+    display: flex;
   }
   .siteCookies__link, 
   .siteCookies__button{
@@ -41,12 +42,32 @@
   .siteCookies__button{
     background: #50AC58;
     color: white;
+    border: 0;
   }
   
   
-  
+@media screen and (max-width: 991px){
+    .siteCookies{
+        min-width: 80vw;
+    }
+    .siteCookies__form {
+        flex-direction: column;
+    }
+    .siteCookies__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .siteCookies__text{
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    .siteCookies__buttonWrap{
+        position: absolute;
+        bottom: 20px;
+        left: 135px;
+    }
+}
   
   .cookiesSetting{
     display: none;
   }
-  

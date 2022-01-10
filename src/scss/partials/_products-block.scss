@@ -1,12 +1,12 @@
 .products-block{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-bottom: 40px;
+    grid-gap: 1px;
 }
 @media screen and (max-width: 991px){
     .products-block{
-        margin: 0 -5px;
+       
     }
 }
 

@@ -1,8 +1,9 @@
 .product{
     position: relative;
-    width: 25%;
+    width: 100%;
     padding: 0;
     flex-shrink: 0;
+    outline: 1px solid $border
     /* content-visibility: auto; fix content jump asap*/
 }
 .p{
@@ -249,7 +250,6 @@
 
 }
 .p .availability{
-    display: none;
     font-size: 14px;
     flex-grow: 1;
     color: $green-700;
