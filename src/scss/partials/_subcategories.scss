@@ -5,16 +5,18 @@
     flex-wrap: wrap;
     margin: 0 -10px;
     margin-bottom: 60px;
+    background: $gray-100;
 }
 .subcategories li{
     margin-bottom: 20px;
 }
 .subcategories li a{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 10px;
-    background: $gray-100;
+    background: $white;
+    border: 1px solid $gray-300;
     height: 100%;
 
     &:hover, &:active, &:focus{

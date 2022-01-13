@@ -4,6 +4,9 @@
     display: flex;
     align-items: center;
 }
+#header .container.navigation-wrapper{
+    max-width: 100%;
+}
 
 @media screen and (max-width: 991px){
     #header {
