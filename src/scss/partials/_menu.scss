@@ -1,7 +1,9 @@
 .header-top + #navigation{
     display: none;
 }
-
+#navigation{
+    height: 100%;
+}
 .menu{
     display: flex;
     //background: $gray-1000;
@@ -9,6 +11,7 @@
     z-index: 4;
     border-radius: $border-radius-primary;
     padding-left: 40px;
+    height: 100%;
 }
 .navigationActions{
     display: none;
@@ -21,7 +24,7 @@
     width: 100%;
 }
 .menu-level-1 > li{
-    height: 54px;
+    height: 100%;
 }
 .menu-level-1 > li.ext{
     &:hover, &:active, &:focus{
