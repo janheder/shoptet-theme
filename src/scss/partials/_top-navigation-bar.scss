@@ -6,6 +6,7 @@
 }
 .top-navigation-bar .container{
     display: flex;
+    max-width: 100%;
 }
 .top-navigation-contacts{
     align-items: center;
@@ -30,7 +31,7 @@
     font-weight: 500;
 }
 .top-navigation-menu li a{
-    color: $black;
+    color: $white;
 }
 .top-navigation-bar-menu{
     margin: 0;

@@ -1,9 +1,13 @@
 .breadcrumbs-wrapper{
-    background: $white;
-    margin-bottom: 40px;
+    background: $gray-100;
+    margin-bottom: 0px;
+    max-width: 100%;
+
 }
 .breadcrumbs{
     padding: 10px 0;
+    max-width: 1340px;
+    margin: 0 auto;
 }
 .breadcrumbs > span{
     font-size: 13px;
