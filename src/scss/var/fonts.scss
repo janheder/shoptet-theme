@@ -26,15 +26,19 @@
 
 @font-face {
     font-family: 'Mohave';
-
     src: url('../fonts/Mohave/Mohave-VariableFont_wght.ttf') format('truetype supports variations'),
          url('../fonts/Mohave/Mohave-VariableFont_wght.ttf') format('truetype-variations');
-
     font-weight: 100 1000;
     font-display: swap;
 }
 
-
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-VariableFont_slnt,wght.woff2') format('woff2 supports variations'),
+         url('../fonts/Inter/Inter-VariableFont_slnt,wght.woff2') format('woff2-variations');
+    font-weight: 100 1000;
+    font-display: swap;
+}
 
 $font-family-primary: "Inter",apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 $font-family-headings: "Mohave",apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;;
