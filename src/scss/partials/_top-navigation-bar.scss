@@ -68,7 +68,7 @@
         content: "";
         width: 16px;
         height: 16px;
-        background-image: url($i-phone);
+        background-image: url($i-phone-white);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -77,7 +77,7 @@
     }
 }
 .top-navigation-contacts .project-email::before{
-    background-image: url($i-envelope);
+    background-image: url($i-envelope-white);
 }
 
 @media screen and (max-width: 991px){
