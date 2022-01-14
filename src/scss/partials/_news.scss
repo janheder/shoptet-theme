@@ -1,11 +1,12 @@
 .news-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
 }
 .news-item {
-    width: 33.333%;
-    padding: 10px;
+    width: 100%;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -141,17 +142,20 @@
 
 
 .hp-blog{
-    padding: 40px 0 0 0;
+    padding: 40px 0;
 }
 .hp-blog h1{
     text-align: center;
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 20px;
+    width: 100%;
 }
+
 .hp-blog-bottom{
     text-align: center;
     display: flex;
     padding-top: 20px;
     justify-content: center;
+    width: 100%;
 }

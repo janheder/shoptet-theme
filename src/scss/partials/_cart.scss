@@ -37,6 +37,7 @@
         flex-direction: column;
         position: relative;
         padding-left: 46px;
+        display: none;
     }
     .contact-box::before{
         content: "";
