@@ -56,6 +56,10 @@
     border-bottom: 1px solid $gray-300;
     margin-bottom: 30px;
 }
+.category-header > form fieldset{
+    display: flex;
+    margin-bottom: -1px;
+}
 .category-header div{
     font-size: 14px;
     color: $gray-500;
@@ -74,7 +78,9 @@
     height: 44px;
     display: flex;
     align-items: center;
+    font-size: 14px;
     border: 1px solid $gray-300;
+    background: $gray-100;  
 }
 .category-header label:last-child{
     margin-right: 0px;
@@ -85,7 +91,10 @@
 }
 
 .category-header input:checked + label{
-    color: $green-700;
+    color: $gray-900;
+    border-bottom: 1px solid $white;
+    background: $white;
+    border-top: 3px solid $green;
 }
 #filterToggleDesktop{
     display: none;
