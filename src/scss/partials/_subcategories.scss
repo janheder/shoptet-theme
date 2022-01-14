@@ -63,7 +63,6 @@
 }
 @media screen and (max-width: 575px){
     .subcategories{
-        margin: 0 -5px;
         flex-wrap: nowrap;
         overflow-x: scroll;
         justify-content: flex-start;
@@ -76,10 +75,8 @@
         font-size: 14px;
     }
     .subcategories li {
-        width: 50%;
         margin-bottom: 0px;
-        padding: 5px;
-        flex-shrink: 0;
-        width: 28.5%;
+        padding: 0;
+        width: 100%;
     }
 }

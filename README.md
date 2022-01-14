@@ -4,8 +4,6 @@ FEATURE LIST DESKTOP
 
 - touch carousel na hlavní straně využívá lightweight 13kb plugin 
 
-- instagramfeed plugin 10kb načítá pouze odpovídající velikosti obrázků a nikoliv zbytečně velké rozlišení
-
 - vlastní řešení modal oken (bez javascriptové animace)
 
 - detail produktu carousel na thumbnailech

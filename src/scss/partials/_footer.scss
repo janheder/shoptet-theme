@@ -1,5 +1,5 @@
 footer {
-    background: $white;
+    background: $gray-100;
     display: flex;
     flex-direction: column;
     padding: 60px 0 0 0;
@@ -15,14 +15,15 @@ footer {
 }
 
 .custom-footer{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
 }
 .custom-footer > div{
-    width: 33.333%;
+    
 }
 .custom-footer > .extended, .custom-footer > div:first-child{
-    width: 100%;
     padding: 0;
 }
 .custom-footer > div > h4{
