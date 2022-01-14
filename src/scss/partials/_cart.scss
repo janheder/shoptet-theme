@@ -1,8 +1,11 @@
 .ordering-process #navigation, .ordering-process #header::before{
     display: none;
 }
-.ordering-process #js-userToggle, .ordering-process .search{
+.ordering-process #js-userToggle, .ordering-process .search, .ordering-process .nav-search{
     display: none;
+}
+.ordering-process .header-top .contact-box{
+    display: flex;
 }
 .ordering-process #header{
     height: 90px;

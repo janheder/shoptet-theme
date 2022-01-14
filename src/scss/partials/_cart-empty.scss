@@ -2,14 +2,22 @@
     padding: 150px 0;
 
 }
+.cart-empty .cart-heading{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    font-weight: 500;
+    font-family: $font-family-headings;
+    margin-bottom: 60px;
+}
 .cart-empty .cart-heading::before{
     content: "";
     height: 280px;
     width: 280px;
     display: flex;
     background-image: url("../img/cart-empty.svg");
-}
-.cart-empty .cart-heading{
-    text-align: center;
-    padding-top: 30px;
+    margin-bottom: 30px;
 }
