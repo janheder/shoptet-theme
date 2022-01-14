@@ -4,7 +4,6 @@ const sourcemaps = require('gulp-sourcemaps');
 const sassGlob = require('gulp-sass-glob');
 const browserSync = require('browser-sync').create();
 const concat = require('gulp-concat');
-const pug = require('gulp-pug-3');
 const uglify = require('gulp-uglify-es').default;
 const postcss = require('gulp-postcss');
 const autoprefixer= require('autoprefixer');
@@ -24,16 +23,6 @@ function style() {
     .pipe(browserSync.stream());
 }
 
-
-function buildhtml() {
-    return gulp.src('./src/pug/*.pug')
-    .pipe(
-        pug({ 
-            pretty: 1
-        })
-    )
-    .pipe(gulp.dest('./dist'));
-}
 
 //compile js
 function scripts() {

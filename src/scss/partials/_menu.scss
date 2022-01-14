@@ -97,14 +97,14 @@
     left: 0;
     width: 100%;
     padding: 10px 0;
-    flex-wrap: wrap;
     z-index: 5;
     top: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 @media screen and (min-width: 992px){
     .menu-level-1 > li:hover .menu-level-2{
-        display: flex;
+        display: grid;
     }
 }
 
@@ -112,7 +112,7 @@
     padding: 10px 20px;
     display: flex;
     align-items: flex-start;
-    width: 33.333%;
+    width: 100%;
 }
 .menu-level-2 > li > a{
     flex-shrink: 0;

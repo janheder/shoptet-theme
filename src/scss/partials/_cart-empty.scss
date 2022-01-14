@@ -1,0 +1,15 @@
+.cart-inner.cart-empty{
+    padding: 150px 0;
+
+}
+.cart-empty .cart-heading::before{
+    content: "";
+    height: 280px;
+    width: 280px;
+    display: flex;
+    background-image: url("../img/cart-empty.svg");
+}
+.cart-empty .cart-heading{
+    text-align: center;
+    padding-top: 30px;
+}

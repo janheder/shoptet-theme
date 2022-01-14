@@ -10,7 +10,9 @@
 .content {
     width: 100%;
 }
-
+.content-inner{
+    padding-top: 40px;
+}
 .sidebar + .content{
     width: 75%;
     padding-left: 10px;
