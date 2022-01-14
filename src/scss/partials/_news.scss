@@ -147,9 +147,11 @@
 .hp-blog h1{
     text-align: center;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 20px;
     width: 100%;
+    font-family: $font-family-headings;
+    text-transform: uppercase;
 }
 
 .hp-blog-bottom{

@@ -1,5 +1,5 @@
 .cart-inner.cart-empty{
-    padding: 150px 0;
+    padding: 110px 0;
 
 }
 .cart-empty .cart-heading{
@@ -12,6 +12,7 @@
     font-weight: 500;
     font-family: $font-family-headings;
     margin-bottom: 60px;
+    text-transform: uppercase;
 }
 .cart-empty .cart-heading::before{
     content: "";

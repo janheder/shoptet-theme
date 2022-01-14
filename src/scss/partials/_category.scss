@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0px 0;
+    margin: 40px 0;
     padding: 10px;
     justify-content: space-between;
     background: $gray-300;
@@ -94,9 +94,7 @@
     .type-category .sidebar-left{
 
     }
-    #content #category-header{
-        display: none;
-    }
+
     .category-perex > p{
         display: block;
     }
