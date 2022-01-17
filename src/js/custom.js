@@ -341,5 +341,5 @@ if ($("#customerLogin").length){
 }
 
 if ($(".cart-header").length){
-    $(".cart-header").insertBefore("#content-wrapper");
+    $(".cart-header").insertBefore(".content-wrapper-in");
 }
