@@ -43,7 +43,6 @@ function watch() {
         }
     });
     gulp.watch('./src/scss/**/*.scss', style)
-    gulp.watch('./src/pug/**/*.pug', buildhtml)
     gulp.watch('./src/js/**/*.js', scripts)
     gulp.watch('./dist/**/*.html').on('change',browserSync.reload);
     gulp.watch('./dist/js/**/*.js').on('change', browserSync.reload);
@@ -51,6 +50,5 @@ function watch() {
 
 
 exports.style = style;
-exports.buildhtml = pug;
 exports.scripts = scripts;
 exports.watch = watch;
