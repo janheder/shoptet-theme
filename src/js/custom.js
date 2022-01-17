@@ -340,3 +340,6 @@ if ($("#customerLogin").length){
     $("#customerLogin .password-helper a:last-child").insertAfter(".input-wrapper.password");
 }
 
+if ($(".cart-header").length){
+    $(".cart-header").insertBefore("#content-wrapper");
+}

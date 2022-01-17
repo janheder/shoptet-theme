@@ -85,12 +85,20 @@
 
 .cart-header{
     display: flex;
-    margin: 20px 0 40px 0;
+    margin: 0px 0 40px 0;
     list-style: none;
     padding: 0;
     background-color: $gray-100;
+    position: absolute;
+    width: 100%;
+    height: 120px;
 }
-
+#content-wrapper::before{
+    content: "";
+    height: 120px;
+    width: 100%;
+    display: flex;
+}
 .cart-header .step{
     display: flex;
     flex-grow: 1;
@@ -385,10 +393,38 @@
 .order-summary .order-summary-inner{
     border: 1px solid $gray-300;
     padding: 20px;
+    margin-bottom: 40px;
 }
 .order-summary .order-summary-inner h4{
     font-family: $font-family-headings;
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 500;
+}
+.order-summary .order-summary-inner .cart-items{
+
+}
+.order-summary .order-summary-inner .cart-item{
+
+}
+.order-summary .order-summary-inner .cart-item-name{
+
+}
+.order-summary .order-summary-inner .cart-item-amount{
+
+}
+.order-summary .order-summary-inner .unit-value{
+
+}
+.order-summary .order-summary-inner .cart-item-price{
+
+}
+.order-summary-item.price{
+    background: $gray-100;
+    padding: 20px;
+}
+.order-summary-item.price .price-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
