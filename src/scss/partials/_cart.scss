@@ -83,6 +83,11 @@
     display: none;
 }
 
+
+
+.content-inner .cart-header{
+    display: none;
+}
 .cart-header{
     display: flex;
     margin: 0px 0 40px 0;
@@ -380,6 +385,7 @@
 .order-summary .checkout-box{
     border: 1px solid $gray-300;
     padding: 30px 20px;
+    margin-bottom: 20px;
 }
 .order-summary .checkout-box img{
     display: none;
@@ -419,9 +425,33 @@
 .order-summary .order-summary-inner .cart-item-price{
 
 }
+.order-summary-item.helper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.order-recapitulation{
+
+}
+.recapitulation-single{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.recapitulation-shipping-billing-label{
+    font-size: 13px;
+    font-weight: 500;
+}
+.recapitulation-shipping-billing-info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 .order-summary-item.price{
     background: $gray-100;
     padding: 20px;
+    margin: -20px;
+    margin-top: 0;
 }
 .order-summary-item.price .price-wrapper{
     display: flex;
