@@ -112,7 +112,10 @@ footer {
     padding-bottom: 40px;
 }
 #signature{
-    color: $gray-1000;
+    
+}
+#signature a{
+    color: $gray-1000;    
 }
 #signature a:first-child{
     margin-right: 10px;

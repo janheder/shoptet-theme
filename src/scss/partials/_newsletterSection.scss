@@ -5,6 +5,8 @@
 }
 .newsletterSection__form{
     display: flex;
+    justify-content: space-between;
+
 }
 .newsletterSection__titleWrap{
 
@@ -14,4 +16,21 @@
 }
 .newsletterSection__subTitle{
 
+}
+.newsletterSection__label{
+    display: none;
+}
+.newsletterSection__formGroup{
+    display: flex;
+    align-items: flex-end;
+}
+.newsletterSection__formGroup .validator-msg-holder{
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.newsletterSection__consent{
+    font-size: 13px;
+    color: $gray-500;
+    padding-top: 5px;
 }
