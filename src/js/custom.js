@@ -104,7 +104,7 @@ $(".menu-helper").click(function(){
     $("body").removeClass("--menuActive --navUserActive --searchActive --cartActive --advancedModal");
 });
 
-
+/* move main navigation */
 $("#navigation").insertBefore(".header-top .search");
 
 // =============================================================================
@@ -332,7 +332,7 @@ if ($(".mobile").length){
 
 /* relocate contact widget to header */
 if ($(".contact-box").length){
-    $(".contact-box").insertBefore("#js-userToggle");
+    $(".contact-box").clone().insertBefore("#js-userToggle");
 }
 
 
