@@ -24,7 +24,7 @@ footer {
     
 }
 .custom-footer > .extended, .custom-footer > div:first-child{
-    padding: 0;
+    grid-column: 1 / 5;
 }
 .custom-footer h4{
     font-size: 20px;
@@ -32,6 +32,7 @@ footer {
     margin-bottom: 20px;
     text-transform: uppercase;
     font-family: $font-family-headings;
+    color: $gray-1000;
 }
 .custom-footer > div  ul{
     list-style: none;
@@ -43,7 +44,7 @@ footer {
 .custom-footer > div  ul > li a{
     font-weight: 400;
     font-size: 14px;
-    color: $black;
+    color: $gray-500;
 }
 
 .custom-footer .news-item-widget{
@@ -111,7 +112,7 @@ footer {
     padding-bottom: 40px;
 }
 #signature{
-
+    color: $gray-1000;
 }
 #signature a:first-child{
     margin-right: 10px;

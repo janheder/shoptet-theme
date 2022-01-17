@@ -8,51 +8,52 @@
     padding: 20px;
     max-width: 970px;
     z-index:9;
-  }
-  .siteCookies__form{
-    display: flex;
-  }
-  .siteCookies__content{
-    display: flex;
-  }
-  .siteCookies__text{
-    padding-right: 40px;
-    margin: 0;
-    color: #6E6E6E;
-    font-size: 14px;
-  }
-  .siteCookies__text a{
-    color: #6E6E6E;
-    text-decoration: underline;
-  }
-  .siteCookies__links{
-    margin: 0;
-    display: flex;
-  }
-  .siteCookies__link, 
-  .siteCookies__button{
+}
+
+.siteCookies__form{
+	display: flex;
+}
+.siteCookies__content{
+	display: flex;
+}
+.siteCookies__text{
+	padding-right: 40px;
+	margin: 0;
+	color: #6E6E6E;
+	font-size: 14px;
+}
+.siteCookies__text a{
+	color: #6E6E6E;
+	text-decoration: underline;
+}
+.siteCookies__links{
+	margin: 0;
+	display: flex;
+}
+.siteCookies__link, .siteCookies__button{
     color: #0B0B0B;
-  background: #FFFFFF;
-  border: 1px solid #F0F0F0;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
     padding: 0 20px;
     height: 44px;
     display: flex;
     align-items: center;
     margin-right: 10px;
     font-size: 14px;
-  }
-  .siteCookies__link:hover{
-    background: #F0F0F0;
-  }
-  .siteCookies__button{
-    background: #50AC58;
-    color: white;
-    border: 0;
-  }
-  .siteCookies__button:hover{
-    background: #408b46;
+    line-height: 1;
+}
+.siteCookies__link:hover{
+  background: #F0F0F0;
+}
+.siteCookies__button{
+	background: #50AC58;
+	color: white;
+	border: 0;
+}
+.siteCookies__button:hover{
+  background: #408b46;
 
-  }
+}
   
 @media screen and (max-width: 991px){
     .siteCookies{
@@ -75,96 +76,95 @@
         left: 135px;
     }
 }
-  
-  .cookiesSetting{
-    display: none;
-  }
+
+.cookiesSetting{
+	display: none;
+}
 
 
 
-  body.cookies-visible {
+body.cookies-visible {
     overflow: hidden;
 }
 .cookiesSetting__form{
   
 }
 .cookiesSetting__title{
-  margin: 0;
-  padding: 20px;
-  padding-top: 40px;
-  font-weight: 600;
+	margin: 0;
+	padding: 20px;
+	padding-top: 40px;
+	font-weight: 600;
 }
 .cookiesSetting__perex{
-  padding: 20px;
-  padding-top: 0;
-  margin: 0;
+	padding: 20px;
+	padding-top: 0;
+	margin: 0;
 }
 .cookiesSetting__data{
-  background: #fff;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1px;
+	background: #fff;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1px;
 }
 .cookiesSetting__item{
-  outline: 1px solid #F0F0F0;
-  background: #FFFFFF;
-  padding: 20px;
-  display: flex;
-  align-items: center;
+	outline: 1px solid #F0F0F0;
+	background: #FFFFFF;
+	padding: 20px;
+	display: flex;
+	align-items: center;
 }
 .cookiesSetting__item__col1{
-  text-align: left;
-  padding-right: 20px;
+	text-align: left;
+	padding-right: 20px;
 }
 .cookiesSetting__item__name{
-  color: #0B0B0B;
-  font-size: 15px;
+	color: #0B0B0B;
+	font-size: 15px;
 }
 .cookiesSetting__item__text{
-  color: #6E6E6E;
-      font-size: 14px;
+	color: #6E6E6E;
+	font-size: 14px;
 }
 .cookiesSetting__item__col2{
   
 }
 .cookiesSetting__item__status{
-  display: flex;
-  align-items: center;
-  border: 1px solid #F0F0F0;
-  padding: 10px 15px;
-  cursor: pointer;
+	display: flex;
+	align-items: center;
+	border: 1px solid #F0F0F0;
+	padding: 10px 15px;
+	cursor: pointer;
 }
 .cookiesSetting__item__status *{
-  cursor: pointer;
+	cursor: pointer;
 }
 .cookiesSetting__item__state{
-  padding-left: 10px;
+	padding-left: 10px;
 }
 .cookiesSetting__bottom{
-  display: flex;
-  padding: 20px;
+	display: flex;
+	padding: 20px;
 }
 .cookiesSetting__bottom button{
-  color: #0B0B0B;
-    background: #FFFFFF;
-    border: 1px solid #F0F0F0;
-    padding: 0 20px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
+	color: #0B0B0B;
+	background: #FFFFFF;
+	border: 1px solid #F0F0F0;
+	padding: 0 20px;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
 }
 .cookiesSetting__bottom .cookiesSetting__uncheck{
-  flex-grow: 1;
+	flex-grow: 1;
 }
 .cookiesSetting__bottom button.cookiesSetting__button{
-  border-color: #0B0B0B;
+	border-color: #0B0B0B;
 }
 .cookiesSetting__bottom button.cookiesSetting__button--green{
-  background: #50AC58;
-    color: white;
-    border: 0;
-  margin: 0;
-
+	background: #50AC58;
+	color: white;
+	border: 0;
+	margin: 0;
 }
