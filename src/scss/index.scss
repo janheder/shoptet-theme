@@ -38,7 +38,7 @@ html *{
 }
 body{
     font-size: 15px;
-    color: $black;
+    color: $gray-1000;
     background: $white;
     font-family: $font-family-primary;
     overflow-x: hidden;
@@ -64,16 +64,16 @@ body.--navUserActive, body.--cartActive{
 }
 
 ::selection {
-    background: $pink-200;
+    background: $red-200;
 }
 
 a{
-    color: $pink-500;
+    color: $red-500;
     text-decoration: none;
     transition: 0.3s ease all;
 
     &:hover, &:active, &:focus{
-        color: $black;
+        color: $gray-1000;
     }
 }
 
