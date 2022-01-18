@@ -21,7 +21,7 @@
     align-items: flex-start;
     justify-content: center;
     background: transparent;
-    color: $white;
+    color: $gray-1000;
     padding: 0;
     line-height: 1.2;
     height: 50px;
@@ -55,7 +55,7 @@
     font-size: 14px;
 }
 .cart-count .cart-price{
-    color: $white;
+    color: $gray-1000;
     font-weight: 700;
 }
 .cart-count i{
@@ -63,7 +63,7 @@
     font-style: normal;
     font-size: 11px;
     background: $red-500;
-    color: $white;
+    color: $gray-1000;
     height: 15px;
     width: 15px;
     border-radius: 50%;
