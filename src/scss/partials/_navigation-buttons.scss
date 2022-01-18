@@ -36,7 +36,7 @@
         position: absolute;
         top: 50%;
         left: 14px;
-        background-image: url($i-shopping-bag-white);
+        background-image: url($i-shopping-bag);
         background-repeat: no-repeat;
         background-size: 100%;
         transform: translate(0%, -50%);
@@ -105,7 +105,7 @@
     height: 50px;
     flex-shrink: 0;
     border-radius: $border-radius-primary;
-    background-image: url($i-user-white);
+    background-image: url($i-user);
     background-repeat: no-repeat;
     background-size: 26px;
     background-position: center center;
@@ -120,7 +120,7 @@
 .nav-search{
     width: 50px;
     height: 50px;
-    background-image: url($i-search-white);
+    background-image: url($i-search);
     background-repeat: no-repeat;
     background-size: 26px;
     background-position: center center;

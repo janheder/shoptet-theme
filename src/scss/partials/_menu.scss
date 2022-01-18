@@ -243,6 +243,7 @@
     .menu{
         background: $white;
         order: 1;
+        padding: 0;
     }
     .menu-level-1{
         flex-direction: column;
@@ -257,7 +258,7 @@
         height: 60px;
         padding: 0 20px;
         width: 100%;
-        color: $black;
+        color: $gray-1000;
 
         &:active, &:focus{
             background: transparent;
@@ -294,6 +295,7 @@
         flex-direction: column;
         padding: 0;
         display: none;
+        top: 0;
     }
     .menu-level-2 > li {
         justify-content: flex-start;
@@ -310,7 +312,7 @@
         justify-content: flex-start;
         width: 100%;
         padding: 5px 15px 5px 40px;
-        color: $black;
+        color: $gray-1000;
         margin: 0;
         height: 48px;
         align-items: center;

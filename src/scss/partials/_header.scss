@@ -1,8 +1,9 @@
 #header{
-    background: $black;
+    background: $white;
     //position: relative;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid $gray-300;
 
 }
 #header .container.navigation-wrapper{
