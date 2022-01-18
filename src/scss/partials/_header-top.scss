@@ -37,10 +37,17 @@
     */
 }
 
+.header-top > div:first-child, .header-top .nav-menu-toggle + div{
+    height: 100%;
+}
 
 .site-name{
-    height: 28px;
     margin: 0;
+    display: flex;
+    width: 220px;
+    height: 100%;
+    position: relative;
+    top: 0;
 }
 @media screen and (max-width: 991px){
     .site-name{
@@ -55,7 +62,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    display: flex;
+    background: $red-500;
+    position: absolute;
+    height: 130px;
+    width: 100%;
+    padding: 20px;
 }
 .site-name img{
     height: 100%;
