@@ -43,6 +43,18 @@ if ($("#carousel").length){
 }
 */
 
+
+$("#carousel").attr("id","swiffy");
+          $("#swiffy").addClass("swiffy-slider slider-nav-arrow slider-indicators-round slider-nav-autoplay slider-nav-autopause");
+          $("#swiffy").attr("data-interval","");
+           $("#swiffy").attr("data-slider-nav-autoplay-interval","5000");
+          $("#swiffy .carousel-inner").addClass("slider-container");
+          $("#swiffy .carousel-inner").removeClass("carousel-inner"); 
+          
+          
+         $("#swiffy").append('<button type="button" class="slider-nav"></button> <button type="button" class="slider-nav slider-nav-next"></button>');      
+       
+
 // =============================================================================
 // HOMEPAGE NEWS
 // =============================================================================

@@ -51,11 +51,20 @@
 }
 @media screen and (max-width: 991px){
     .site-name{
-        height: 20px;
+        height: 100%;
         margin: 0px;
+        width: auto;
     }
     .ordering-process .site-name{
         margin-left: 10px;
+    }
+    .site-name a {
+        height: 100%;
+        position: relative;
+        padding: 0;
+    }
+    .site-name img{
+        height: 30px;
     }
 }
 .site-name a{
