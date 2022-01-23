@@ -65,10 +65,18 @@
     margin: 0;
 }
 @media screen and (max-width: 991px){
+    .news-wrapper{
+        overflow: auto;
+    }
     .news-item{
-
+        min-width: 340px;
+        padding-bottom: 10px;
+    }
+    .news-item > .image > a {
+        height: 220px;
     }
 }
+/*
 @media screen and (max-width: 767px){
     .news-item{
         width: 100% !important;
@@ -103,7 +111,7 @@
         padding-left: 10px;
     }
 }
-
+*/
 .news-item-detail{
     margin: 0 auto;
     max-width: 760px;

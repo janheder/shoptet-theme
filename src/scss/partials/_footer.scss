@@ -170,4 +170,7 @@ footer {
         grid-template-columns: 1fr 1fr;
 
     }
+    .custom-footer > .extended, .custom-footer > div:first-child{
+        grid-column: 1 / 3;
+    }
 }
