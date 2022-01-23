@@ -1,4 +1,4 @@
-.category-title{
+h1.category-title{
     position: relative;
     display: flex;
     font-size: 36px;
@@ -10,7 +10,7 @@
     font-family: $font-family-headings;
     text-transform: uppercase;
 }
-.category-title::before{
+h1.category-title::before{
     content: "";
     top: 0;
     bottom: 0;

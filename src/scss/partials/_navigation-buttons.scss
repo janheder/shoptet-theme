@@ -53,10 +53,11 @@
 .cart-count .sr-only{
     width: 100%;
     font-size: 14px;
+    display: none;
 }
 .cart-count .cart-price{
     color: $gray-1000;
-    font-weight: 700;
+    font-weight: 500;
 }
 .cart-count i{
     position: absolute;

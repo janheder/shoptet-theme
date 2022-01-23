@@ -25,6 +25,9 @@
 .newsletterSection__formGroup{
     display: flex;
     align-items: flex-end;
+    width: 480px;
+    max-width: calc(100vw - 20px);
+    margin: 0 auto;
 }
 .newsletterSection fieldset{
     width: 600px;
