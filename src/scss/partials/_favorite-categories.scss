@@ -10,6 +10,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
+    padding-bottom: 10px;
+    overflow: auto;
 }
 .favoriteCategories__single{
     text-align: center;
@@ -21,6 +23,7 @@
     background: $gray-100;
     position: relative;
     height: 300px;
+    min-width: 220px;
 }
 .favoriteCategories__single img{
     display: flex;

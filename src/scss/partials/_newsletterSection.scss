@@ -44,3 +44,17 @@
 .newsletterSection__consent a{
     color: $gray-500;
 }
+
+@media screen and (max-width: 768px){
+    #newsletterSection {
+        padding: 0px 0 40px 0;
+        margin-bottom: 40px;
+    }
+    .newsletterSection__form {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .newsletterSection__titleWrap{
+        padding-bottom: 20px;
+    }
+}
