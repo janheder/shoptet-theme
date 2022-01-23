@@ -1,5 +1,5 @@
 .ordering-process #navigation, .ordering-process #header::before{
-    display: none;
+    /*display: none;*/
 }
 .ordering-process #js-userToggle, .ordering-process .search, .ordering-process .nav-search{
     display: none;
@@ -41,6 +41,7 @@
         position: relative;
         padding-left: 46px;
         display: none;
+        color: $gray-1000;
     }
     .contact-box::before{
         content: "";
@@ -67,7 +68,7 @@
         margin: 0;
     }
     .contact-box ul a{
-        color: $white;
+        color: $gray-1000;
     }
     .contact-box li{
         font-size: 15px;
@@ -410,6 +411,25 @@
 .order-summary .checkout-box ul{
     list-style: none;
     padding: 0;
+}
+.order-summary .checkout-box .contact-box strong{
+    display: none;
+}
+.order-summary .checkout-box .contact-box a{
+    color: $gray-1000;
+}
+.order-summary .checkout-box .contact-box .mail{
+    display: flex;
+    align-items: center;
+}
+.order-summary .checkout-box .contact-box .mail::before{
+    content: "";
+    height: 16px;
+    width: 16px;
+    background-image: url($i-envelope);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 10px;
 }
 
 

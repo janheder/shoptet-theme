@@ -22,3 +22,12 @@
         text-decoration: none;
     }
 }
+.btn-conversion{
+    background: $green-500;
+
+    &:hover, &:active, &:focus{
+        color: $white;
+        background: $green-600;
+        text-decoration: none;
+    }
+}
