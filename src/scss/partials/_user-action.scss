@@ -52,8 +52,7 @@ body.--navUserActive .user-action .login-widget{
     position: relative;
     display: flex;
     justify-content: center;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 30px;
     margin: 0 auto;
     margin-bottom: 30px;
     padding-bottom: 0px;
@@ -63,9 +62,11 @@ body.--navUserActive .user-action .login-widget{
 .login-widget h2::after{
     content: "Jako člen sbíráte slevy za každý svůj nákup.";
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 400;
     color: grey;
     padding-top: 10px;
+    font-family: $font-family-primary;
+    text-transform: none;
 }
 .login-widget .user-action-tabs, #affiliateLogin{
     display: none;
@@ -78,14 +79,21 @@ body.--navUserActive .user-action .login-widget{
     margin-bottom: 0px;
     order: 1;
     margin-left: 10px;
+    background: $red-500;
+
+    &:hover, &:active, &:focus{
+        color: $white;
+        background: $red-600;
+        text-decoration: none;
+    }
 }
 .login-widget .password .no-display{
     display: none;
 }
 .login-widget .input-wrapper.password + a{
-    padding: 10px 0;
+    padding: 20px 0 10px 0;
     display: block;
-    color: $black;
+    color: $gray-500;
 }
 .login-widget .login-wrapper{
     display: flex;
@@ -96,10 +104,10 @@ body.--navUserActive .user-action .login-widget{
     flex-shrink: 0;
 }
 .login-widget .password-helper a{
-    color: $black;
+    color: $gray-1000;
     font-size: 15px;
     padding: 0 20px;    
-    border: 1px solid $black;
+    border: 1px solid $gray-300;
     height: 50px;
     display: flex;
     justify-content: center;
