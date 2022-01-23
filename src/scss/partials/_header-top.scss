@@ -71,6 +71,7 @@
         height: 100%;
         margin: 0px;
         width: auto;
+        margin-left: 52px;
     }
     .ordering-process .site-name{
         margin-left: 0px;
@@ -359,6 +360,9 @@
         width: 52px;
         position: relative;
         flex-shrink: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
     }
     .nav-menu-toggle span{
         display: flex;

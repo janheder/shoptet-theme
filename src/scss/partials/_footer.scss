@@ -163,7 +163,9 @@ footer {
         align-items: center;
     }
     .copyright{
+        display: inline-block;
         padding-top: 10px;
+        text-align: center;
     }
 }
 @media screen and (max-width: 768px){
@@ -181,7 +183,7 @@ footer {
     }
     .footer-bottom{
         margin-top: 30px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }

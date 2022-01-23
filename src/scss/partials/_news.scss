@@ -118,13 +118,12 @@
 }
 .news-item-detail h1{
     font-size: 30px;
-    font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
 }
 .news-item-detail time{
     color: $gray-700;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     margin-bottom: 40px;
     display: flex;
@@ -134,9 +133,8 @@
     margin: 0px 0 40px 0;
 }
 .news-item-detail .text{
-    font-size: 18px;
+    font-size: 17px;
     line-height: 2;
-    font-weight: 500;
 }
 .news-item-detail .next-prev{
     margin-top: 40px;
