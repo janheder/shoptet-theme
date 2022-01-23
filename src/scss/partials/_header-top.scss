@@ -16,7 +16,7 @@
         width: 100%;
         padding: 0;
         align-items: center;
-        background: $gray-900;
+        background: $white;
         //box-shadow: 0px 3px 8px 0px rgba($black,0.05);
     }
     body.--searchActive .header-top{
@@ -78,13 +78,20 @@
     .site-name a {
         height: 100%;
         position: relative;
-        padding: 0 20px;
+        padding: 0 15px;
     }
     .site-name img{
-        height: 30px;
+        height: 24px;
     }
 }
-
+@media screen and (max-width: 500px){
+    .site-name a {
+        padding: 0 12px;
+    }
+    .site-name img{
+        height: 20px;
+    }
+}
 .header-contacts{
     display: flex;
     flex-direction: column;
@@ -364,7 +371,7 @@
         left: 50%;
         width: 18px;
         height: 2px;
-        background: $white;
+        background: $gray-900;
 
         &::before, &::after{
             content: "";
@@ -373,7 +380,7 @@
             left: 0;
             height: 2px;
             width: 18px;
-            background: $white;
+            background: $gray-900;
             transform: translate(0, -300%);
         }
        &::after{

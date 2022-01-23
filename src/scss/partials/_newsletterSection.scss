@@ -38,7 +38,9 @@
     flex-grow: 1;
     margin-right: 10px;
 }
-
+.newsletterSection__formGroup .newsletterSection__btn{
+    white-space: nowrap;
+}
 .newsletterSection__consent{
     font-size: 13px;
     color: $gray-500;
