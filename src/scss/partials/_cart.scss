@@ -167,7 +167,7 @@
     line-height: 1;
     color: $white;
     font-weight: 500;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .step.step-1 strong::before, .step.step-1 a::before{
     content: "1";
@@ -420,16 +420,26 @@
 }
 .order-summary .checkout-box .contact-box a{
     color: $gray-1000;
+    padding: 5px 0;
 }
-.order-summary .checkout-box .contact-box .mail{
+.order-summary .checkout-box .contact-box .mail, .order-summary .checkout-box .contact-box .tel{
     display: flex;
     align-items: center;
 }
 .order-summary .checkout-box .contact-box .mail::before{
     content: "";
+    height: 18px;
+    width: 18px;
+    background-image: url($i-envelope);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 10px;
+}
+.order-summary .checkout-box .contact-box .tel::before{
+    content: "";
     height: 16px;
     width: 16px;
-    background-image: url($i-envelope);
+    background-image: url($i-phone);
     background-repeat: no-repeat;
     background-size: 100%;
     margin-right: 10px;
@@ -492,10 +502,15 @@
     background: $gray-100;
     padding: 20px;
     margin: -20px;
-    margin-top: 0;
+    margin-top: 10px;
 }
 .order-summary-item.price .price-wrapper{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    font-weight: 500;
+    font-size: 17px;
+}
+.order-summary-item.price .price-wrapper .price.price-primary{
+    color: $red-500;
 }

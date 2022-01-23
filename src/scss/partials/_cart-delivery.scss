@@ -22,7 +22,7 @@ h4.order-delivery, h4.order-payment{
 .order-delivery-payment-form .radio-wrapper label {
     margin: 0;
     flex-grow: 1;
-    padding: 15px 10px;
+    padding: 20px;
     padding-left: 34px;
     position: relative;
     cursor: pointer;
@@ -38,8 +38,8 @@ h4.order-delivery, h4.order-payment{
     display: flex;
     margin-right: 10px;
     position: absolute;
-    left: 10px;
-    top: 19px;
+    left: 15px;
+    top: 20px;
     border-radius: 50%;
     border: 1px solid $gray-500;
 }
@@ -50,8 +50,8 @@ h4.order-delivery, h4.order-payment{
     width: 12px;
     display: flex;
     position: absolute;
-    top: 23px;
-    left: 14px;
+    top: 25px;
+    left: 20px;
     border-radius: 50%;
 }
 .payment-info{
@@ -114,5 +114,6 @@ h4.order-delivery, h4.order-payment{
 .order-delivery-payment-form .radio-wrapper input:checked+label {
     background: $white;
     outline: 2px solid $gray-1000;
+    z-index: 2;
 }
 /* ---- */
