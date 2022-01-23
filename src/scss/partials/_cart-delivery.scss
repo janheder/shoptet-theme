@@ -7,13 +7,15 @@ h4.order-delivery, h4.order-payment{
 
 }
 .shipping-billing-table{
-
-}
-.order-delivery-payment-form .radio-wrapper{
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1px;
     outline: 1px solid $gray-300;
+}
+.order-delivery-payment-form .radio-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .order-delivery-payment-form .radio-wrapper input {
     appearance: none;
@@ -64,8 +66,46 @@ h4.order-delivery, h4.order-payment{
 .shipping-billing-name{
     font-weight: 500;
 }
-
-
+.payment-info .sublabel-description {
+    width: 100%;
+}
+.not-possible-info{
+    width: 100%;
+}
+.payment-shipping-price {
+    color: #A8071A;
+    flex-grow: 1;
+    justify-content: flex-end;
+    display: flex;
+    order: 20;
+    white-space: nowrap;
+}
+.payment-shipping-price.for-free {
+    color: #78aa66;
+    font-weight: 400;
+}
+.payment-logo {
+    height: 25px;
+    width: 50px;
+    margin: 0 15px 0 10px;
+    order: 0;
+    text-align: center;
+}
+#order-shipping-methods .show-tooltip {
+    padding: 0px;
+    position: relative;
+    background: #7bb82a;
+    cursor: pointer;
+    border-radius: 50%;
+    color: $white;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* CHECKED */
 .order-delivery-payment-form .radio-wrapper input:checked+label::before {
