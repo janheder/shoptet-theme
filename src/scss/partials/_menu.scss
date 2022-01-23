@@ -101,6 +101,8 @@
     top: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     border-top: 1px solid $gray-300;
+
+    
 }
 
 @media screen and (min-width: 992px){
@@ -165,7 +167,9 @@
 .menu-level-3 > li > a{
     color: $black;
 }
-
+.backSubmenu{
+    display: none;
+}
 
 #nav-manufacturers{
     display: none;
@@ -252,7 +256,6 @@
     }
     .menu-level-1 > li{
         height: auto;
-        position: relative;
         border-bottom: 1px solid $gray-300;
     }
     .menu-level-1 > li > a{
@@ -273,16 +276,10 @@
             padding-bottom: 10px;
         }
         &.--active > a::before{
-            transform: translateY(-50%) rotate(90deg);
+            /*transform: translateY(-50%) rotate(90deg);*/
         }
         &.--active .menu-level-2{
-            display: flex;
-            position: absolute;
-            top: -52px;
-            min-height: 100vh;
-            background: white;
-            flex-grow: 1;
-            overflow-y: scroll;
+            transform: translateX(0%);
         }
         &.--active ~ li{
             display: none;
@@ -305,8 +302,16 @@
         display: flex;
         flex-direction: column;
         padding: 0;
-        display: none;
+        display: flex;
         top: 0;
+        position: absolute;
+        transform: translateX(-100%);
+        transition: 0.3s ease transform;
+        background: #ffffff;
+        top: 0;
+        min-height: 100vh;
+        overflow-y: scroll;
+
     }
     .menu-level-2 > li {
         justify-content: flex-start;
@@ -322,7 +327,7 @@
         display: flex;
         justify-content: flex-start;
         width: 100%;
-        padding: 5px 15px 5px 40px;
+        padding: 5px 20px;
         color: $gray-1000;
         margin: 0;
         height: 48px;
@@ -351,15 +356,19 @@
         z-index: 10;
         transition: 0.3s ease opacity;
     }
-    @media screen and (max-width: 991px){
-        body.--menuActive .menu-helper{
-            pointer-events: auto;
-            opacity: 1;
-        }   
-        body.--searchActive .menu-helper{
-            pointer-events: auto;
-            opacity: 1;
-        }   
+    .backSubmenu{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        font-weight: 500;
     }
+    body.--menuActive .menu-helper{
+        pointer-events: auto;
+        opacity: 1;
+    }   
+    body.--searchActive .menu-helper{
+        pointer-events: auto;
+        opacity: 1;
+    }   
 }
-
