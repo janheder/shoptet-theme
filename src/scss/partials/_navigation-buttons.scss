@@ -21,8 +21,7 @@
     align-items: flex-start;
     justify-content: center;
     background: transparent;
-    color: $white;
-    border: 2px solid $white;
+    color: $gray-1000;
     padding: 0;
     line-height: 1.2;
     height: 50px;
@@ -45,7 +44,7 @@
 
     &:hover, &:focus, &:active{
         text-decoration: none;
-        background: $gray-1000;
+        background: $gray-100;
     }
 }
 .cart-count.full .cart-price{
