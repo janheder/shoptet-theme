@@ -1,7 +1,8 @@
 .products-block{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
     grid-gap: 1px;
     position: relative;
 }
@@ -15,6 +16,7 @@
     height: 100%;
     background: rgba(255,255,255,0.8);
 }
+
 @media screen and (max-width: 991px){
     .products-block{
        
@@ -23,13 +25,20 @@
 
 @media screen and (max-width: 991px){
     .homepage-products-1, .homepage-products-2{
-        display: flex;
-        flex-wrap: nowrap;
         overflow-x: auto;
+        padding-left: 1px;
+        padding-top: 1px;
+
+        .product {
+            min-width: 300px;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .homepage-products-1, .homepage-products-2{
         
         .product {
-            width: 30%;
-            flex-shrink: 0;
+            min-width: 260px;
         }
     }
 }
@@ -37,7 +46,7 @@
     .homepage-products-1, .homepage-products-2{
         
         .product {
-            width: 40%;
+            min-width: 200px;
         }
     }
 }

@@ -73,7 +73,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
-        transform: translateY(-50%) rotate(270deg);
+        transform: translateY(-50%) rotate(180deg);
         position: absolute;
         right: 20px;
         top: 50%;
@@ -213,6 +213,7 @@
         border-radius: 0;
         display: flex;
         flex-direction: column;
+        height: 100vh;
     }
     body.--menuActive #navigation{
         transform: translate3d(0,0,0);
@@ -276,6 +277,15 @@
         }
         &.--active .menu-level-2{
             display: flex;
+            position: absolute;
+            top: -52px;
+            min-height: 100vh;
+            background: white;
+            flex-grow: 1;
+            overflow-y: scroll;
+        }
+        &.--active ~ li{
+            display: none;
         }
     }
     .menu-level-1 > li.ext > a{
