@@ -1,3 +1,82 @@
 .co-delivery-method, .co-payment-method{
     padding-bottom: 40px;
 }
+
+
+h4.order-delivery, h4.order-payment{
+
+}
+.shipping-billing-table{
+
+}
+.order-delivery-payment-form .radio-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+    outline: 1px solid $gray-300;
+}
+.order-delivery-payment-form .radio-wrapper input {
+    appearance: none;
+    opacity: 0;
+    position: absolute;
+}
+.order-delivery-payment-form .radio-wrapper label {
+    margin: 0;
+    flex-grow: 1;
+    padding: 15px 10px;
+    padding-left: 34px;
+
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+}
+.order-delivery-payment-form .radio-wrapper label::before {
+    content: "";
+    background: transparent;
+    height: 14px;
+    width: 14px;
+    display: flex;
+    margin-right: 10px;
+    position: absolute;
+    left: 10px;
+    top: 19px;
+    border-radius: 50%;
+    border: 2px solid #BFBFBF;
+}
+.order-delivery-payment-form .radio-wrapper label::after {
+    content: "";
+    background: transparent;
+    height: 6px;
+    width: 6px;
+    display: flex;
+    position: absolute;
+    top: 23px;
+    left: 14px;
+    border-radius: 50%;
+}
+.payment-info{
+    order: 10;
+    display: flex;
+    flex-direction: revert;
+    flex-wrap: wrap;
+}
+.shipping-billing-name{
+    font-weight: 500;
+}
+
+
+
+/* CHECKED */
+.order-delivery-payment-form .radio-wrapper input:checked+label::before {
+    border-color: #78aa66;
+}
+.order-delivery-payment-form .radio-wrapper input:checked+label::after {
+    background: #7bb82a;
+}
+.order-delivery-payment-form .radio-wrapper input:checked+label {
+    color: #76b729;
+    background: #F0FFF4;
+    border: 1px solid #7bb82a;
+}
+/* ---- */

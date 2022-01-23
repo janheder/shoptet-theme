@@ -397,13 +397,15 @@
 
 
 .order-summary{
-
+    display: flex;
+    flex-direction: column;
 }
 
 .order-summary .checkout-box{
     border: 1px solid $gray-300;
     padding: 30px 20px;
     margin-bottom: 20px;
+    order: 2;
 }
 .order-summary .checkout-box img{
     display: none;
@@ -437,6 +439,7 @@
     border: 1px solid $gray-300;
     padding: 20px;
     margin-bottom: 40px;
+    order: 1;
 }
 .order-summary .order-summary-inner h4{
     font-family: $font-family-headings;
