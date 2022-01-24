@@ -1,47 +1,11 @@
 // =============================================================================
 // INIT HOMEPAGE CAROUSEL
 // =============================================================================
-/*
-if ($("#carousel").length){
-    const mySiema = new Siema({
-        selector: '.carousel-inner',
-        duration: 200,
-        easing: 'ease-out',
-        perPage: 1,
-        startIndex: 0,
-        draggable: true,
-        multipleDrag: true,
-        threshold: 20,
-        loop: true,
-        rtl: false,
-        onInit: () => {},
-        onChange: () => {},
-        });
-        if ($(".left").length){
-        document.querySelector('.left').addEventListener('click', () => mySiema.prev());
-        document.querySelector('.right').addEventListener('click', () => mySiema.next());
-        }
-    $(function(){
-        var isDragging = false;
-        $(".item a")
-        .mousedown(function () {
-            isDragging = false;
-        })
-        .mousemove(function () {
-            isDragging = true;
-        })
-        .mouseup(function () {
-            var wasDragging = isDragging;
-            isDragging = false;
-            if (!wasDragging) {
-                $(".item").click();
-            } else {
-                $(".item").one("click", false);
-            }
-        });
-    });
-}
-*/
+$('<div class="swiffy-slider slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round slider-nav-mousedrag" data-slider-nav-autoplay-interval="5000"><ul class="slider-container"></ul><button type="button" class="slider-nav"></button> <button type="button" class="slider-nav slider-nav-next"></button></div>').insertBefore(".in-index #content-wrapper");
+$('#carousel img').each(function(){
+     $(".swiffy-slider .slider-container").append('<li><img src="' + $(this).attr("src") + '"></li>');
+});
+$(".swiffy-slider .slider-container li:first-child img").addClass("active");
 
 // =============================================================================
 // HOMEPAGE NEWS
@@ -272,48 +236,7 @@ if ($(".mobile").length){
     });
 }
 
-// -----------------------------------------------------------------------------
-// CATEGORY CAROUSEL INIT
-// -----------------------------------------------------------------------------
 
-if ($("#productsTop .product").length > 5){
-    $(".button-wrapper").remove();
-
-    new Siema({
-        selector: '#productsTop',
-        duration: 200,
-        easing: 'ease-out',
-        perPage: {
-            0: 2,
-            500: 3,
-            991: 5,
-        },
-        startIndex: 0,
-        draggable: true,
-        multipleDrag: true,
-        threshold: 20,
-        loop: false
-    });
-    $(function(){
-        var isDragging = false;
-        $("a")
-        .mousedown(function () {
-            isDragging = false;
-        })
-        .mousemove(function () {
-            isDragging = true;
-        })
-        .mouseup(function () {
-            var wasDragging = isDragging;
-            isDragging = false;
-            if (!wasDragging) {
-                $(".p").click();
-            } else {
-                $(".p").one("click", false);
-            }
-        });
-    });
-}
 
 // =============================================================================
 // RESPONSIVE MENU TOGGLE
@@ -324,8 +247,15 @@ if ($(".mobile").length){
         $(this).parent(".ext").toggleClass("--active");
         return false;
     });
-
 }
+
+
+$(".menu-level-2").each(function(){
+	$(this).prepend('<span class="backSubmenu">Zpět</span>')
+});
+$(".backSubmenu").click(function(){
+    $(this).closest("li").toggleClass("--active");
+});
 
 // =============================================================================
 // CART
