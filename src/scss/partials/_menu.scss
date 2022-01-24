@@ -320,6 +320,7 @@
         width: 100%;
         padding: 0;
         align-items: center;
+        position: relative;
     }
     .menu-level-2 > li > div{
         padding: 0;
@@ -337,11 +338,20 @@
         border-bottom: 1px solid $gray-300;
     }
     .menu-level-2 .menu-image {
-        height: 36px;
-        display: none;
+        height: 38px;
+        width: 38px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 20px;
+    }
+    .menu-level-2 .menu-image + div a{
+        padding-left: 70px;
     }
     .menu-level-2 > li > a > img {
-        height: 100%;
+        height: auto;
+        width: auto;
     }
     .menu-level-3{
         display: none;
