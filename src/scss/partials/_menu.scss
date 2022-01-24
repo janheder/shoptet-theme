@@ -329,11 +329,12 @@
         display: flex;
         justify-content: flex-start;
         width: 100%;
-        padding: 5px 20px;
+        padding: 0px 20px;
         color: $gray-1000;
         margin: 0;
-        height: 48px;
+        height: 60px;
         align-items: center;
+        border-bottom: 1px solid $gray-300;
     }
     .menu-level-2 .menu-image {
         height: 36px;
@@ -359,11 +360,12 @@
         transition: 0.3s ease opacity;
     }
     .backSubmenu{
-        height: 50px;
+        height: 52px;
         display: flex;
         align-items: center;
         padding: 0 20px;
         font-weight: 500;
+        border-bottom: 1px solid $gray-300;
     }
     body.--menuActive .menu-helper{
         pointer-events: auto;
