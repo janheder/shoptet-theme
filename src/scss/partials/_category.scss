@@ -179,8 +179,7 @@ h1.category-title::before{
     position: relative;
     width: 100%;
     padding: 0;
-    border: 1px solid $gray-300;
-    padding: 10px;
+    padding: 15px;
 }
 .products-top .product.inactive{
     display: none;
@@ -190,8 +189,8 @@ h1.category-title::before{
     padding: 0;
 }
 .products-top .product .p .image {
-    height: 76px;
-    width: 76px;
+    height: 70px;
+    width: 70px;
     flex-shrink: 0;
     padding: 0;
 }
@@ -205,6 +204,8 @@ h1.category-title::before{
 }
 .products-top .product .p-in-in .name{
     font-size: 14px;
+    padding: 0;
+    padding-bottom: 10px;
 }
 .products-top .product .p .price-additional, .products-top .product .p .price-save{
     display: none;
@@ -214,8 +215,8 @@ h1.category-title::before{
 }
 .products-top .p .p-bottom{
     position: absolute;
-    bottom: 20px;
-    right: 10px;
+    bottom: 0px;
+    right: 0px;
 }
 .products-top .button-wrapper{
     display: none;
@@ -224,12 +225,18 @@ h1.category-title::before{
     top: 30px;
     left: 20px;
 }
+.products-top .availability {
+    line-height: 1;
+}
+.products-top .p .price-final strong {
+
+    line-height: 1;
+}
 @media screen and (max-width: 991px){
     .products-top{
-        margin: 0 -5px;
+
     }  
     .products-top .p .flags {
-        top: 25px;
-        left: 10px;
+
     }
 }
