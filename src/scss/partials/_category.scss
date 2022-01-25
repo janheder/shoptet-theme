@@ -179,6 +179,17 @@ h1.category-title::before{
     width: 100%;
     padding: 0;
     border: 1px solid $gray-300;
+    padding: 10px;
+}
+.products-top .product.inactive{
+    display: none;
+}
+.products-top .product .p{
+    flex-direction: row;
+}
+.products-top .product .p .image {
+    height: 76px;
+    width: 76px;
 }
 .products-top .button-wrapper{
     display: none;
