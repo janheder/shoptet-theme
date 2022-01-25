@@ -1,0 +1,16 @@
+.filters-wrapper{
+    padding-bottom: 40px;
+}
+.filters{
+    display: none;
+}
+.filters.visible{
+    display: flex;
+}
+.filters-unveil-button-wrapper{
+
+}
+.filters-unveil-button-wrapper .btn{
+    height: 40px;
+    font-size: 14px;
+}

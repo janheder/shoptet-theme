@@ -247,6 +247,9 @@ h1.category-title::before{
     align-items: center;
     justify-content: center;
     line-height: 1;
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid $white;
 }
 .products-top .product:first-child::before{
     content: "1";
