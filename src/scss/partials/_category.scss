@@ -171,7 +171,8 @@ h1.category-title::before{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
+    padding-top: 40px;
 }
 
 .products-top .product {
@@ -194,12 +195,27 @@ h1.category-title::before{
     flex-shrink: 0;
     padding: 0;
 }
+.products-top .product .p .extra-flags{
+    display: none;
+}
 .products-top .product .p .p-in{
     padding-top: 0;
     padding-left: 15px;
+    position: relative;
+}
+.products-top .product .p-in-in .name{
+    font-size: 14px;
 }
 .products-top .product .p .price-additional, .products-top .product .p .price-save{
     display: none;
+}
+.products-top .p .ratings-wrapper{
+    padding: 0;
+}
+.products-top .p .p-bottom{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
 }
 .products-top .button-wrapper{
     display: none;
