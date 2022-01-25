@@ -46,7 +46,7 @@ body.--navUserActive .user-action .login-widget{
     pointer-events: auto;
 }
 .user-action .login-widget .popup-widget-inner{
-    padding: 50px; 
+    padding: 60px 50px 50px 50px; 
     background-color: #fff;
     max-height: 100vh;
     overflow-y: auto;
@@ -56,6 +56,7 @@ body.--navUserActive .user-action .login-widget{
     width: calc(100% - 20px);
     box-shadow: 0px 4px 15px rgba($black,0.08);
     flex-direction: column;  
+    position: relative;
 }
 .login-widget h2{
     position: relative;
@@ -70,9 +71,9 @@ body.--navUserActive .user-action .login-widget{
 }
 .login-widget h2::after{
     content: "Jako člen sbíráte slevy za každý svůj nákup.";
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
-    color: grey;
+    color: $gray-500;
     padding-top: 10px;
     font-family: $font-family-primary;
     text-transform: none;

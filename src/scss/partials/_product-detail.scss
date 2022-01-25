@@ -15,6 +15,9 @@
     height: 100%;
 }
 @media screen and (max-width: 991px){
+    .p-detail{
+        padding: 0;
+    }
     .p-detail-inner{
         padding: 0px 0 20px 0;
     }

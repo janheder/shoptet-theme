@@ -166,21 +166,19 @@ h1.category-title::before{
     font-weight: 700;
     margin-bottom: 20px;
 }
+
 .products-top{
-    display: none;
-}
-.products-top{
-    display: block;
-    margin: 0 -10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
     padding-bottom: 40px;
 }
-.products-top > .product {
-    display: none; /* hide products before carousel init */
-}
+
 .products-top .product {
     position: relative;
     width: 100%;
     padding: 0;
+    border: 1px solid $gray-300;
 }
 .products-top .button-wrapper{
     display: none;
