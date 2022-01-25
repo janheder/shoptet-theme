@@ -186,10 +186,20 @@ h1.category-title::before{
 }
 .products-top .product .p{
     flex-direction: row;
+    padding: 0;
 }
 .products-top .product .p .image {
     height: 76px;
     width: 76px;
+    flex-shrink: 0;
+    padding: 0;
+}
+.products-top .product .p .p-in{
+    padding-top: 0;
+    padding-left: 15px;
+}
+.products-top .product .p .price-additional, .products-top .product .p .price-save{
+    display: none;
 }
 .products-top .button-wrapper{
     display: none;
