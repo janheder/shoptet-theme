@@ -272,7 +272,7 @@
 
         &.--active{
             background: $white;
-            padding-bottom: 10px;
+            padding-bottom: 0px;
         }
         &.--active > a::before{
             /*transform: translateY(-50%) rotate(90deg);*/

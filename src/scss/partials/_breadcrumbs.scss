@@ -4,7 +4,7 @@
     max-width: 100%;
     padding: 0;
 }
-.type-detail .breadcrumbs-wrapper{
+.type-detail .breadcrumbs-wrapper, .type-posts-listing .breadcrumbs-wrapper, .type-post .breadcrumbs-wrapper{
     background: $white;
 }
 .breadcrumbs{
@@ -42,6 +42,7 @@
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 16px 16px;
+    opacity: 0.5;
     
     span{
         font-size: 0;
