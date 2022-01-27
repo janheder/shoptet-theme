@@ -3,7 +3,7 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: white;
+    background: $white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
     padding: 20px;
     max-width: 970px;
@@ -19,11 +19,11 @@
 .siteCookies__text{
 	padding-right: 40px;
 	margin: 0;
-	color: #6E6E6E;
+	color: $gray-500;
 	font-size: 14px;
 }
 .siteCookies__text a{
-	color: #6E6E6E;
+	color: $gray-500;
 	text-decoration: underline;
 }
 .siteCookies__links{
@@ -31,9 +31,9 @@
 	display: flex;
 }
 .siteCookies__link, .siteCookies__button{
-    color: #0B0B0B;
-    background: #FFFFFF;
-    border: 1px solid #F0F0F0;
+    color: $gray-1000;
+    background: $white;
+    border: 1px solid $gray-300;
     padding: 0 20px;
     height: 44px;
     display: flex;
@@ -43,11 +43,11 @@
     line-height: 1;
 }
 .siteCookies__link:hover{
-  background: #F0F0F0;
+  background: $gray-300;
 }
 .siteCookies__button{
-	background: #50AC58;
-	color: white;
+	background: $green-500;
+	color: $white;
 	border: 0;
 }
 .siteCookies__button:hover{
@@ -93,23 +93,24 @@ body.cookies-visible {
 	margin: 0;
 	padding: 20px;
 	padding-top: 40px;
-	font-weight: 600;
+	font-weight: 500;
 }
 .cookiesSetting__perex{
 	padding: 20px;
 	padding-top: 0;
 	margin: 0;
+	color: $gray-500;
 }
 .cookiesSetting__data{
-	background: #fff;
+	background: $white;
 	padding: 20px;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: 1px;
 }
 .cookiesSetting__item{
-	outline: 1px solid #F0F0F0;
-	background: #FFFFFF;
+	outline: 1px solid $gray-300;
+	background: $white;
 	padding: 20px;
 	display: flex;
 	align-items: center;
@@ -119,11 +120,11 @@ body.cookies-visible {
 	padding-right: 20px;
 }
 .cookiesSetting__item__name{
-	color: #0B0B0B;
+	color: $gray-1000;
 	font-size: 15px;
 }
 .cookiesSetting__item__text{
-	color: #6E6E6E;
+	color: $gray-500;
 	font-size: 14px;
 }
 .cookiesSetting__item__col2{
@@ -132,7 +133,7 @@ body.cookies-visible {
 .cookiesSetting__item__status{
 	display: flex;
 	align-items: center;
-	border: 1px solid #F0F0F0;
+	border: 1px solid $gray-300;
 	padding: 10px 15px;
 	cursor: pointer;
 }
@@ -147,9 +148,9 @@ body.cookies-visible {
 	padding: 20px;
 }
 .cookiesSetting__bottom button{
-	color: #0B0B0B;
-	background: #FFFFFF;
-	border: 1px solid #F0F0F0;
+	color: $gray-1000;
+	background: $white;
+	border: 1px solid $gray-300;
 	padding: 0 20px;
 	height: 44px;
 	display: flex;
@@ -160,11 +161,11 @@ body.cookies-visible {
 	flex-grow: 1;
 }
 .cookiesSetting__bottom button.cookiesSetting__button{
-	border-color: #0B0B0B;
+	border-color: $gray-1000;
 }
 .cookiesSetting__bottom button.cookiesSetting__button--green{
-	background: #50AC58;
-	color: white;
+	background: $green-500;
+	color: $white;
 	border: 0;
 	margin: 0;
 }
