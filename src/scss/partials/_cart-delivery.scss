@@ -59,6 +59,7 @@ h4.order-delivery, h4.order-payment{
     display: flex;
     flex-direction: revert;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 .shipping-billing-name{
     font-weight: 500;
