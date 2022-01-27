@@ -149,6 +149,7 @@
 .p-in-in .name span{
     display: flex;
     width: 100%;
+    flex-direction: column;
 }
 
 .p-in-in .name .p-variants{

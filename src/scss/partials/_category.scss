@@ -9,7 +9,7 @@
     .subcategories{
         order: 10;
     }
-    .subcategories +h4{
+    .subcategories + h4, .category-title + h4{
         order: 20;
     }
     #productsTop{
@@ -100,6 +100,16 @@ h1.category-title::before{
 .perex-short{
     
 }
+@media screen and (max-width: 991px){
+    h1.category-title{
+        position: relative;
+        display: flex;
+        font-size: 36px;
+        font-weight: 500;
+        padding: 30px 0 20px 0;
+    }
+}
+
 .category-header{
     display: flex;
     flex-direction: column;
@@ -211,11 +221,15 @@ h1.category-title::before{
         display: none;
     }
 }
-
-.category-title + .subcategories + h4 {
+.category-title + .subcategories + h4, .category-title + h4 {
     text-align: left;
-    font-size: 22px;
+    font-size: 22px;    
     margin-bottom: 20px;
+}
+.category-title + h4{
+    margin-top: 40px;
+}
+.category-title + .subcategories + h4 {
     margin-top: 40px;
 }
 
