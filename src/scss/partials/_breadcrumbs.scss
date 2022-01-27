@@ -17,7 +17,7 @@
 }
 .breadcrumbs > span > a{
     padding: 5px 10px;
-    color: $black;
+    color: $gray-500;
     position: relative;
 
     &::after{
@@ -31,7 +31,7 @@
 }
 .breadcrumbs > span > span{
     padding: 5px 10px;
-    color: $black;
+    color: $gray-500;
 }
 .breadcrumbs > span > .navigation-bullet{
     display: none;
