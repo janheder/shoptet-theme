@@ -56,11 +56,14 @@ h1.category-title::before{
 }
 .category-perex{
     font-size: 14px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     order: 0;
     background: $gray-100;
     position: relative;
-    margin-top: -20px;
+    margin-top: -30px;
+    z-index: 1;
+    color: $gray-500;
+    display: flex;
 }
 .category-perex::before {
     content: "";
@@ -77,6 +80,10 @@ h1.category-title::before{
 }
 .category-perex > p{
     display: none;
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .category-perex.active{
     .perex-short, .perex-showMore{
