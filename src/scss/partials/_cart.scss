@@ -38,14 +38,18 @@
 .cart-content{
     margin: 0;
 }
-
+#checkoutSidebar .cart-content{
+    padding-left: 20px;
+}
 .cart-content .next-step{
     display: flex;
     justify-content: space-between;
     padding-left: 20px;
 }
+
+
 @media screen and (max-width: 991px){
-    .cart-content .next-step{
+    #checkoutSidebar .cart-content{
         padding-left: 0px;
     }
 }
@@ -420,7 +424,6 @@
 .order-summary{
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
 }
 
 .order-summary .checkout-box{
