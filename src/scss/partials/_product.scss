@@ -250,10 +250,16 @@
         background: $gray-200;
     }
 }
-.p:hover .p-tools .btn{
-    opacity: 1;
-    pointer-events: auto;
+.p .p-tools .btn::before{
+    content: "";
+    height: 18px;
+    width: 18px;
+    display: flex;
+    background-image: url($i-shopping-bag);
+    background-size: 100%;
+    margin-right: 10px;
 }
+
 .p .p-desc{
     font-size: 13px;
     margin: 0;
