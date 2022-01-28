@@ -8,6 +8,8 @@
 }
 .homepage-products-1, .homepage-products-2{
     grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    margin: 0;
+    padding-bottom: 60px;
 }
 .spinner-visible .products-block::after{
     content: "";

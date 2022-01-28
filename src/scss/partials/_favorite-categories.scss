@@ -1,5 +1,5 @@
 .favoriteCategories{
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 .favoriteCategories__title{
     text-align: center;
@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     overflow: auto;
 }
 .favoriteCategories__single{
