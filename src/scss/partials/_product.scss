@@ -217,10 +217,6 @@
 }
 
 .p .p-tools {
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,9 +224,12 @@
     opacity: 1;
     z-index: 1;
     transition: 0.3s ease opacity;
+    padding-top: 20px;
 }
 .p .p-tools form{
     display: flex;
+    width: 100%;
+    justify-content: flex-end;
 }
 .p .p-tools form .form-control{
     height: 48px;
@@ -245,6 +244,7 @@
     color: $gray-900;
     text-transform: uppercase;
     line-height: 1;
+    flex-shrink: 0;
 
     &:hover, &:active, &:focus{
         background: $gray-200;
