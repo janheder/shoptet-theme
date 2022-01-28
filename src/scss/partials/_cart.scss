@@ -44,7 +44,6 @@
 .cart-content .next-step{
     display: flex;
     justify-content: space-between;
-    padding-left: 20px;
 }
 
 
@@ -486,10 +485,16 @@
 
 }
 .order-summary .order-summary-inner .cart-item{
-
+    padding: 20px 0;
+    border-top: 1px solid $gray-300;
 }
 .order-summary .order-summary-inner .cart-item-name{
 
+}
+.order-summary .order-summary-inner .cart-item-name a{
+    color: $gray-1000;
+    font-size: 14px;
+    font-weight: 500;
 }
 .order-summary .order-summary-inner .cart-item-amount{
 
@@ -504,6 +509,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    display: none;
 }
 .order-recapitulation{
     border-top: 1px solid $gray-300;

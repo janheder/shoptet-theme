@@ -245,6 +245,7 @@
     text-transform: uppercase;
     line-height: 1;
     flex-shrink: 0;
+    flex-direction: row;
 
     &:hover, &:active, &:focus{
         background: $gray-200;

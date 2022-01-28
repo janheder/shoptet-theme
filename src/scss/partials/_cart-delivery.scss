@@ -22,13 +22,15 @@ h4.order-delivery, h4.order-payment{
 .order-delivery-payment-form .radio-wrapper label {
     margin: 0;
     flex-grow: 1;
-    padding: 20px;
+    padding: 25px 20px;
     padding-left: 50px;
     position: relative;
     cursor: pointer;
     margin: 0;
     display: flex;
     outline: 1px solid $gray-300;
+    align-items: center;
+    line-height: 1;
 }
 .order-delivery-payment-form .radio-wrapper label::before {
     content: "";
@@ -60,18 +62,33 @@ h4.order-delivery, h4.order-payment{
     flex-direction: revert;
     flex-wrap: wrap;
     flex-direction: column;
+    line-height: 1;
 }
 .shipping-billing-name{
     font-weight: 500;
+}
+.payment-info .sublabel{
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid $gray-1000;
+    margin-top: 10px;
+
+    a{
+        color: $gray-1000;
+    }
 }
 .payment-info .sublabel-description {
     width: 100%;
 }
 .not-possible-info{
     width: 100%;
+    font-style: normal;
+    margin-top: 10px;
+    font-size: 14px;
+    color: $gray-500;
 }
 .payment-shipping-price {
-    color: #A8071A;
+    color: $red-500;
     flex-grow: 1;
     justify-content: flex-end;
     display: flex;
@@ -79,8 +96,8 @@ h4.order-delivery, h4.order-payment{
     white-space: nowrap;
 }
 .payment-shipping-price.for-free {
-    color: #78aa66;
-    font-weight: 400;
+    color: $green-500;
+    font-weight: 500;
 }
 .payment-logo {
     height: 25px;
@@ -92,7 +109,7 @@ h4.order-delivery, h4.order-payment{
 #order-shipping-methods .show-tooltip {
     padding: 0px;
     position: relative;
-    background: #7bb82a;
+    background: $green-500;
     cursor: pointer;
     border-radius: 50%;
     color: $white;
