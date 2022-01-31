@@ -438,6 +438,7 @@
 .order-summary .checkout-box ul{
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 .order-summary .checkout-box .btn-block{
     background: transparent;
@@ -446,6 +447,8 @@
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    padding: 0;
+    height: auto;
 
     span{
         display: none;
@@ -457,9 +460,11 @@
 .order-summary .checkout-box .contact-box strong{
     display: none;
 }
+.order-summary .checkout-box .contact-box li{
+    padding: 5px 0;
+}
 .order-summary .checkout-box .contact-box a{
     color: $gray-1000;
-    padding: 5px 0;
 }
 .order-summary .checkout-box .contact-box .mail, .order-summary .checkout-box .contact-box .tel{
     display: flex;
