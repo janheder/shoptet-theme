@@ -23,7 +23,6 @@ h4.order-delivery, h4.order-payment{
     margin: 0;
     flex-grow: 1;
     padding: 25px 20px;
-    padding-left: 50px;
     position: relative;
     cursor: pointer;
     margin: 0;
@@ -38,10 +37,7 @@ h4.order-delivery, h4.order-payment{
     height: 22px;
     width: 22px;
     display: flex;
-    margin-right: 10px;
-    position: absolute;
-    left: 15px;
-    top: 20px;
+    margin-right: 20px;
     border-radius: 50%;
     border: 1px solid $gray-500;
 }
@@ -52,9 +48,10 @@ h4.order-delivery, h4.order-payment{
     width: 12px;
     display: flex;
     position: absolute;
-    top: 25px;
-    left: 20px;
+    top: 50%;
+    left: 25px;
     border-radius: 50%;
+    transform: translateY(-50%);
 }
 .payment-info{
     order: 10;
@@ -75,9 +72,12 @@ h4.order-delivery, h4.order-payment{
     */
     margin-top: 10px;
     display: none;
+    line-height: 1.3;
+    align-items: center;
 
     a{
         color: $gray-1000;
+        line-height: 1;
     }
 }
 .radio-wrapper.active .sublabel{
@@ -113,9 +113,12 @@ h4.order-delivery, h4.order-payment{
 .payment-logo {
     height: 25px;
     width: 50px;
-    margin: 0 15px 0 10px;
+    margin: 0 15px 0 0px;
     order: 0;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #order-shipping-methods .show-tooltip {
     padding: 0px;
@@ -146,3 +149,9 @@ h4.order-delivery, h4.order-payment{
     z-index: 2;
 }
 /* ---- */
+
+
+
+#na-postu-wrapper{
+    padding: 50px 30px;
+}
