@@ -439,6 +439,21 @@
     list-style: none;
     padding: 0;
 }
+.order-summary .checkout-box .btn-block{
+    background: transparent;
+    color: $gray-1000;
+    font-family: $font-family-headings;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    span{
+        display: none;
+    }
+    br{
+        display: none;
+    }
+}
 .order-summary .checkout-box .contact-box strong{
     display: none;
 }
@@ -522,16 +537,19 @@
     flex-direction: column;
     padding: 10px 0;
 }
-.recapitulation-shipping-billing-label{
+.recapitulation-shipping-billing-label, .recapitulation-single > span{
     font-size: 13px;
     font-weight: 500;
     color: $gray-500;
     padding-bottom: 2px;
 }
-.recapitulation-shipping-billing-info{
+.recapitulation-shipping-billing-info, .recapitulation-single > strong{
     display: flex;
     width: 100%;
     justify-content: space-between;
+}
+.recapitulation-single > strong span{
+    order: 10;
 }
 .order-summary-item.price{
     background: $gray-100;
