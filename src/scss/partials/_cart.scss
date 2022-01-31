@@ -537,6 +537,10 @@
     flex-direction: column;
     padding: 10px 0;
 }
+.cart-items .recapitulation-single:first-child{
+    border-top: 1px solid $gray-300;
+    padding-top: 20px;
+  }
 .recapitulation-shipping-billing-label, .recapitulation-single > span{
     font-size: 13px;
     font-weight: 500;
@@ -578,3 +582,7 @@
 }
 
 
+.cart-content .consents{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
