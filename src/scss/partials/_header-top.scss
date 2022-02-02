@@ -40,6 +40,7 @@
 
 .header-top > div:first-child, .header-top .nav-menu-toggle + div{
     height: 100%;
+    z-index: 6;
 }
 
 .site-name{

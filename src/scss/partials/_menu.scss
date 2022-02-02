@@ -96,11 +96,13 @@
     background: $white;
     left: 0;
     width: 100%;
-    padding: 10px 0;
+    padding: 40px 0;
     z-index: 5;
     top: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     border-top: 1px solid $gray-300;
+    grid-gap: 20px;
+    padding-left: 300px;
 }
 
 @media screen and (min-width: 992px){
@@ -123,6 +125,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50px;
+    border: 1px solid $gray-300;
 }
 .menu-level-2 > li > a > img{
     height: 80px;
@@ -373,7 +376,7 @@
         align-items: center;
         padding: 0 20px 0 70px;
         font-weight: 500;
-        border-bottom: 1px solid $gray-300;
+        border-bottom: 1px solid $white;
         background: $gray-100;
 
         &::before {
