@@ -96,13 +96,12 @@
     background: $white;
     left: 0;
     width: 100%;
-    padding: 40px 0;
+    padding: 40px 300px;
     z-index: 5;
     top: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     border-top: 1px solid $gray-300;
     grid-gap: 20px;
-    padding-left: 300px;
 }
 
 @media screen and (min-width: 992px){
@@ -116,8 +115,9 @@
     display: flex;
     align-items: flex-start;
     width: 100%;
+    border: 1px solid $gray-300;
 }
-.menu-level-2 > li > a{
+.menu-level-2 > li .menu-image{
     flex-shrink: 0;
     height: 80px;
     width: 110px;
@@ -125,9 +125,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50px;
-    border: 1px solid $gray-300;
+
 }
-.menu-level-2 > li > a > img{
+.menu-level-2 > li .menu-image img{
     height: 80px;
     width: 110px;
 }

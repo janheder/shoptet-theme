@@ -44,10 +44,13 @@
     border: 1px solid $gray-300;
     height: 100%;
 }
+.empty-cart-boxes .col-md-6{
+    width: 100%;
+}
 .empty-cart-boxes .col-md-6:last-child{
     display: none;
 }
 
-.cart-empty .cart-content{
+.cart-empty .col-md-4 .cart-content{
     display: none;
 }
