@@ -338,7 +338,7 @@
         align-items: center;
         border-bottom: 1px solid $gray-300;
     }
-    .menu-level-2 .menu-image {
+    .menu-level-2>li .menu-image{
         height: 38px;
         width: 38px;
         position: absolute;
@@ -350,7 +350,8 @@
     .menu-level-2 .menu-image + div a{
         padding-left: 70px;
     }
-    .menu-level-2 > li > a > img {
+
+    .menu-level-2 > li .menu-image img{
         height: auto;
         width: auto;
     }

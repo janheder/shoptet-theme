@@ -154,6 +154,7 @@
 }
 .p-in-in .name span .category-appendix{
     color: $gray-500;
+    font-size: 13px;
 }
 
 .p-in-in .name .p-variants{
@@ -246,6 +247,7 @@
     line-height: 1;
     flex-shrink: 0;
     flex-direction: row;
+    flex-grow: 1;
 
     &:hover, &:active, &:focus{
         background: $gray-200;
@@ -259,6 +261,34 @@
     background-image: url($i-shopping-bag);
     background-size: 100%;
     margin-right: 10px;
+}
+.p .p-tools>.btn{
+    width:100%;
+    margin: 0;
+}
+.p .p-tools>.btn::before{
+    content: none;
+}
+.p .p-tools .quantity{
+    width: 100%;
+    max-width: 100px;
+    position: relative;
+}
+.p .p-tools .quantity .increase, .p .p-tools .quantity .decrease{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50%;
+    width: 28px;
+    background-image: url("../icons/arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.p .p-tools .quantity .decrease{
+    transform: rotate(180deg);
+    bottom: 0;
+    top: 50%;
 }
 
 .p .p-desc{
