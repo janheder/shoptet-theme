@@ -2,7 +2,20 @@
     padding: 0px 0 60px 0;
     border-bottom: 1px solid $gray-300;
     margin-bottom: 60px;
+    position: relative;
 }
+#newsletterSection::before {
+    content: "";
+   height: 1px;
+    background: $gray-300;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    display: flex;
+    position: absolute;
+}
+
 .newsletterSection__form{
     display: flex;
     justify-content: space-between;

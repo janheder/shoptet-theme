@@ -1,0 +1,10 @@
+.benefitBanner{
+    padding: 60px 0;
+    border-bottom: 1px solid $gray-300;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+.benefitBanner__item{
+    display: flex;
+}
