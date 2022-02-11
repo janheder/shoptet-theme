@@ -7,4 +7,11 @@
 }
 .benefitBanner__item{
     display: flex;
+    align-items: center;
+}
+.benefitBanner__picture{
+    flex-shrink: 0;
+}
+.benefitBanner__content{
+    padding-left: 20px;
 }
