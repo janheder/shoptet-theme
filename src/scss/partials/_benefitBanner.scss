@@ -15,3 +15,15 @@
 .benefitBanner__content{
     padding-left: 20px;
 }
+@media screen and (max-width: 991px){
+    .benefitBanner{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 575px){
+    .benefitBanner{
+        padding: 30px 0;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}

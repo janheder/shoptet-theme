@@ -63,23 +63,23 @@
     line-height: 2;
 
     &.flag-action{
-        background: #cf4823;
+        background: $red-500;
         color: $white;
     }
     &.flag-new{
-        background: #d86329;
+        background: $green-500;
         color: $white;
     }
     &.flag-tip{
-        background: #eb8959;
-        color: $white;
+        background: $gray-100;
+        color: $gray-1000;
     }
     &.flag-gift{
-        background: #a0cd54;
+        background: $gray-900;
         color: $white;
     }
     &.flag-custom3{
-        background: #78aa66;
+        background: $gray-900;
         color: $white;
     }
     .price-standard{
