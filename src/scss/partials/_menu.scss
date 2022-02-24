@@ -314,7 +314,8 @@
         top: 0;
         min-height: 100vh;
         overflow-y: scroll;
-
+        grid-gap: 0;
+        border: 0;
     }
     .menu-level-2 > li {
         justify-content: flex-start;
@@ -322,6 +323,7 @@
         padding: 0;
         align-items: center;
         position: relative;
+        border: 0;
     }
     .menu-level-2 > li > div{
         padding: 0;
