@@ -231,7 +231,7 @@
     width: 100%;
 }
 .removeable{
-
+    border: 1px solid $gray-300;
 }
 .removeable td{
     padding: 10px 0;
@@ -590,4 +590,8 @@
 .cart-content .consents{
     font-size: 14px;
     padding-bottom: 20px;
+}
+
+#checkoutContent .form-group{
+    max-width: 520px;
 }

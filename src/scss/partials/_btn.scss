@@ -23,11 +23,11 @@
     }
 }
 .btn-conversion{
-    background: $green-500;
+    background: $red-500;
 
     &:hover, &:active, &:focus{
         color: $white;
-        background: $green-600;
+        background: $red-600;
         text-decoration: none;
     }
 }
