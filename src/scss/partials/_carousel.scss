@@ -148,13 +148,13 @@ before-carousel{
   }
   .slide-content h1{
       max-width: 50%;
-
+    margin: 0;
   }
 .slide-content h1 span{
     background: $gray-100;
     display: inline;
     box-shadow: 20px 0 0 $gray-100;
-    line-height: 1.5;
+    line-height: 1.4;
 }
   .slide-img{
     width: 60%;
@@ -171,6 +171,8 @@ before-carousel{
 @media screen and (max-width: 1300px){
     .slide-content{
         padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
     }
     .slide-img {
         width: 100%;
@@ -178,11 +180,17 @@ before-carousel{
     .slider-container li{
         height: 520px;
     }
+    .slide-content h1{
+        max-width: 70%;
+    }
 }
 
 
 @media screen and (max-width: 991px){
     .slider-container li{
         height: 420px;
+    }
+    .slide-content h1{
+        max-width: 100%;
     }
 }
