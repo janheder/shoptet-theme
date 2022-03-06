@@ -337,6 +337,8 @@ h1.category-title::before{
     .products-top{
         grid-template-columns: 1fr;
         grid-gap: 1px;
+        padding-bottom: 0;
+        border: 0;
     }  
     .products-top .p .flags {
 

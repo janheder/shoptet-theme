@@ -238,7 +238,6 @@
 .p .p-tools .btn{
     height: 48px;
     font-size: 13px;
-    margin-left: 10px;
     transition: 0.3s ease opacity;
     background: $white;
     border: 1px solid $gray-900;
@@ -273,6 +272,7 @@
     width: 100%;
     max-width: 100px;
     position: relative;
+    margin-right: 10px;
 }
 .p .p-tools .quantity .increase, .p .p-tools .quantity .decrease{
     position: absolute;
@@ -343,9 +343,6 @@
     }
 }
 @media screen and (max-width: 500px){
-    .product{
-        width: 50%;
-    } 
     .p{
         padding: 10px 10px;
     }   
@@ -356,7 +353,10 @@
         width: 100%;
     }
     #products .p{
-        flex-direction: row;
+
+    }
+    .p .p-tools .quantity{
+        display: none;
     }
 }
 
