@@ -153,10 +153,44 @@ h4.order-delivery, h4.order-payment{
 
 
 #na-postu-wrapper{
-    padding: 50px 30px 30px 30px;
+    
 }
 
+
+#na-postu-form table{
+    width: 100%;
+}
+#na-postu-result{
+    order: 99;
+}
+#na-postu-legend{
+    padding: 20px 20px 20px 15px;
+    background: $gray-100;
+    margin-top: 20px;
+}
+#na-postu-legend p{
+    text-align:left;
+    font-weight: 500;
+    padding-left: 5px
+}
+#na-postu-wrapper{
+    padding: 50px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    }
 #na-postu-wrapper .table td{
     text-align: left;
-    padding: 5px 10px;
+    padding: 5px;
+    ;
+}
+
+#na-postu-wrapper .ui-widget-content{
+    position: relative !important;
+    top: 0 !important;
+    list-style: none;
+    padding-left: 0;
+}
+#na-postu-wrapper .ui-widget-content .ui-menu-item{
+    cursor: pointer;
+    text-align:left;
 }

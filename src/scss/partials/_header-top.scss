@@ -153,6 +153,9 @@
     padding-right: 0px;
     display: none;
 }
+body.--searchActive .search{
+    display: flex;
+}
 .search-form{
     height: 100%;
     display: flex;

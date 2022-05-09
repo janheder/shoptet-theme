@@ -204,3 +204,8 @@ before-carousel{
         height: 300px;
     }
 }
+
+
+.slider-nav-arrow .slider-nav::after {
+    background: $gray-900;
+}
