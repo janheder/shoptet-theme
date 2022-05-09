@@ -21,9 +21,10 @@ $(".p .p-tools form").prepend('<span class="quantity"><input type="text" value="
 // HOMEPAGE PRODUCTS
 // =============================================================================
 
-$("#products-1").addClass("swiffy-slider slider-item-show4 slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round");
-$("#products-1").wrapInner("<div class='slider-container'></div>");
-$("#products-1").append('<button type="button" class="slider-nav"></button> <button type="button" class="slider-nav slider-nav-next"></button>');
+$("#products-1, #products-2").addClass("swiffy-slider slider-item-show4 slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round");
+$("#products-1, #products-2").data("slider-nav-autoplay-interval","5000");
+$("#products-1, #products-2").wrapInner("<div class='slider-container'></div>");
+$("#products-1, #products-2").append('<button type="button" class="slider-nav"></button> <button type="button" class="slider-nav slider-nav-next"></button>');
 
 
 // =============================================================================
