@@ -15,6 +15,12 @@
 .homepage-products-1.swiffy-slider , .homepage-products-2.swiffy-slider {
     display: flex;
 }
+.homepage-products-1.swiffy-slider .slider-container, .homepage-products-2.swiffy-slider .slider-container{
+    --swiffy-slider-item-gap-totalwidth: 0px;
+    grid-gap: 1px;
+    padding: 0;
+    outline: 1px solid $gray-300;
+}
 
 .spinner-visible .products-block::after{
     content: "";
