@@ -153,5 +153,10 @@ h4.order-delivery, h4.order-payment{
 
 
 #na-postu-wrapper{
-    padding: 50px 30px;
+    padding: 50px 30px 30px 30px;
+}
+
+#na-postu-wrapper .table td{
+    text-align: left;
+    padding: 5px 10px;
 }

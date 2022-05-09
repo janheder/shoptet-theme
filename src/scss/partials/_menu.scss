@@ -3,6 +3,8 @@
 }
 #navigation{
     height: 100%;
+    display: flex;
+    flex-grow: 1;
 }
 .menu{
     display: flex;

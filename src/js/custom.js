@@ -14,9 +14,17 @@ $(".swiffy-slider .slider-container li:first-child img").addClass("active");
 $(".hp-blog .news-wrapper").load("/blog/ .news-wrapper .news-item:nth-child(-n+3)");
 
 
-
-
 $(".p .p-tools form").prepend('<span class="quantity"><input type="text" value="1" name="amount" class="form-control amount" data-min="1" data-max="100" tabindex="0"><span class="increase"></span><span class="decrease"></span></span>');
+
+
+// =============================================================================
+// HOMEPAGE PRODUCTS
+// =============================================================================
+
+$("#products-1").addClass("swiffy-slider slider-item-show4 slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round");
+$("#products-1").wrapInner("<div class='slider-container'></div>");
+$("#products-1").append('<button type="button" class="slider-nav"></button> <button type="button" class="slider-nav slider-nav-next"></button>');
+
 
 // =============================================================================
 // MENU TOGGLES

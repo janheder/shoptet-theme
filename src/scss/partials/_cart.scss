@@ -251,6 +251,9 @@
 .cart-table .p-name{
     padding-left: 20px;
 }
+.cart-table .p-name a{
+    color: $gray-1000;
+}
 .p-availability{
 
 }
@@ -397,11 +400,21 @@
     display: none;
 }
 .cart-summary{
+    padding: 20px 0 40px 0;
+}
+.cart-summary h4{
 
 }
-
 .cart-content.summary-wrapper{
-    border-top: 1px solid $gray-300;
+    
+
+}
+.cart-content.summary-wrapper .price-wrapper{
+    text-align: right;
+    font-size: 20px;
+}
+.cart-content.summary-wrapper .price-wrapper .price{
+    font-weight: 500;
 }
 .cart-content.summary-wrapper .next-step{
     display: flex;
