@@ -9,9 +9,13 @@
 .homepage-products-1, .homepage-products-2{
     /*grid-template-columns: 1fr 1fr 1fr 1fr !important;*/
     margin: 0;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
+    display: none;
+}
+.homepage-products-1.swiffy-slider , .homepage-products-2.swiffy-slider {
     display: flex;
 }
+
 .spinner-visible .products-block::after{
     content: "";
     z-index: 1;
