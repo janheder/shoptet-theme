@@ -193,7 +193,7 @@ body.--searchActive .search{
 
 .search-whisperer{
     position: absolute;
-    bottom: 0;
+    bottom: 1px;
     right: 0;
     width: 100%;
     background: $gray-100;
@@ -216,7 +216,7 @@ body.--searchActive .search{
 .search-whisperer ul > li{
 
 }
-.search-whisperer ul > li > a{
+.search-whisperer .search-whisperer-products a{
     display: flex;
     align-items: center;
     padding: 5px 10px;
@@ -261,6 +261,14 @@ body.--searchActive .search{
     color: $gray-900;
     padding: 10px 20px;
 }
+.search-whisperer-category:first-child{
+
+}
+.search-whisperer-products::before{
+    content: "";
+
+}
+
 
 .search-form .btn{
     font-size: 0;
