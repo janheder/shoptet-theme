@@ -253,9 +253,14 @@ body.--searchActive .search{
     padding: 10px 20px;
 }
 .search-whisperer-documents{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
 }
-
+.search-whisperer-documents a {
+    color: $gray-900;
+    padding: 10px 20px;
+}
 
 .search-form .btn{
     font-size: 0;
