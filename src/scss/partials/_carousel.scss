@@ -214,11 +214,12 @@ before-carousel{
     padding: 0;
     width: 30px;
 }
+
 .slider-nav::before{
     background: white;
     border-radius: 0%;
     height: 64px;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 4%);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.04);
     padding: 0;
     width: 100%;
     outline: 1px solid $gray-300;
