@@ -50,6 +50,7 @@ body{
 
 body.--navUserActive, body.--cartActive{
     overflow: hidden;
+    padding-right: 17px;
 }
 
 @media screen and (max-width: 991px){
