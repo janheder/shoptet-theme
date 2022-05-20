@@ -208,13 +208,16 @@ b, strong {
     display: none;
 }
 @media (max-width: 991px){
-    .floating-bar{
+    body.--floatBarActive{
         display: flex;
+    }
+    .floating-bar{
         position: fixed;
-        top: 56px;
+        top: 52px;
         left: 0;
         width: 100%;
         background: white;
         z-index: 9;
+        padding: 10px;
     }
 }

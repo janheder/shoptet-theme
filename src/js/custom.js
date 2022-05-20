@@ -181,7 +181,13 @@ $(".p-detail-inner-header").insertBefore(".p-final-price-wrapper");
 if ($(".type-detail").length){
     $("body").append('<div class="floating-bar"><button type="submit" form="product-detail-form">Do košíku</button></div>');
 }
-
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 500) {
+       $('body').addClass('--floatBarActive');
+    } else {
+       $('body').removeClass('--floatBarActive');
+    }
+});
 
 // =============================================================================
 // RESPONSIVE MENU TOGGLE

@@ -221,13 +221,16 @@
     overflow: hidden;
 }
 .p-thumbnails-inner > div{
-    margin: 0 -5px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     overflow: hidden;
+
 }
 .p-thumbnail{
     position: relative;
     display: block;
-    padding: 5px;
+    padding: 0px;
     width: 100%;
 }
 .p-thumbnail img{
