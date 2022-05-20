@@ -177,8 +177,10 @@ if ($(".type-detail").length){
 $(".p-detail-inner-header").insertBefore(".p-final-price-wrapper");
 
 
-/* init thumbnail carousel */
-
+/* floating bar */
+if ($(".type-detail").length){
+    $("body").append('<div class="floating-bar"><button type="submit" form="product-detail-form">Do košíku</button></div>');
+}
 
 
 // =============================================================================

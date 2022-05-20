@@ -202,3 +202,19 @@ b, strong {
 
 
 @import "partials/**/*";
+
+
+.floating-bar{
+    display: none;
+}
+@media (max-width: 991px){
+    .floating-bar{
+        display: flex;
+        position: fixed;
+        top: 56px;
+        left: 0;
+        width: 100%;
+        background: white;
+        z-index: 9;
+    }
+}
