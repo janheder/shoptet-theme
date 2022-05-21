@@ -16,8 +16,7 @@
         width: 100%;
         padding: 0;
         align-items: center;
-        background: $white;
-        box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.05%);
+        background: $red-500;
         //box-shadow: 0px 3px 8px 0px rgba($black,0.05);
     }
     body.--searchActive .header-top{
@@ -394,7 +393,7 @@ body.--searchActive .search{
         left: 50%;
         width: 18px;
         height: 2px;
-        background: $gray-900;
+        background: $white;
 
         &::before, &::after{
             content: "";
@@ -403,7 +402,7 @@ body.--searchActive .search{
             left: 0;
             height: 2px;
             width: 18px;
-            background: $gray-900;
+            background: $white;
             transform: translate(0, -300%);
         }
        &::after{

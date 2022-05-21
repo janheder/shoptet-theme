@@ -226,5 +226,13 @@ b, strong {
         transition: 0.3s ease transform;
         transform: translateY(-100%);
         pointer-events: none;
+        border-bottom: 1px solid $gray-300;
+    }
+    .floating-product-name{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .floating-bar .btn{
+        height: 42px;
     }
 }
