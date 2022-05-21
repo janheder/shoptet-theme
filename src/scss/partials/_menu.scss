@@ -189,6 +189,8 @@
     background: rgba(black,0.2);
     z-index: 10;
     transition: 0.3s ease opacity;
+    backdrop-filter: blur(3px);
+    backface-visibility: hidden;
 }
 .menu-helper *{
     display: none;
