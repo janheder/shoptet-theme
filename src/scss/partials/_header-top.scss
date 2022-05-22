@@ -22,10 +22,10 @@
     body.--searchActive .header-top{
         z-index: 11;
     }
-    body.--memuActive .header-top{
+    body.--menuActive .header-top{
         background: #9d0000;
     }
-    body.--memuActive .header-top .navigation-buttons{
+    body.--menuActive .header-top .navigation-buttons{
         opacity: 0.8;
         pointer-events: none;
     }
@@ -68,6 +68,7 @@
     height: 130px;
     width: 100%;
     padding: 20px;
+    transition: none;
 }
 .site-name img{
     height: 100%;
@@ -294,8 +295,8 @@ body.--searchActive .search{
     }
     &::after{
         content: "";
-        height: 20px;
-        width: 20px;
+        height: 22px;
+        width: 22px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -349,8 +350,8 @@ body.--searchActive .search{
         border-radius: 0;
 
         &::after{
-            height: 26px;
-            width: 26px;
+            height: 22px;
+            width: 22px;
         }
     }
     #speechToggle{
