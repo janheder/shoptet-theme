@@ -93,6 +93,7 @@
             height: 26px;
             width: 26px;
             transform: translate(-50%, -50%);
+            background-image: url($i-shopping-bag-white);
         }
     }
     .cart-count i{
@@ -141,8 +142,12 @@
         width: 52px;
         margin: 0;
     }
+    .nav-user{
+        background-image: url($i-user-white);
+    }
     .nav-search{
         display: flex;
+        background-image: url($i-search-white);
     }
     .nav-search.--active{
         background-image: url("../icons/close.svg");
