@@ -24,9 +24,9 @@
     }
     body .header-top::before{
         content: "";
-        height: 52px;
         left: 0;
-        height: 111px;
+        top: 0;
+        height: 52px;
         width: 100%;
         background: rgba(black,0.3);
         z-index: 10;
@@ -36,8 +36,8 @@
         pointer-events: none;
         opacity: 0;
     }
-    body.--floatSearchHide .header-top::before{
-        height: 52px;
+    body.--floatSearchActive .header-top::before{
+        height: 111px;
     }
     body.--menuActive .header-top::before{
         pointer-events: auto;
@@ -335,6 +335,7 @@ body.--searchActive .search{
         padding: 8px;
         padding-top: 5px;
         background: $red-500;
+        z-index: -1;
     }
     body.--floatSearchActive .search{
         display: flex;
@@ -411,6 +412,7 @@ body.--searchActive .search{
         left: 0;
         top: 0;
         z-index: 9 !important;
+        background-color: $red-500;
     }
     .nav-menu-toggle span{
         display: flex;
