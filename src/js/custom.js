@@ -86,7 +86,9 @@ $("#navigation").insertBefore(".header-top .search");
 
 
 
-/* detect scroll for search */
+if(window.pageYOffset <= 300) {
+    $('body').addClass('--floatSearchActive');
+}
 $(window).scroll(function(){
     if ($(this).scrollTop() < 300) {
        $('body').addClass('--floatSearchActive');
