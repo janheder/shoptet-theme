@@ -22,13 +22,21 @@
     body.--searchActive .header-top{
         z-index: 11;
     }
-    body.--menuActive .header-top{
-        background: #9d0000;
-    }
-    body.--menuActive .header-top .navigation-buttons{
-        opacity: 0.8;
+    body.--menuActive .header-top::before{
+        content: "";
+        height: 52px;
         pointer-events: none;
+        opacity: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(black,0.3);
+        z-index: 10;
+        transition: 0.3s ease opacity;
+        position: fixed;
+        z-index: 12;
     }
+
     /*
     body.--menuActive .header-top{
         span{
