@@ -84,6 +84,19 @@ $(".menu-helper").click(function(){
 /* move main navigation */
 $("#navigation").insertBefore(".header-top .search");
 
+
+
+/* detect scroll for search */
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 300) {
+       $('body').addClass('--floatSearchHide');
+    } else {
+       $('body').removeClass('--floatSearchHide');
+    }
+});
+
+
+
 // =============================================================================
 // VOICE SEARCH
 // =============================================================================
@@ -181,14 +194,18 @@ $(".p-detail-inner-header").insertBefore(".p-final-price-wrapper");
 if ($(".type-detail").length){
     var pname = $(".p-detail-inner-header h1").text();
     $("body").append('<div class="floating-bar"><div class="floating-product-name">'+ pname +'</div><button type="submit" form="product-detail-form" class="btn">Do košíku</button></div>');
+
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 500) {
+           $('body').addClass('--floatBarActive');
+        } else {
+           $('body').removeClass('--floatBarActive');
+        }
+    });
+
 }
-$(window).scroll(function(){
-    if ($(this).scrollTop() > 500) {
-       $('body').addClass('--floatBarActive');
-    } else {
-       $('body').removeClass('--floatBarActive');
-    }
-});
+
 
 // =============================================================================
 // RESPONSIVE MENU TOGGLE
