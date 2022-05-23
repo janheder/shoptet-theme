@@ -22,11 +22,9 @@
     body.--searchActive .header-top{
         z-index: 11;
     }
-    body.--menuActive .header-top::before{
+    body.header-top::before{
         content: "";
         height: 52px;
-        pointer-events: none;
-        opacity: 0;
         left: 0;
         height: 100%;
         width: 100%;
@@ -35,6 +33,12 @@
         transition: 0.3s ease opacity;
         position: fixed;
         z-index: 12;
+        pointer-events: none;
+        opacity: 0;
+    }
+    body.--menuActive .header-top::before{
+        pointer-events: auto;
+        opacity: 1;
     }
 
     /*
