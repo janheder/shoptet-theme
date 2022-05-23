@@ -22,11 +22,11 @@
     body.--searchActive .header-top{
         z-index: 11;
     }
-    body.header-top::before{
+    body .header-top::before{
         content: "";
         height: 52px;
         left: 0;
-        height: 100%;
+        height: 113px;
         width: 100%;
         background: rgba(black,0.3);
         z-index: 10;
@@ -35,6 +35,9 @@
         z-index: 11;
         pointer-events: none;
         opacity: 0;
+    }
+    body.--floatSearchHide .header-top::before{
+        height: 52px;
     }
     body.--menuActive .header-top::before{
         pointer-events: auto;
@@ -328,9 +331,10 @@ body.--searchActive .search{
         margin: 0;
         width: 100%;
         display: flex;
-        height: 52px;
+        height: auto;
         padding: 10px;
         padding-top: 5px;
+        background: $red-500;
     }
     body.--floatSearchHide .search{
         display: none;
@@ -367,17 +371,17 @@ body.--searchActive .search{
         border-radius: 0;
 
         &::after{
-            height: 22px;
-            width: 22px;
+            height: 20px;
+            width: 20px;
         }
     }
     #speechToggle{
         height: 100%;
-        width: 52px;
+        width: 42px;
         background: transparent;
         background-image: url($i-microphone);
         background-position: center center;
-        background-size: 26px;
+        background-size: 20px;
         background-repeat: no-repeat;
         position: absolute;
         right: 52px;
