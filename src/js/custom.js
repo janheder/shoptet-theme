@@ -88,10 +88,10 @@ $("#navigation").insertBefore(".header-top .search");
 
 /* detect scroll for search */
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 300) {
-       $('body').addClass('--floatSearchHide');
+    if ($(this).scrollTop() < 300) {
+       $('body').addClass('--floatSearchActive');
     } else {
-       $('body').removeClass('--floatSearchHide');
+       $('body').removeClass('--floatSearchActive');
     }
 });
 
