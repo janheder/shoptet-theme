@@ -35,11 +35,13 @@
         z-index: 11;
         pointer-events: none;
         opacity: 0;
+        backdrop-filter: blur(3px);
+        backface-visibility: hidden;
     }
     body.--floatSearchActive .header-top::before{
         height: 111px;
     }
-    body.--menuActive .header-top::before{
+    body.--menuActive .header-top::before, body.--cartActive .header-top::before{
         pointer-events: auto;
         opacity: 1;
     }
