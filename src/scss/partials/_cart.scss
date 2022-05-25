@@ -15,7 +15,9 @@
     .ordering-process #header{
         height: 52px;
     }
-      
+    .ordering-process .search{
+        display: none !important;
+    }
 }
 
 #cart-wrapper{
@@ -59,7 +61,6 @@
 }
 .header-top{
     .contact-box{
-        display: flex;
         flex-direction: column;
         position: relative;
         padding-left: 46px;
@@ -100,6 +101,17 @@
     .contact-box li:last-child, .contact-box li:nth-child(3){
         display: none;
     }    
+}
+
+@media screen and (max-width: 991px){
+    .header-top{
+        .contact-box{
+            color: $white;
+        }
+        .contact-box ul a{
+            color: $white;
+        }
+    }
 }
 
 
