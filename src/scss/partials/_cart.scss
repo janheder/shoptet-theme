@@ -237,7 +237,11 @@
         display: none;
     }
 }
-
+@media screen and (max-width: 575px){
+    .cart-header .step a, .cart-header .step strong{
+        flex-direction: column;
+    }
+}
 
 .cart-table{
     width: 100%;

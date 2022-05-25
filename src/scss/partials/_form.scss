@@ -9,6 +9,15 @@ input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance:none;
 }
 
+input:autofill,
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    box-shadow: 0 0 0 30px white inset !important;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
 .form-control{
     font-size: 15px;
     font-weight: 400;
