@@ -24,3 +24,24 @@ textarea.form-control{
     padding: 20px;
     min-height: 100px;
 }
+.js-validator-msg.msg-error{
+    display: none;
+}
+
+
+.form-group{
+    position: relative;
+    margin-bottom: 20px;
+}
+.form-group label{
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    padding: 0 5px;
+    transition: 0.2s ease transform;
+    transform-origin: left;
+}
+.form-group.--activeFocus label, .form-group.--activeFilled label{
+    background: white;
+    transform: translateY(-24px) scale(0.85);
+}

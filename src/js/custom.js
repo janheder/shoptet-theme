@@ -7,6 +7,14 @@ $('#carousel .item').each(function(){
 });
 $(".swiffy-slider .slider-container li:first-child img").addClass("active");
 
+$("#carousel").addClass("swiffy-slider slider-item-show1 slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round");
+$("#carousel").prop("data-interval" , '');
+$("#carousel").data("slider-nav-autoplay-interval","5000");
+$("#carousel .carousel-inner").removeClass("carousel-inner");
+$("#carousel > div").addClass("slider-container");
+$("#carousel").append('<button type="button" class="slider-nav"></button> <button type="button" class="slider-nav slider-nav-next"></button>');
+
+
 // =============================================================================
 // LOAD HOMEPAGE NEWS
 // =============================================================================
@@ -245,6 +253,32 @@ if ($("#customerLogin").length){
 if ($(".cart-header").length){
     $(".cart-header").insertBefore(".content-wrapper-in");
 }
+
+
+
+// =============================================================================
+// FLOATING LABEL FORM
+// =============================================================================
+
+
+$(".form-group input").on("focus",function(){
+    
+    $(this).parent().addClass("--activeFocus");
+
+    }).blur(function(){
+        $(this).parent().removeClass("--activeFocus");
+
+});
+
+$(".form-group input").keyup(function() {
+    var input = $(this);
+
+    if( input.val() == "" ) {
+        input.parent().removeClass("--activeFilled");
+    }   else{
+        input.parent().addClass("--activeFilled");
+    }
+});
 
 
 
