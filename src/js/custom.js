@@ -15,7 +15,7 @@ $("#carousel > div").addClass("slider-container");
 $("#carousel").append('<button type="button" class="slider-nav"></button> <button type="button" class="slider-nav slider-nav-next"></button>');
 
 $('#carousel .item').each(function(){
-    $(".extended-banner-texts").append('<div href="' + $(this).find("a").attr("href") + '" class="btn">Více informací</div>');
+    $(this).find(".extended-banner-texts").append('<div href="' + $(this).find("a").attr("href") + '" class="btn">Více informací</div>');
 });
 
 

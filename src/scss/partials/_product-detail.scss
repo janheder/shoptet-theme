@@ -37,6 +37,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 40px;
+    width: 100%;
 }
 .p-detail-inner-header h1{
     width: 100%;
@@ -396,7 +397,7 @@
     margin-bottom: 40px;
     width: 100%;
     border-bottom: 1px solid $gray-300;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 .availability-label{
     display: flex;
