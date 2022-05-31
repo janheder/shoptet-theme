@@ -51,6 +51,9 @@
 
 
 @media screen and (max-width: 991px){
+    .breadcrumbs{
+        padding: 8px 10px;
+    }
     .breadcrumbs-wrapper{
         background: $gray-100;
         margin-bottom: 0px;

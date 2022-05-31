@@ -27,12 +27,13 @@
     .benefitBanner{
         padding: 30px 0;
         grid-template-columns: 1fr;
-        grid-gap: 15px;
+        grid-gap: 10px;
     }
     .benefitBanner__item img{
-        height: 56px;
+        height: 44px;
     }
     .benefitBanner__text {
         padding-left: 10px;
+        font-size: 14px;
     }
 }
