@@ -222,6 +222,9 @@ if ($(".type-detail").length){
 }
 
 
+$(".shipping-options").insertAfter(".availability-value .availability-label:last-child");
+
+
 // =============================================================================
 // RESPONSIVE MENU TOGGLE
 // =============================================================================

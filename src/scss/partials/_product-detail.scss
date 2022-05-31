@@ -394,11 +394,16 @@
     display: flex;
     order: 20;
     margin-bottom: 40px;
+    width: 100%;
+    border-bottom: 1px solid $gray-300;
+    padding: 15px 0;
 }
 .availability-label{
     display: flex;
     padding-right: 5px;
     line-height: 1;
+    align-items: center;
+    flex-grow: 1;
     
     &::before{
         content: "";
@@ -428,7 +433,14 @@
 .availability-value .choose-variant{
     display: flex;
 }
-
+.shipping-options{
+    display: none
+}
+.shipping-options .availability-value{
+    display: flex;
+    color: $gray-500;
+    font-weight: 400;
+}
 .detail-parameters{
     display: flex;
     order: 15;
