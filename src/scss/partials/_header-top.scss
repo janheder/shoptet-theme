@@ -39,7 +39,7 @@
         backface-visibility: hidden;
     }
     body.--floatSearchActive .header-top::before{
-        height: 111px;
+        height: 106px;
     }
     body.--menuActive .header-top::before, body.--cartActive .header-top::before{
         pointer-events: auto;
@@ -335,7 +335,7 @@ body.--searchActive .search{
         display: none;
         height: auto;
         padding: 8px;
-        padding-top: 5px;
+        padding-top: 0px;
         background: $red-500;
         z-index: -1;
     }
