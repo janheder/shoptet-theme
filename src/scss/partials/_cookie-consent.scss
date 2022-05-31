@@ -13,8 +13,19 @@
 .siteCookies__form{
 	display: flex;
 }
-.siteCookies__content{
+.siteCookies__content {
+    align-items: center;	
 	display: flex;
+}
+.siteCookies__content::before{
+  content: "";
+  height: 26px;
+  width: 26px;
+  display: flex;
+  flex-shrink: 0;
+  margin-right: 15px;
+  background-image: url("../icons/cookie.svg");
+  background-size: contain;
 }
 .siteCookies__text{
 	padding-right: 40px;

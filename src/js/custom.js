@@ -7,12 +7,17 @@ $('#carousel .item').each(function(){
 });
 $(".swiffy-slider .slider-container li:first-child img").addClass("active");
 
-$("#carousel").addClass("swiffy-slider slider-item-show1 slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round");
+$("#carousel").addClass("swiffy-slider slider-item-show1 slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round slider-nav-mousedrag");
 $("#carousel").prop("data-interval" , '');
 $("#carousel").data("slider-nav-autoplay-interval","5000");
 $("#carousel .carousel-inner").removeClass("carousel-inner");
 $("#carousel > div").addClass("slider-container");
 $("#carousel").append('<button type="button" class="slider-nav"></button> <button type="button" class="slider-nav slider-nav-next"></button>');
+
+$('#carousel .item').each(function(){
+    $(".extended-banner-texts").append('<div href="' + $(this).find("a").attr("href") + '" class="btn">Více informací</div>');
+});
+
 
 
 // =============================================================================
@@ -262,20 +267,16 @@ if ($(".cart-header").length){
 
 
 $(".form-group input").on("focus",function(){
-    
     $(this).parent().addClass("--activeFocus");
-
-    }).blur(function(){
-        $(this).parent().removeClass("--activeFocus");
-
+}).blur(function(){
+    $(this).parent().removeClass("--activeFocus");
 });
 
-$(".form-group input").keyup(function() {
+$(".form-group input").keyup(function(){
     var input = $(this);
-
-    if( input.val() == "" ) {
+    if(input.val() == "") {
         input.parent().removeClass("--activeFilled");
-    }   else{
+    }else{
         input.parent().addClass("--activeFilled");
     }
 });
