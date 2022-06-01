@@ -1,11 +1,6 @@
 // =============================================================================
 // INIT HOMEPAGE CAROUSEL
 // =============================================================================
-$('<div class="swiffy-slider slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round slider-nav-mousedrag" data-slider-nav-autoplay-interval="5000"><ul class="slider-container"></ul><button type="button" class="slider-nav"></button> <button type="button" class="slider-nav slider-nav-next"></button></div>').insertBefore(".in-index #content-wrapper");
-$('#carousel .item').each(function(){
-     $(".swiffy-slider .slider-container").append('<li><div class="slide-content"><h1><span>' + $(this).find("img").attr("alt") + '</span></h1><a href="' + $(this).find("a").attr("href") + '" class="btn">Více informací</a></div><div class="slide-img"><img src="' + $(this).find("img").attr("src") + '"></div></li>');
-});
-$(".swiffy-slider .slider-container li:first-child img").addClass("active");
 
 $("#carousel").addClass("swiffy-slider slider-item-show1 slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round slider-nav-mousedrag");
 $("#carousel").prop("data-interval" , '');
@@ -17,8 +12,6 @@ $("#carousel").append('<button type="button" class="slider-nav"></button> <butto
 $('#carousel .item').each(function(){
     $(this).find(".extended-banner-texts").append('<div href="' + $(this).find("a").attr("href") + '" class="btn">Více informací</div>');
 });
-
-
 
 // =============================================================================
 // LOAD HOMEPAGE NEWS

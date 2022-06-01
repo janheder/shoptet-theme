@@ -4,6 +4,12 @@
 before-carousel{
 
 }
+.before-carousel .banners-row{
+    margin: 0;
+  }
+  .wide-carousel{
+    padding: 0;
+  }
 .banners-row .col-sm-8, .banners-row .col-sm-4{
     width: 100%;
 }
@@ -23,6 +29,7 @@ before-carousel{
 
 .carousel .item{
     text-align: center;
+    height: 600px;
 }
 
 /*
@@ -36,8 +43,13 @@ before-carousel{
     justify-content: center;
     align-items: center;
     display: flex;
+    height: 100%;
 }
-
+.carousel .item a img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
 .carousel .carousel-inner > .item:first-child{
     display: flex;
 }
@@ -45,6 +57,28 @@ before-carousel{
 .carousel .carousel-inner > .item{
     display: none;
 }
+
+.extended-banner-texts{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: $white;
+    padding: 40px;
+}
+.extended-banner-text{
+    line-height: 1.4;
+    font-size: 36px;
+    font-family: $font-family-headings;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $gray-900;
+    margin-bottom: 10px;
+}
+
 
 .carousel-control {
     position: absolute;
@@ -129,7 +163,10 @@ before-carousel{
 
 
 
-
+.slider-item-show1 .slider-container>*{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
 
 
 .slider-container li{

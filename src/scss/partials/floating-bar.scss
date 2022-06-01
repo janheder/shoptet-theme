@@ -1,0 +1,32 @@
+.floating-bar{
+    display: none;
+}
+@media (max-width: 991px){
+    body.--floatBarActive .floating-bar{
+        transform: translateY(0%);
+        pointer-events: auto;
+    }
+    .floating-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 52px;
+        left: 0;
+        width: 100%;
+        background: white;
+        z-index: 9;
+        padding: 10px;
+        transition: 0.3s ease transform;
+        transform: translateY(-100%);
+        pointer-events: none;
+        border-bottom: 1px solid $gray-300;
+    }
+    .floating-product-name{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .floating-bar .btn{
+        height: 42px;
+    }
+}
