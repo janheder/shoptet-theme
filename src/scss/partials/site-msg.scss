@@ -1,3 +1,47 @@
+.messages{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+.messages .msg{
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+
+}
+.messages .msg.msg-success::before {
+    content: "";
+    display: flex;
+    height: 16px;
+    width: 16px;
+    margin-right: 0px;
+    background-image: url("..icons/check-circle-green.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-right: 10px;
+}
+.messages .msg .container{
+    padding: 0;
+}
+.messages .msg a{
+    color: black;
+}
+
+
+@media screen and (max-width: 991px){
+    .messages{
+        position: fixed;
+        top: auto;
+        bottom: 0px;
+        right: 0px;
+        left: 0;
+    }
+}
+
+
 .site-msg.information{
     background: $green-500;
     color: $white;
