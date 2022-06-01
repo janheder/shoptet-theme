@@ -74,8 +74,12 @@
 }
 .shipping-row{
     display: flex;
+    padding: 10px 0;
 }
-
+.shipping-options-popup .extra.delivery{
+    margin-top: 40px;
+    margin-bottom: 0;
+}
 
 
 body.--advancedModal .advancedModal, body.--advancedModal .menu-helper{

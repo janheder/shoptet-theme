@@ -397,6 +397,7 @@
     margin-bottom: 40px;
     width: 100%;
     border-bottom: 1px solid $gray-300;
+    border-top: 1px solid $gray-300;
     padding: 20px 0;
 }
 .availability-label{
@@ -435,12 +436,13 @@
     display: flex;
 }
 .shipping-options{
-    display: none
+    display: none;
 }
-.shipping-options .availability-value{
+.availability-value .shipping-options {
     display: flex;
     color: $gray-500;
     font-weight: 400;
+    line-height: 1;
 }
 .detail-parameters{
     display: flex;
