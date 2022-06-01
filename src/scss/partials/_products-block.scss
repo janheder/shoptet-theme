@@ -6,11 +6,14 @@
     grid-gap: 1px;
     position: relative;
 }
-.homepage-products-1, .homepage-products-2{
+.in-index .products.products-block{
     /*grid-template-columns: 1fr 1fr 1fr 1fr !important;*/
     margin: 0;
     margin-bottom: 60px;
     padding: 0;
+}
+.in-index .products.products-block > .product:nth-child(n+5){
+    display: none;
 }
 .homepage-products-1.swiffy-slider , .homepage-products-2.swiffy-slider {
     display: flex;
