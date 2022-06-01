@@ -26,7 +26,7 @@ $(".p .p-tools form").prepend('<span class="quantity"><input type="text" value="
 // =============================================================================
 
 $(".in-index .products.products-block").each(function() {
-    $(this).data("slider-nav-autoplay-interval","8000");
+    $(".in-index .products.products-block").attr("data-slider-nav-autoplay-interval","8000");
 
     if($(this).find('.product').length > 4){
         $(this).addClass("swiffy-slider slider-item-show4 slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round slider-nav-page");
