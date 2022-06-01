@@ -19,19 +19,20 @@ $('#carousel .item').each(function(){
 
 $(".hp-blog .news-wrapper").load("/blog/ .news-wrapper .news-item:nth-child(-n+3)");
 
-
 $(".p .p-tools form").prepend('<span class="quantity"><input type="text" value="1" name="amount" class="form-control amount" data-min="1" data-max="100" tabindex="0"><span class="increase"></span><span class="decrease"></span></span>');
-
 
 // =============================================================================
 // HOMEPAGE PRODUCTS
 // =============================================================================
 
-$("#products-1, #products-2").addClass("swiffy-slider slider-item-show4 slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round");
-$("#products-1, #products-2").data("slider-nav-autoplay-interval","5000");
-$("#products-1, #products-2").wrapInner("<div class='slider-container'></div>");
-$("#products-1, #products-2").append('<button type="button" class="slider-nav"></button> <button type="button" class="slider-nav slider-nav-next"></button>');
-
+$(".in-index .products.products-block").each(function() {
+    if($(this).find('.product').length > 4){
+        $(this).addClass("swiffy-slider slider-item-show4 slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round");
+        $(this).data("slider-nav-autoplay-interval","5000");
+        $(this).wrapInner("<div class='slider-container'></div>");
+        $(this).append('<button type="button" class="slider-nav"></button> <button type="button" class="slider-nav slider-nav-next"></button>');
+    };
+});
 
 // =============================================================================
 // MENU TOGGLES
