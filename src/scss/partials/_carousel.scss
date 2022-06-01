@@ -18,7 +18,9 @@
     position: relative;
     padding: 20px 0 0 0;
 }
-
+.slider-container{
+    --swiffy-slider-item-gap: 20px;
+}
 .carousel-inner {
     position: relative;
     overflow: hidden;
@@ -284,14 +286,33 @@
 }
  
 
-.swiffy-slider.slider-nav-scrollbar  {
-    --swiffy-slider-track-height: 2px;
-}  
-@media (max-width: 62rem){
-  .swiffy-slider.slider-nav-scrollbar  {
-    --swiffy-slider-track-height: 2px;
-}  
-}
+
+.swiffy-slider.slider-nav-scrollbar{
+    --swiffy-slider-track-height: 18px;
+  
+  }
+  .swiffy-slider.slider-nav-scrollbar:hover {
+    
+   
+  }
+  .swiffy-slider.slider-nav-scrollbar:hover .slider-container{
+  
+  }
+       .swiffy-slider.slider-nav-scrollbar ::-webkit-scrollbar-track{
+  background: linear-gradient(0deg, white 0%, white 45%, #eee 45%, #eee 55%, white 55%, white 100%);
+  
+      }
+      
+      .swiffy-slider.slider-nav-scrollbar ::-webkit-scrollbar-thumb:horizontal {
+  background: linear-gradient(0deg, white 0%, white 45%, $gray-900 45%, $gray-900 55%, white 55%, white 100%);
+      
+      }
+  
+  .swiffy-slider.slider-nav-scrollbar:hover ::-webkit-scrollbar-thumb:horizontal{
+    background: linear-gradient(0deg, white 0%, white 33%, $gray-900 33%, $gray-900 66%, white 66%, white 100%);
+  }
+
+
 .swiffy-slider.slider-nav-scrollbar .slider-container{
     padding-bottom: 20px;
   }
