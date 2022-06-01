@@ -196,13 +196,15 @@
     display: none;
 }
 @media screen and (min-width: 992px){
-    .submenu-visible .menu-helper{
-        opacity: 1;
+    .menu-helper{
         z-index: 2;
         top: 130px;
         bottom: 0;
         position: absolute;
-      }
+    }
+    .submenu-visible .menu-helper{
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 991px){
