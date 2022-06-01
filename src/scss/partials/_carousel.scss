@@ -16,7 +16,7 @@
 
 .carousel {
     position: relative;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
 }
 
 .carousel-inner {
@@ -283,3 +283,15 @@
     opacity: 1;
 }
  
+
+.swiffy-slider.slider-nav-scrollbar  {
+    --swiffy-slider-track-height: 2px;
+}  
+@media (max-width: 62rem){
+  .swiffy-slider.slider-nav-scrollbar  {
+    --swiffy-slider-track-height: 2px;
+}  
+}
+.swiffy-slider.slider-nav-scrollbar .slider-container{
+    padding-bottom: 20px;
+  }
