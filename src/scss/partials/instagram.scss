@@ -1,0 +1,37 @@
+.instagram-footer{
+   background: #f9f9f9;
+    padding: 20px 0 40px 0;
+    position: relative;
+    z-index: 2;
+}
+  
+.instagram-footer h1{
+    font-size: 30px;
+    text-align:center;
+    margin-bottom: 20px;
+}
+.instagram-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.instagram-item{
+    padding-bottom: 100%;
+    position: relative;
+}
+.instagram-item img{
+   position: absolute;
+    height: 100%;
+    object-fit: cover;
+    width: 100%
+}
+@media screen and (max-width: 991px){
+    .instagram-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 575px){
+    .instagram-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
