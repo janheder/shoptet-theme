@@ -19,8 +19,17 @@ $('#carousel .item').each(function(){
 
 $(".hp-blog .news-wrapper").load("/blog/ .news-wrapper .news-item:nth-child(-n+3)");
 
-$(".p .p-tools form").prepend('<span class="quantity"><input type="text" value="1" name="amount" class="form-control amount" data-min="1" data-max="100" tabindex="0"><span class="increase"></span><span class="decrease"></span></span>');
+// =============================================================================
+// LOAD NUMBER INPUT
+// =============================================================================
 
+function productAddNumber(){ 
+    $(".p .p-tools form").prepend('<span class="quantity"><input type="text" value="1" name="amount" class="form-control amount" data-min="1" data-max="100" tabindex="0"><span class="increase"></span><span class="decrease"></span></span>');
+}
+productAddNumber();
+document.addEventListener('ShoptetDOMPageContentLoaded', function () {
+    productAddNumber();
+});
 // =============================================================================
 // HOMEPAGE PRODUCTS
 // =============================================================================
