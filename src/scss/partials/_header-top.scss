@@ -332,18 +332,22 @@ body.--searchActive .search{
         top: 52px;
         margin: 0;
         width: 100%;
-        display: none;
+        display: flex;
         height: auto;
         padding: 8px;
         padding-top: 0px;
         background: $red-500;
         z-index: -1;
+        transform: translateY(-100%);
+        transition: 0.2s ease transform;
     }
     body.--floatSearchActive .search{
         display: flex;
+        transform: translateY(0%);
     }
     body.--searchActive .search{
         display: flex;
+        transform: translateY(0%);
     }
     .search-form {
         height: 46px;
