@@ -1,6 +1,5 @@
 #newsletterSection{
     padding: 60px 40px 60px 40px;
-    background: $red-500;
     border: 0;
   margin-top: 0px;
   z-index: 10;
@@ -16,7 +15,6 @@
     width: 100vw;
     display: flex;
     position: absolute;
-    content: none;
 }
 
 .newsletterSection__form{
@@ -84,10 +82,4 @@
     .newsletterSection__formGroup{
         max-width: calc(100vw - 100px);
     }
-}
-
-.newsletterSection__title,
-.newsletterSection__subTitle,
-.newsletterSection__consent, .newsletterSection__consent a{
-  color: white;
 }
