@@ -404,6 +404,9 @@
     width: 100%;
     display: flex;
 }
+.availability-value .parameter-dependent.no-display{
+    display: none;
+}
 .availability-label {
     display: flex;
     padding-right: 5px;
