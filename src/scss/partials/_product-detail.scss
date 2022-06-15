@@ -390,7 +390,7 @@
 .availability-value{
     font-size: 14px;
     font-weight: 600;
-    color: $green-900;
+    color: $green-500;
     padding: 0;
     display: flex;
     order: 20;
@@ -400,7 +400,11 @@
     border-top: 1px solid $gray-300;
     padding: 20px 0;
 }
-.availability-label{
+.availability-value .parameter-dependent{
+    width: 100%;
+    display: flex;
+}
+.availability-label {
     display: flex;
     padding-right: 5px;
     line-height: 1;
