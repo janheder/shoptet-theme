@@ -302,6 +302,16 @@
     visibility: visible;
     opacity: 0;
 }
+.mobile .swiffy-slider .slider-nav{
+    display: none;
+}
+@media screen and (max-width: 575px){
+    .swiffy-slider .slider-nav{
+        display: none;
+    }
+}
+
+
 .swiffy-slider:hover .slider-nav {
     opacity: 1;
 }
