@@ -277,7 +277,9 @@ $('.detail-parameters select, div.hidden-split-parameter').on('change', function
 
     if(sPar.length){
         url.searchParams.set(sName, sPar);
-    }else{
+    }
+    
+    if(sParAlt.length){
         url.searchParams.set(sName, sParAlt);
     }
 
