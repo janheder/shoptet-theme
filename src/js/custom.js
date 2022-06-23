@@ -246,21 +246,47 @@ $(".detail-parameters select").each(function(){
 
     });
 
+    
+});
+
+$("div.hidden-split-parameter").each(function(){
+
+    var qName = $(this).attr("data-parameter-name").replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); 
+    let qPar = urlParams.get(qName);
+
+    $(this).find("input").each(function(){
+    var qOption = $(this).closest('.parameter-value').text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    if(qOption == qPar) {
+        $(this).attr("checked",true);
+    }
+
+    });
+
+    
 });
 
 
 
-$('.detail-parameters select').on('change', function() {
+$('.detail-parameters select, div.hidden-split-parameter').on('change', function() {
     var sName = $(this).attr("data-parameter-name").replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
     var sPar = $(this).find("option:selected").text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    var sParAlt = $(this).find("input:checked + .parameter-value").text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
     var currentUrl = window.location.href;
     var url = new URL(currentUrl);
-    url.searchParams.set(sName, sPar); // setting your param
+
+    if(sPar.length){
+        url.searchParams.set(sName, sPar);
+    }else{
+        url.searchParams.set(sName, sParAlt);
+    }
+
     var newUrl = url.href; 
     console.log(newUrl);
     window.history.replaceState("string", "Title", newUrl);
 });
+
+
 
 
 // =============================================================================
