@@ -565,7 +565,10 @@
     border-top: 1px solid $gray-300;
     padding-top: 10px;
 }
-
+#shipping-billing-summary{
+    display: none;
+  }
+  
 .recapitulation-single{
     display: flex;
     flex-direction: column;
