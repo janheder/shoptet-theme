@@ -225,8 +225,42 @@ if ($(".type-detail").length){
 
 }
 
-
 $(".shipping-options").insertAfter(".availability-value .availability-label:last-child");
+
+
+
+
+
+var urlParams = new URLSearchParams(window.location.search);
+
+$(".detail-parameters select").each(function(){
+
+    var qName = $(this).attr("data-parameter-name").replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); 
+    let qPar = urlParams.get(qName);
+
+    $(this).find("option").each(function(){
+    var qOption = $(this).text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    if(qOption == qPar) {
+        $(this).attr("selected",true);
+    }
+
+    });
+
+});
+
+
+
+$('.detail-parameters select').on('change', function() {
+    var sName = $(this).attr("data-parameter-name").replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    var sPar = $(this).find("option:selected").text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+    var currentUrl = window.location.href;
+    var url = new URL(currentUrl);
+    url.searchParams.set(sName, sPar); // setting your param
+    var newUrl = url.href; 
+    console.log(newUrl);
+    window.history.replaceState("string", "Title", newUrl);
+});
 
 
 // =============================================================================
