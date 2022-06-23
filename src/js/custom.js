@@ -255,7 +255,7 @@ $("div.hidden-split-parameter").each(function(){
     let qPar = urlParams.get(qName);
 
     $(this).find("input").each(function(){
-    var qOption = $(this).closest('.parameter-value').text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    var qOption = $(this).closest('.advanced-parameter').find('.parameter-value').text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
     if(qOption == qPar) {
         $(this).prop('checked',true);
     }
@@ -282,7 +282,6 @@ $('.detail-parameters select, div.hidden-split-parameter').on('change', function
     }
 
     var newUrl = url.href; 
-    console.log(newUrl);
     window.history.replaceState("string", "Title", newUrl);
 });
 
