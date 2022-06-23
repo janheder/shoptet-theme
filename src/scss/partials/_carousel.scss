@@ -159,8 +159,26 @@
     .carousel-control {
         display: none;
     }
+    .carousel .item{
+        height: 400px;
+    }
 }
-
+@media screen and (max-width: 991px){
+    .carousel .item{
+        height: auto;
+    }
+    .carousel .item a{
+        flex-direction: column;
+    }
+    .extended-banner-texts{
+        left: 0;
+        position: relative;
+        bottom: 0;
+        padding: 10px;
+        width: 100%;
+        background: #f9f9f9;
+    }
+}
 
 
 
