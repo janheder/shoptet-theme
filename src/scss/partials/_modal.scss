@@ -97,7 +97,7 @@ body.--advancedModal{
     left: 50%;
     transform: translate(-50%, -50%);
     overflow-y: auto;
-    z-index: 11;
+    z-index: 30;
     padding: 0px;
     width: 900px;
     max-width: calc(100% - 20px);
@@ -120,6 +120,7 @@ body.--advancedModal{
     margin: 0 auto;
     margin-bottom: 30px;
     padding-bottom: 0px;
+    padding-top: 30px;
     text-align: center;
     flex-direction: column;
 }
