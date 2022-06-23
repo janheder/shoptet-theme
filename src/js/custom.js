@@ -257,7 +257,7 @@ $("div.hidden-split-parameter").each(function(){
     $(this).find("input").each(function(){
     var qOption = $(this).closest('.parameter-value').text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
     if(qOption == qPar) {
-        $(this).attr("checked",true);
+        $(this).prop('checked',true);
     }
 
     });
