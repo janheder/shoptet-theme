@@ -85,6 +85,7 @@
 body.--advancedModal .advancedModal, body.--advancedModal .menu-helper{
     opacity: 1;
     pointer-events: auto;
+    z-index: 20;
 }
 body.--advancedModal{
     overflow: hidden;

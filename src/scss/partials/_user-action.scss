@@ -29,7 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 20;
+    z-index: 21;
     padding: 10px;  
     border-radius: $border-radius-primary;
     opacity: 0;
@@ -42,10 +42,7 @@ body.--navUserActive .menu-helper{
     pointer-events: auto;
     z-index: 20;
 }
-body.--navUserActive .user-action .login-widget{
-    opacity: 1;
-    pointer-events: auto;
-}
+
 .user-action .login-widget .popup-widget-inner{
     padding: 60px 50px 50px 50px; 
     background-color: #fff;
