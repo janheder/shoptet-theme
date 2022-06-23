@@ -350,6 +350,10 @@ $(".form-group input").keyup(function(){
 });
 
 
+if($(".form-group input").val() !== "") { 
+    $(".form-group input").parent().addClass("--activeFilled");
+};
+
 
 // =============================================================================
 // Add top products

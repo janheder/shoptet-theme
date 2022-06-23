@@ -37,10 +37,25 @@ textarea.form-control{
     display: none;
 }
 
+.error-field, .js-error-field{
+    border-color: red;
+}
+.js-validator-msg.msg-info, .js-validator-msg.msg-error{
+    background: yellow;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: flex !important;
+    flex-shrink: 0;
+    width: 200px
+}
+  
+  
 
+  
 .form-group:not(.consents), .form-group:not(.submit-wrapper){
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     label{
         position: absolute;
@@ -51,6 +66,7 @@ textarea.form-control{
         transform-origin: top left;
         line-height: 1;
         pointer-events: none;
+        color: $gray-500;
     }
     &.--activeFocus label, &.--activeFilled label{
         background: white;
@@ -59,3 +75,27 @@ textarea.form-control{
         font-size: 12px;
     }
 }
+.form-group label[for="billCountryId"]{
+    display: none;
+}
+
+
+
+.form-group input[type="checkbox"] + label{
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none !important;
+    font-size: 15px !important;
+    pointer-events: auto;
+  }
+  #shipping-address{
+    width: 520px;
+    border: 1px solid #F0F0F0;
+    padding: 40px;
+    padding-bottom: 20px;
+  }
+  #shipping-address h4{
+    display: none;
+  }
+  
