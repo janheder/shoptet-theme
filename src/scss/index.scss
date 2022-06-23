@@ -177,6 +177,7 @@ b, strong {
 }
 .js-hidden.visible{
     display: flex;
+    flex-direction: column;
 }
 .sr-only {
     position: absolute;
