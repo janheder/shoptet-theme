@@ -41,6 +41,7 @@ body.--navUserActive .menu-helper{
     opacity: 1;
     pointer-events: auto;
     z-index: 20;
+    top: 0;
 }
 body.--navUserActive .user-action .login-widget{
     opacity: 1;
