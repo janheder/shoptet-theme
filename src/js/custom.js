@@ -267,31 +267,41 @@ $("div.hidden-split-parameter").each(function(){
 });
 
 /* runs on option select modifying url */
-/*
-$(document).ready(function() {
-    $('.detail-parameters select, div.hidden-split-parameter').on('change', function() {
-        var sName = $(this).attr("data-parameter-name").replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-        var sPar = $(this).find("option:selected").text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-        var sParAlt = $(this).find(".advanced-parameter input:checked + .parameter-value").text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
-        var currentUrl = window.location.href;
-        var url = new URL(currentUrl);
+$('.detail-parameters select').on('change', function() {
+    var sName = $(this).attr("data-parameter-name").replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    var sPar = $(this).find("option:selected").text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    
+    var currentUrl = window.location.href;
+    var url = new URL(currentUrl);
 
-        if(sPar.length || sPar !== "zvolte-variantu"){
-            url.searchParams.set(sName, sPar);
+    if(sPar.length && sPar !== "zvolte-variantu"){
+        url.searchParams.set(sName, sPar);
+    }
+    if(sPar == "zvolte-variantu"){
+        url.searchParams.delete(sName, sPar);
+    }
 
-        }
-        
-        if(sParAlt.length){
-            url.searchParams.set(sName, sParAlt);
-        }
-
-        var newUrl = url.href; 
-        window.history.replaceState("string", "Title", newUrl);
-    });
-
+    var newUrl = url.href; 
+    window.history.replaceState("string", "Title", newUrl);
 });
-*/
+
+
+$('div.hidden-split-parameter').on('change', function() {
+    var sName = $(this).attr("data-parameter-name").replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    var sParAlt = $(this).find(".advanced-parameter input:checked + .parameter-value").text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+    var currentUrl = window.location.href;
+    var url = new URL(currentUrl);
+    
+    if(sParAlt.length){
+        url.searchParams.set(sName, sParAlt);
+    }
+
+    var newUrl = url.href; 
+    window.history.replaceState("string", "Title", newUrl);
+}); 
+
 
 // =============================================================================
 // RESPONSIVE MENU TOGGLE
