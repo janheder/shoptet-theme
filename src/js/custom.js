@@ -267,7 +267,7 @@ $("div.hidden-split-parameter").each(function(){
 });
 
 /* runs on option select modifying url */
-
+/*
 $(document).ready(function() {
     $('.detail-parameters select, div.hidden-split-parameter').on('change', function() {
         var sName = $(this).attr("data-parameter-name").replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -279,6 +279,7 @@ $(document).ready(function() {
 
         if(sPar.length || sPar !== "zvolte-variantu"){
             url.searchParams.set(sName, sPar);
+
         }
         
         if(sParAlt.length){
@@ -290,7 +291,7 @@ $(document).ready(function() {
     });
 
 });
-
+*/
 
 // =============================================================================
 // RESPONSIVE MENU TOGGLE
