@@ -230,6 +230,7 @@ $(".shipping-options").insertAfter(".availability-value .availability-label:last
 
 
 
+/* runs on load checking url */
 
 var urlParams = new URLSearchParams(window.location.search);
 
@@ -265,17 +266,18 @@ $("div.hidden-split-parameter").each(function(){
     
 });
 
+/* runs on option select modifying url */
 
 $(document).ready(function() {
     $('.detail-parameters select, div.hidden-split-parameter').on('change', function() {
         var sName = $(this).attr("data-parameter-name").replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
         var sPar = $(this).find("option:selected").text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-        var sParAlt = $(this).find("input:checked + .parameter-value").text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+        var sParAlt = $(this).find(".advanced-parameter input:checked + .parameter-value").text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
         var currentUrl = window.location.href;
         var url = new URL(currentUrl);
 
-        if(sPar.length){
+        if(sPar.length || sPar == "zvolte-variantu"){
             url.searchParams.set(sName, sPar);
         }
         
