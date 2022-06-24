@@ -277,7 +277,7 @@ $(document).ready(function() {
         var currentUrl = window.location.href;
         var url = new URL(currentUrl);
 
-        if(sPar.length || sPar == "zvolte-variantu"){
+        if(sPar.length || sPar !== "zvolte-variantu"){
             url.searchParams.set(sName, sPar);
         }
         
