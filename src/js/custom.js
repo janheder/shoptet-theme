@@ -275,10 +275,11 @@ $('.detail-parameters select').on('change', function() {
     var currentUrl = window.location.href;
     var url = new URL(currentUrl);
 
-    if(sPar.length && sPar ){
+    if(sPar.length ){
         url.searchParams.set(sName, sPar);
+    }else{
+        url.searchParams.delete(sName, sPar);
     }
-
 
     var newUrl = url.href; 
     window.history.replaceState("string", "Title", newUrl);
