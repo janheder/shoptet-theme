@@ -24,11 +24,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0px;
     background: $gray-100;
     position: relative;
     height: 300px;
     /*min-width: 220px;*/
+}
+.favoriteCategories__single picture{
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 .favoriteCategories__single img{
     display: flex;
