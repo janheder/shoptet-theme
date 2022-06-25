@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('../fonts/Inter/Inter-VariableFont_slnt,wght.ttf') format('truetype supports variations'),
-         url('../fonts/Inter/Inter-VariableFont_slnt,wght.ttf') format('truetype-variations');
+    src: url('../fonts/Inter/Inter-VariableFont_slnt,wght.woff2') format("woff2-variations"),
+         url('../fonts/Inter/static/Inter-Regular.woff2') format('woff2');
     font-weight: 100 1000;
     font-style: normal;
     font-display: swap;
