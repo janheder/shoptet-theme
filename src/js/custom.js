@@ -270,17 +270,15 @@ $("div.hidden-split-parameter").each(function(){
 
 $('.detail-parameters select').on('change', function() {
     var sName = $(this).attr("data-parameter-name").replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-    var sPar = $(this).find("option:selected").text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    var sPar = $(this).find("option:selected:not(:first-child)").text().replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
     
     var currentUrl = window.location.href;
     var url = new URL(currentUrl);
 
-    if(sPar.length && sPar !== "zvolte-variantu"){
+    if(sPar.length && sPar ){
         url.searchParams.set(sName, sPar);
     }
-    if(sPar == "zvolte-variantu"){
-        url.searchParams.delete(sName, sPar);
-    }
+
 
     var newUrl = url.href; 
     window.history.replaceState("string", "Title", newUrl);
