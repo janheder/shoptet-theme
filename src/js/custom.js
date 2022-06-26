@@ -2,7 +2,7 @@
 // INIT HOMEPAGE CAROUSEL
 // =============================================================================
 
-$("#carousel").addClass("swiffy-slider slider-item-show1 slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round slider-nav-mousedrag");
+$("#carousel").addClass("swiffy-slider slider-item-show1 slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round ");
 $("#carousel").attr("data-interval" , '');
 $("#carousel").attr("data-slider-nav-autoplay-interval","5000");
 $("#carousel .carousel-inner").removeClass("carousel-inner");
