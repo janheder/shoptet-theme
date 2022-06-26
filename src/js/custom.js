@@ -3,8 +3,8 @@
 // =============================================================================
 
 $("#carousel").addClass("swiffy-slider slider-item-show1 slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round slider-nav-mousedrag");
-$("#carousel").prop("data-interval" , '');
-$("#carousel").data("slider-nav-autoplay-interval","5000");
+$("#carousel").attr("data-interval" , '');
+$("#carousel").attr("data-slider-nav-autoplay-interval","5000");
 $("#carousel .carousel-inner").removeClass("carousel-inner");
 $("#carousel > div").addClass("slider-container");
 $("#carousel").append('<button type="button" class="slider-nav"></button> <button type="button" class="slider-nav slider-nav-next"></button>');
