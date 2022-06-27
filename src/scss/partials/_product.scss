@@ -127,6 +127,7 @@
     flex-direction: column;
     padding-top: 10px;
     height: 100%;
+    order: 10;
 }
 .p-in-in{
     display: flex;
@@ -330,6 +331,24 @@
 .p-code{
     display: none;
 }
+
+
+.widget-parameter-wrapper{
+order: 2;
+}
+.widget-parameter-list{
+display: flex;
+padding: 0;
+margin: 0;
+margin-top: 10px;
+}
+.widget-parameter-wrapper li {
+  height: auto;
+    list-style: none;
+background: transparent;
+
+}
+
 
 
 @media screen and (max-width: 991px){
