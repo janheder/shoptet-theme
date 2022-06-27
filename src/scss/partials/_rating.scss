@@ -31,6 +31,7 @@
 }
 .ratingSection__content .slider-nav.slider-nav-next{
     right: -50px;
+    left: auto;
 }
 .ratingSection .slider-container{
     padding: 10px;
@@ -104,19 +105,27 @@
     height: 24px;
     width: 24px;
     display: flex;
-    background-image: url(https://www.benlemi.cz/user/documents/theme/dist/icons/star-empty.svg);
+    background-image: url("../icons/star-empty.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     margin: 0px;
 }
 .stars .star.star-on {
-    background-image: url(https://www.benlemi.cz/user/documents/theme/dist/icons/star-full.svg);
+    background-image: url("../icons/star-full.svg");
 }
 .vote-delimeter{
     display: none;
 }
 .vote-rating .vote-time{
     font-weight: 400;
-font-size: 14px;
-color: #6F6F6F;
+    font-size: 14px;
+    color: #6F6F6F;
+}
+
+.vote-rating .vote-time::before{
+    content: "";
+    background-image: url("../icons/calendar.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
 }
