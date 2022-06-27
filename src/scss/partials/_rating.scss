@@ -1,0 +1,48 @@
+.ratingSection{
+
+}
+.ratingSection h1{
+
+}
+.ratingSection__content{
+
+}
+
+.vote-wrap{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 9px rgba(52, 66, 81, 0.05);
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.vote-header{
+    order: 10;
+}
+.vote-content{
+    order: 0;
+    margin-top: 50px;
+}
+.vote-pic{
+    
+}
+.vote-summary{
+
+}
+.vote-name{
+
+}
+.vote-rating{
+
+}
+.vote-rating .stars{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+.vote-delimeter{
+    display: none;
+}
+.vote-rating .vote-time{
+
+}
