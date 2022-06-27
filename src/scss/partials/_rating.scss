@@ -19,6 +19,7 @@ text-align: center
 }
 .vote-header{
     order: 10;
+    display: flex;
 }
 .vote-content{
     order: 0;
@@ -36,10 +37,15 @@ border-radius: 999px;
 height: 46px;
 width: 46px;
 color: white;
+display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
 }
 .vote-summary{
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
 }
 .vote-name{
 
