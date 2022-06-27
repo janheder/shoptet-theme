@@ -24,10 +24,21 @@
     margin-top: 50px;
 }
 .vote-pic{
-    
+
+}
+.vote-pic img{
+    display: none;
+}
+.vote-initials{
+    background: rgba(196, 8, 8, 0.5);
+border-radius: 999px;
+height: 46px;
+width: 46px;
+color: white;
 }
 .vote-summary{
-
+    display: flex;
+    flex-direction: column;
 }
 .vote-name{
 
