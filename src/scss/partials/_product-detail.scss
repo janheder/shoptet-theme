@@ -390,7 +390,8 @@
 }
 .availability-value{
     font-size: 14px;
-    font-weight: 600;
+    text-transform: uppercase;
+    font-weight: 500;
     color: $green-500;
     padding: 0;
     display: flex;
@@ -898,6 +899,12 @@
         width: 40px;
         background: $red-500;
     }
+}
+.basic-description ul{
+    list-style: circle;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-bottom: 20px;
 }
 .basic-description > .rte > h2{
     display: flex;
