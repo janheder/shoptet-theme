@@ -575,8 +575,11 @@
     width: 34px;
     border-radius: 50%;
     position: relative;
-    border: 2px solid $gray-400;
+
     cursor: pointer;
+}
+.advanced-parameter-inner[style="background-color: #ffffff"]{
+        border: 1px solid $gray-400;
 }
 .advanced-parameter-inner.yes-before{
     border-color: $green-500;
