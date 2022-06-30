@@ -53,11 +53,11 @@ textarea.form-control{
   
 
   
-.form-group:not(.consents), .form-group:not(.submit-wrapper), .form-group input:not([type="checkbox"]){
+.form-group:not(.consents), .form-group:not(.submit-wrapper){
     position: relative;
     margin-bottom: 30px;
 
-    label,label:not([for="login"]){
+    label, label:not([for="login"]), input:not([type="checkbox"]) + label{
         position: absolute;
         left: 15px;
         top: 16px;
