@@ -74,7 +74,12 @@
 }
 .shipping-row{
     display: flex;
-    padding: 10px 0;
+    padding: 10px;
+    margin-bottom: 2px;
+    background: $gray-100;
+    line-height: 1;
+    align-items: center;
+    min-height: 46px;
 }
 .shipping-options-popup .extra.delivery{
     margin-top: 40px;
