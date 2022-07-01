@@ -350,6 +350,9 @@ body.--searchActive .search{
         display: flex;
         transform: translateY(0%);
     }
+    body.--floatSearchActive .nav-search{
+        display: none;
+    }
     .search-form {
         height: 46px;
         width: 100%;
