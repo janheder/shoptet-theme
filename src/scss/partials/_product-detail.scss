@@ -937,6 +937,22 @@
     width: 100%;
 }
 
+.p-detail-tabs-wrapper .tab-content{
+    display: flex;
+    flex-direction: column;
+
+    #description{
+        order: 10;
+    }
+    #productsRelated{
+        order: 20;
+    }
+    #productVideos{
+        order: 30;
+    }
+  }
+  
+
 
 #jsUnavailableCombinationMessage{
     margin: 0;
@@ -964,5 +980,12 @@
     align-items: center;
     width: 20%;
 }
+
+
+#productsRelated .products-related-header{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
 
 

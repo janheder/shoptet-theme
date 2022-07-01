@@ -153,6 +153,7 @@ body.--advancedModal{
 .advancedModal__buttons{
     padding: 20px;
     padding-top: 0;
+    text-align: center;
 }
 
 @media screen and (max-width: 991px){
@@ -161,4 +162,14 @@ body.--advancedModal{
         padding-top: 80px;
         padding-bottom: 20px;
     }
+}
+
+.advancedModal #productsRelated{
+    padding-top: 40px;
+    margin-top: 20px;
+    border-top: 2px solid #F9f9f9;
+}
+.advancedModal #productsRelated .products-related-header{
+    text-align: center;
+    font-size: 28px;
 }

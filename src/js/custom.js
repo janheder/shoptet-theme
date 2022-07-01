@@ -195,8 +195,8 @@ if ($(".type-detail").length){
         '<div class="extras-product-amount">' + amount + 'x</div>' +
         '<div class="extras-product-priceTotal">' + priceTotal + ' Kč</div>' +
         '</div>');
-    
-    
+        $(".advancedModal__inner").append($("#productsRelated"));
+        
     }
     
     /* call functions after order modal loaded */
