@@ -214,6 +214,7 @@ footer {
     width: 100%;
     padding: 40px 0 60px 0;
     border-bottom: 1px solid #F0F0F0;
+    flex-wrap: wrap;
 }
 .footer-payment-methods-col{
     display: flex;
@@ -232,4 +233,21 @@ footer {
     padding: 13px 20px;
     margin-right: 10px;
     line-height: 1;
+}
+@media screen and (max-width: 768px){
+    .footer-payment-methods{
+        display: flex;
+        flex-grow: 1;
+        width: 100%;
+        padding: 40px 0 60px 0;
+        border-bottom: 1px solid #F0F0F0;
+    }
+    .footer-payment-methods-col{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-payment-methods-col:last-child{
+        margin-top: 20px;
+    }
 }
