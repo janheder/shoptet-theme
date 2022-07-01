@@ -118,6 +118,7 @@ body.--advancedModal{
     display: flex;
     align-items: center;
     justify-content: center;
+    backface-visibility: hidden;
 }
 .advancedModal__inner{
     background: white;
@@ -172,4 +173,7 @@ body.--advancedModal{
 .advancedModal #productsRelated .products-related-header{
     text-align: center;
     font-size: 28px;
+}
+.advancedModal #productsRelated .p-tools{
+    display: none;
 }
