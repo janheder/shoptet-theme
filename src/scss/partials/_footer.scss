@@ -166,7 +166,7 @@ footer {
         width: 100%;
     }
     .footer-rows .custom-footer > div > h4, .footer-rows .banner-wrapper h4{
-        font-size: 16px;
+        font-size: 20px;
     }
     .footer-bottom {
         flex-direction: column;
@@ -227,6 +227,8 @@ footer {
 }
 .footer-payment-methods-content{
     display: flex;
+    overflow-x: auto;
+    max-width: 100%;
 }
 .footer-payment-methods-single{
     background: white;
