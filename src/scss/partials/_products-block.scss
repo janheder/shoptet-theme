@@ -45,16 +45,13 @@
         padding-left: 1px;
         padding-top: 1px;
 
-        .product {
-            min-width: 300px;
-        }
     }
 }
 @media screen and (max-width: 768px){
     .products-block.homepage-products-1, .products-block.homepage-products-2{
         
         .product {
-            min-width: 260px;
+            width: 280px;
         }
     }
 }
@@ -76,7 +73,7 @@
         display: flex;
 
         .product {
-            width: 200px;
+            width: 240px;
             min-width: auto;
         }
     }
