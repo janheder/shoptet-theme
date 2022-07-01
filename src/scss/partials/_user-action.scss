@@ -83,6 +83,7 @@ body.--navUserActive .user-action .login-widget{
 }
 .login-widget .form-group{
     padding: 10px 0;
+    margin: 0;
 }
 .login-widget .btn{
     width: 100%;
@@ -237,7 +238,7 @@ body.--navUserActive .user-action .login-widget{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0;
     border-bottom: 1px solid $gray-300;
 }
 .cart-widget-product-image{
@@ -286,7 +287,7 @@ body.--navUserActive .user-action .login-widget{
     }
     span{
         color: $red-800;
-        font-weight: 700;
+        font-weight: 500;
         text-align: right;
         flex-grow: 1;
         flex-shrink: 0;

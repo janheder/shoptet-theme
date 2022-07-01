@@ -252,6 +252,9 @@
 .removeable td{
     padding: 10px 0;
 }
+.removeable .p-price.p-cell .p-label{
+    display: none;
+}
 .cart-p-image{
     height: 80px;
     width: 80px;
