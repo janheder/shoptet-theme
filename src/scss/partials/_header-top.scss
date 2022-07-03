@@ -339,19 +339,19 @@ body.--searchActive .search{
         padding-top: 0px;
         background: $red-500;
         z-index: -1;
-        transform: translateY(-100%);
+        transform: translateY(0%);
         transition: 0.2s ease transform;
     }
     body.--floatSearchActive .search{
         display: flex;
-        transform: translateY(0%);
+        transform: translateY(100%);
     }
     body.--searchActive .search{
         display: flex;
         transform: translateY(0%);
     }
     body.--floatSearchActive .nav-search{
-        display: none;
+        display: flex;
     }
     .search-form {
         height: 46px;

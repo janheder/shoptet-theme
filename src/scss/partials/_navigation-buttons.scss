@@ -151,6 +151,7 @@
     .nav-search{
         display: flex;
         background-image: url($i-search-white);
+        display:none;
     }
     .nav-search.--active{
         background-image: url("../icons/close.svg");
