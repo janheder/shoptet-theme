@@ -114,11 +114,11 @@ $("#navigation").insertBefore(".header-top .search");
 
 
 
-if(window.pageYOffset <= 300) {
+if(window.pageYOffset >= 300) {
     $('body').addClass('--floatSearchActive');
 }
 $(window).scroll(function(){
-    if ($(this).scrollTop() < 300) {
+    if ($(this).scrollTop() > 300) {
        $('body').addClass('--floatSearchActive');
     } else {
        $('body').removeClass('--floatSearchActive');
