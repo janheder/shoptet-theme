@@ -6,12 +6,14 @@
 }
 .contact-form__container{
     background: white;
+    display: flex;
 }
 .contact-form__left{
     background: $red-500;
+    padding: 60px;
 }
 .contact-form h2{
-
+    color: white;
 }
 .contact-form__content{
     background: white;
