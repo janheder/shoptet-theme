@@ -23,7 +23,7 @@ summary::after{
     background-image: url(../icons/arrow-down.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 10px;
+    background-size: 100%;
     transition: 0.2s ease transform;
 }
 details[open] summary::after{
