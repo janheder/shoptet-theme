@@ -359,13 +359,13 @@ if ($(".cart-header").length){
 // =============================================================================
 
 
-$(".form-group input").on("focus",function(){
+$(".form-group input, .form-group textarea").on("focus",function(){
     $(this).parent().addClass("--activeFocus");
 }).blur(function(){
     $(this).parent().removeClass("--activeFocus");
 });
 
-$(".form-group input").keyup(function(){
+$(".form-group input, .form-group textarea").keyup(function(){
     var input = $(this);
     if(input.val() == "") {
         input.parent().removeClass("--activeFilled");
@@ -375,8 +375,8 @@ $(".form-group input").keyup(function(){
 });
 
 $(document).ready(function() {
-    if($(".form-group input").val() !== "") { 
-        $(".form-group input").parent().addClass("--activeFilled");
+    if($(".form-group input, .form-group textarea").val() !== "") { 
+        $(".form-group input, .form-group textarea").parent().addClass("--activeFilled");
     };
 });
 

@@ -344,7 +344,7 @@ body.--searchActive .search{
     }
     body.--floatSearchActive .search{
         display: flex;
-        transform: translateY(100%);
+        transform: translateY(-100%);
     }
     body.--searchActive .search{
         display: flex;
