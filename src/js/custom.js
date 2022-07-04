@@ -21,10 +21,47 @@ $('#carousel .item').each(function(){
 });
 
 // =============================================================================
+// LOAD HOMEPAGE BRANDS
+// =============================================================================
+
+const loadBrands = (html) => {
+    const nodes = new DOMParser().parseFromString(html, 'text/html');
+    const body = nodes.querySelectorAll('.manufacturers li li a');
+
+    for(var i = 0; i <= 9; i++) {
+        document.querySelector('#brandWrapper').appendChild(body[i]);
+    }
+
+};
+
+fetch("https://www.janheder.tk/znacka/")
+    .then((response) => response.text())
+    .then(loadBrands)
+
+
+// =============================================================================
 // LOAD HOMEPAGE NEWS
 // =============================================================================
 
-$(".hp-blog .news-wrapper").load("/blog/ .news-wrapper .news-item:nth-child(-n+3)");
+
+// $(".hp-blog .news-wrapper").load("/blog/ .news-wrapper .news-item:nth-child(-n+3)");
+
+const loadNews = (html) => {
+    const nodes = new DOMParser().parseFromString(html, 'text/html');
+
+    const body = nodes.querySelectorAll('.news-wrapper .news-item:nth-child(-n+3)');
+    
+    for(var i = 0; i <= 2; i++) {
+        document.querySelector('#newsWrapper').appendChild(body[i]);
+    }
+
+};
+
+fetch("https://www.janheder.tk/blog/")
+    .then((response) => response.text())
+    .then(loadNews)
+
+
 
 // =============================================================================
 // LOAD NUMBER INPUT
