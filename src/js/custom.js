@@ -52,7 +52,7 @@ const loadNews = (html) => {
     const body = nodes.querySelectorAll('.news-wrapper .news-item:nth-child(-n+3)');
     
     for(var i = 0; i <= 2; i++) {
-        document.querySelector('#newsWrapper').appendChild(body[i]);
+        document.querySelector('.in-index #newsWrapper').appendChild(body[i]);
     }
 
 };
