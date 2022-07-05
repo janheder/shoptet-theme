@@ -22,9 +22,19 @@
         pointer-events: none;
         border-bottom: 1px solid $gray-300;
     }
+    .floating-product-content{
+        display: flex;
+        flex-direction: column;
+    }
+
     .floating-product-name{
         font-size: 15px;
         font-weight: 500;
+    }
+    .floating-product-price{
+        font-size: 15px;
+        font-weight: 500;
+        color: $red-500;
     }
     .floating-bar .btn{
         height: 42px;
