@@ -274,32 +274,32 @@ $(".p-detail-inner-header").insertBefore(".p-final-price-wrapper");
 /* floating bar */
 if ($(".type-detail").length){
 
-    function floatingBar() {
-        var pname = $(".p-detail-inner-header h1").text();
+    var pname = $(".p-detail-inner-header h1").text();
+    var pPrice = $(".product-top .price-final-holder:not(.noDisplay)").text();
 
+    $("body").append('<div class="floating-bar"><div class="floating-product-content"><div class="floating-product-name">'+ pname +'</div><div class="floating-product-price">'+ pPrice +'</div></div><button type="submit" form="product-detail-form" class="btn">Do košíku</button></div>');
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 500) {
+        $('body').addClass('--floatBarActive');
+        } else {
+        $('body').removeClass('--floatBarActive');
+        }
+    });
+
+
+    document.addEventListener('ShoptetSurchargesPriceUpdated', function () {
         var pPrice = $(".product-top .price-final-holder:not(.noDisplay)").text();
+        $(".floating-product-price").text(pPrice);
+    },{
+        passive: true
+    });
 
-        $("body").append('<div class="floating-bar"><div class="floating-product-content"><div class="floating-product-name">'+ pname +'</div><div class="floating-product-price">'+ pPrice +'</div></div><button type="submit" form="product-detail-form" class="btn">Do košíku</button></div>');
-
-
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 500) {
-            $('body').addClass('--floatBarActive');
-            } else {
-            $('body').removeClass('--floatBarActive');
-            }
-        });
-    }
 }
 
 
-document.addEventListener('ShoptetSurchargesPriceUpdated', function () {
-    floatingBar();
-},{
-    passive: true
-});
 
-floatingBar();
+
 
 
 $(".shipping-options").insertAfter(".availability-value .availability-label:last-child");
