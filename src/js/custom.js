@@ -20,48 +20,60 @@ $('#carousel .item').each(function(){
     $(this).find(".extended-banner-texts").append('<div href="' + $(this).find("a").attr("href") + '" class="btn">Více informací</div>');
 });
 
+
+// =============================================================================
+// LOAD 404 products
+// =============================================================================
+
+if ($(".id-404").length){
+    const load404 = (html) => {
+        const nodes = new DOMParser().parseFromString(html, 'text/html');
+        const body = nodes.querySelectorAll('#products-1 .product');
+        for(var i = 0; i <= 3; i++) {
+            document.querySelector('#errorProductsWrap').appendChild(body[i]);
+        }
+    };
+    fetch("https://www.janheder.tk/")
+        .then((response) => response.text())
+        .then(load404)
+}
+
 // =============================================================================
 // LOAD HOMEPAGE BRANDS
 // =============================================================================
 
-const loadBrands = (html) => {
-    const nodes = new DOMParser().parseFromString(html, 'text/html');
-    const body = nodes.querySelectorAll('.manufacturers li li a');
-
-    for(var i = 0; i <= 9; i++) {
-        document.querySelector('#brandWrapper').appendChild(body[i]);
-    }
-
-};
-
-fetch("https://www.janheder.tk/znacka/")
-    .then((response) => response.text())
-    .then(loadBrands)
-
+if ($(".in-index").length){
+    const loadBrands = (html) => {
+        const nodes = new DOMParser().parseFromString(html, 'text/html');
+        const body = nodes.querySelectorAll('.manufacturers li li a');
+        for(var i = 0; i <= 9; i++) {
+            document.querySelector('#brandWrapper').appendChild(body[i]);
+        }
+    };
+    fetch("https://www.janheder.tk/znacka/")
+        .then((response) => response.text())
+        .then(loadBrands)
+}
 
 // =============================================================================
 // LOAD HOMEPAGE NEWS
 // =============================================================================
 
+if ($(".in-index").length){
 
-// $(".hp-blog .news-wrapper").load("/blog/ .news-wrapper .news-item:nth-child(-n+3)");
+    // $(".hp-blog .news-wrapper").load("/blog/ .news-wrapper .news-item:nth-child(-n+3)");
 
-const loadNews = (html) => {
-    const nodes = new DOMParser().parseFromString(html, 'text/html');
-
-    const body = nodes.querySelectorAll('.news-wrapper .news-item:nth-child(-n+3)');
-    
-    for(var i = 0; i <= 2; i++) {
-        document.querySelector('.in-index #newsWrapper').appendChild(body[i]);
-    }
-
-};
-
-fetch("https://www.janheder.tk/blog/")
-    .then((response) => response.text())
-    .then(loadNews)
-
-
+    const loadNews = (html) => {
+        const nodes = new DOMParser().parseFromString(html, 'text/html');
+        const body = nodes.querySelectorAll('.news-wrapper .news-item:nth-child(-n+3)');
+        for(var i = 0; i <= 2; i++) {
+            document.querySelector('.in-index #newsWrapper').appendChild(body[i]);
+        }
+    };
+    fetch("https://www.janheder.tk/blog/")
+        .then((response) => response.text())
+        .then(loadNews)
+}
 
 // =============================================================================
 // LOAD NUMBER INPUT

@@ -11,7 +11,11 @@
     display: none;
 }
 #brandWrapper a{
-    padding: 10px 25px;
+    padding: 30px 25px;
     background: $gray-100;
     text-align: center;
+    color: $gray-900;
+}
+#brandWrapper a img{
+    
 }
