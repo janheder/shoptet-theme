@@ -213,7 +213,7 @@ function startDictation() {
 
 if ($(".type-detail").length){
 
-    $("body").append('<div class="advancedModal"><div class="advancedModal__inner"><h2 class="advancedModal__title">Zboží bylo přidáno do košíku</h2><div class="advancedModal__content"></div><div class="advancedModal__buttons"><a href="/kosik" class="btn">Přejít do košíku</a></div></div></div>');
+    $("body").append('<div class="advancedModal"><div class="advancedModal__inner"><h2 class="advancedModal__title">Zboží bylo přidáno do košíku</h2><div class="advancedModal__content"></div><div class="advancedModal__buttons"><a href="/" class="btn btn-ghost">Zpět do obchodu</a><a href="/kosik" class="btn">Přejít do košíku</a></div></div></div>');
 
     if ($(".products-related").length){
         var related = $(".products-related").html();
@@ -237,13 +237,14 @@ if ($(".type-detail").length){
         var priceSingle = $(".p-detail-inner .p-final-price-wrapper .price-final-holder").html();
         var priceTotal = parseFloat(priceSingle)*amount;
     
-        $(".advancedModal__content").prepend('<div class="extras-product">' +
-        '<div class="extras-product-img">' + img + '</div>' +
-        '<div class="extras-product-name">' + name + '</div>' +
-        '<div class="extras-product-stock">' + stock + '</div>' +
-        '<div class="extras-product-amount">' + amount + 'x</div>' +
-        '<div class="extras-product-priceTotal">' + priceTotal + ' Kč</div>' +
-        '</div>');
+        $(".advancedModal__content").prepend('<div class="advancedProduct">' +
+        '<div class="advancedProduct-img">' + img + '</div>' +
+        '<div class="advancedProduct-content">' +
+        '<div class="advancedProduct-name">' + name + '</div>' +
+        '<div class="advancedProduct-stock"><span>Dostupnost</span>' + stock + '</div>' +
+        '<div class="advancedProduct-amount"><span>Počet kusů</span>' + amount + 'x</div>' +
+        '<div class="advancedProduct-priceTotal"><span>Celková cena</span>' + priceTotal + ' Kč</div>' +
+        '</div></div>');
         $(".advancedModal__inner").append($("#productsRelated"));
         
     }

@@ -21,6 +21,7 @@
         transform: translateY(-100%);
         pointer-events: none;
         border-bottom: 1px solid $gray-300;
+        box-shadow: 0px 4px 9px rgba(52, 66, 81, 0.05);
     }
     .floating-product-content{
         display: flex;
