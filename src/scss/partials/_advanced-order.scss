@@ -314,6 +314,16 @@
     display: flex;
 }
 .advancedProduct-img{
+    background: $gray-100;
+    height: 260px;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.advancedProduct-img img{
+    max-height: 180px;
+    max-width: 180px;
 
 }
 .advancedProduct-content{
