@@ -241,9 +241,9 @@ if ($(".type-detail").length){
         '<div class="advancedProduct-img">' + img + '</div>' +
         '<div class="advancedProduct-content">' +
         '<div class="advancedProduct-name">' + name + '</div>' +
-        '<div class="advancedProduct-stock"><span>Dostupnost</span>' + stock + '</div>' +
-        '<div class="advancedProduct-amount"><span>Počet kusů</span>' + amount + 'x</div>' +
-        '<div class="advancedProduct-priceTotal"><span>Celková cena</span>' + priceTotal + ' Kč</div>' +
+        '<div class="advancedProduct-stock">Dostupnost<span>' + stock + '</span></div>' +
+        '<div class="advancedProduct-amount">Počet kusů<span>' + amount + 'x</span></div>' +
+        '<div class="advancedProduct-priceTotal">Celková cena<span>' + priceTotal + ' Kč</span></div>' +
         '</div></div>');
         $(".advancedModal__inner").append($("#productsRelated"));
         
