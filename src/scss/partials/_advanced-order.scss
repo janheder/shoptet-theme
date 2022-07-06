@@ -406,8 +406,6 @@ body.--advancedModal{
 @media screen and (max-width: 991px){
     .advancedModal{
         align-items: flex-start;
-        padding-top: 80px;
-        padding-bottom: 20px;
     }
     .advancedModal #productsRelated{
         display: none;
@@ -416,6 +414,9 @@ body.--advancedModal{
 @media screen and (max-width: 767px){
     .advancedModal__content{
         padding: 40px 30px 30px 30px;
+    }
+    .advancedModal__buttons {
+        padding: 50px 30px;
     }
 }
 
@@ -495,5 +496,8 @@ body.--advancedModal{
     .advancedProduct{
         display: flex;
         flex-direction: column;
+    }
+    .advancedProduct-content {
+        margin-left: 0;
     }
 }
