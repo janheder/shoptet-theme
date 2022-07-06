@@ -378,13 +378,15 @@ body.--advancedModal{
     padding: 10px;
 }
 .advancedModal__buttons{
-    padding: 20px;
+    padding: 50px 60px;
     padding-top: 0;
     text-align: center;
     display: flex;
     justify-content: space-between;
 }
-
+.advancedModal__buttons .btn.btn-ghost{
+    height: 50px;
+}
 @media screen and (max-width: 991px){
     .advancedModal{
         align-items: flex-start;
@@ -437,17 +439,22 @@ body.--advancedModal{
     text-transform: uppercase;
     font-weight: 500;
     border-bottom: 1px solid $gray-300;
+    padding-bottom: 30px;
 }
 .advancedProduct-stock{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid $gray-300;
     padding: 12px 0;
+    color: $green-500;
+}
+.advancedProduct-stock .availability-label{
+    display: none;
 }
 .advancedProduct-stock span{
     font-weight: 500;
     padding-right: 10px;
-    color: $green-500;
+    color: $gray-900;
 }
 .advancedProduct-amount{
     display: flex;
@@ -472,6 +479,3 @@ body.--advancedModal{
     color: $red-500;
 }
 
-.advancedModal__buttons .btn.btn-ghost{
-    height: 50px;
-}
