@@ -456,9 +456,10 @@ body.--advancedModal{
     padding: 12px 0;
     color: $gray-900;
     font-size: 14px;
+    align-items: center;
 }
 .advancedProduct-stock .availability-label{
-    display: none;
+    padding-right: 0;
 }
 .advancedProduct-stock span{
     font-weight: 500;
@@ -471,6 +472,7 @@ body.--advancedModal{
     border-bottom: 1px solid $gray-300;
     padding: 12px 0;
     font-size: 14px;
+    align-items: center;
 }
 .advancedProduct-amount span{
     font-weight: 500;
