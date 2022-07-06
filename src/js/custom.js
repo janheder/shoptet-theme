@@ -85,7 +85,7 @@ function productAddNumber(){
 }
 productAddNumber();
 
-document.addEventListener('ShoptetDOMPageContentLoaded', function () {
+document.addEventListener('ShoptetPageSortingChanged', function () {
     productAddNumber();
 },{
     passive: true
