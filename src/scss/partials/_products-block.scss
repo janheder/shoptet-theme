@@ -47,6 +47,13 @@
     }
 }
 @media screen and (max-width: 768px){
+    .products-block{
+        grid-template-columns: 1fr 1fr;
+
+        .product {
+            width: 100%;
+        }
+    }
     .products-block.homepage-products-1, .products-block.homepage-products-2{
         
         .product {

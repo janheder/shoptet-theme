@@ -386,6 +386,7 @@ body.--advancedModal{
 }
 
 .advancedModal #productsRelated{
+    padding: 10px;
     padding-top: 40px;
     margin-top: 0px;
     border-top: 2px solid #F9f9f9;
@@ -396,6 +397,10 @@ body.--advancedModal{
 }
 .advancedModal #productsRelated .p-tools{
     display: none;
+}
+.advancedModal #productsRelated .products-block{
+    padding: 0;
+    margin: 0;
 }
 
 @media screen and (max-width: 991px){
@@ -408,7 +413,11 @@ body.--advancedModal{
         display: none;
     }
 }
-
+@media screen and (max-width: 767px){
+    .advancedModal__content{
+        padding: 40px 30px 30px 30px;
+    }
+}
 
 .advancedProduct{
     display: flex;
@@ -482,3 +491,9 @@ body.--advancedModal{
     color: $red-500;
 }
 
+@media screen and (max-width: 767px){
+    .advancedProduct{
+        display: flex;
+        flex-direction: column;
+    }
+}
