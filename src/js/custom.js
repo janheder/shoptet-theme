@@ -218,9 +218,9 @@ if ($(".type-detail").length){
 
     if ($(".products-related").length){
         var related = $(".products-related").html();
-        $(".advancedModal__inner").append('<h3 class="advancedModal__relatedTitle">Související produkty</h3><div class="products-block">' + related + '</div>');
+        $(".advancedModal__inner").append('<div id="productsRelated"><h3 class="advancedModal__relatedTitle">Související produkty</h3><div class="products-block">' + related + '</div></div>');
     }
-
+    
     function advanceOrderCustom() {
     
         $("body").addClass("--advancedModal");
