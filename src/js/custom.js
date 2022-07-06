@@ -217,7 +217,7 @@ if ($(".type-detail").length){
 
     if ($(".products-related").length){
         var related = $(".products-related").html();
-        $(".advancedModal").append('<h3 class="advancedModal__relatedTitle">Související produkty</h3><div class="products-block">' + related + '</div>');
+        $(".advancedModal__inner").append('<h3 class="advancedModal__relatedTitle">Související produkty</h3><div class="products-block">' + related + '</div>');
     }
 
     function advanceOrderCustom() {
@@ -245,7 +245,6 @@ if ($(".type-detail").length){
         '<div class="advancedProduct-amount">Počet kusů<span>' + amount + 'x</span></div>' +
         '<div class="advancedProduct-priceTotal">Celková cena<span>' + priceTotal + ' Kč</span></div>' +
         '</div></div>');
-        $(".advancedModal__inner").append($("#productsRelated"));
         
     }
     
