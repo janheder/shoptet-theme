@@ -234,8 +234,8 @@ if ($(".type-detail").length){
         }
         var amount = parseFloat($(".p-detail-inner .add-to-cart .amount").val());
     
-        var priceSingle = $(".p-detail-inner .p-final-price-wrapper .price-final-holder").html();
-        var priceTotal = parseFloat(priceSingle)*amount;
+        var priceSingle = $(".p-detail-inner .p-final-price-wrapper .price-final-holder:not(.noDisplay)").html();
+        var priceTotal = parseFloat(priceSingle.replace(/ /g, ''))*amount;
     
         $(".advancedModal__content").prepend('<div class="advancedProduct">' +
         '<div class="advancedProduct-img">' + img + '</div>' +
