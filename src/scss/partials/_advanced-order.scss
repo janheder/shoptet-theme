@@ -383,6 +383,7 @@ body.--advancedModal{
 .advancedModal__buttons .btn.btn-ghost{
     height: 50px;
     background: $white;
+    font-size: 15px;
 }
 
 .advancedModal #productsRelated{
@@ -433,8 +434,8 @@ body.--advancedModal{
     flex-shrink: 0;
 }
 .advancedProduct-img img{
-    max-height: 180px;
-    max-width: 180px;
+    max-height: 220px;
+    max-width: 220px;
     mix-blend-mode: multiply;
 }
 .advancedProduct-content{
