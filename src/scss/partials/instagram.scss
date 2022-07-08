@@ -47,3 +47,33 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+
+.social-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.social-footer a{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 80px;
+}
+.social-footer a img{
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 575px){
+    .social-footer{
+        grid-template-columns: 1fr
+    }
+    .social-footer a{
+        font-size: 0;
+    }
+    .social-footer a img{
+        margin-right: 0px;
+    }
+}
