@@ -24,14 +24,29 @@
     background: $red-500;
     padding: 60px;
     max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .contact-form h2{
     color: white;
 }
 .contact-form p{
     color: white;
+    opacity: 0.8;
 }
 .contact-form__content{
     background: white;
     padding: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contact-form__content form{
+    max-width: 100%;
+    width: 520px;
+}
+.contact-form__content form button{
+    width: 100%;
+    background: $red-500;
 }
