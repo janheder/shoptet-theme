@@ -76,6 +76,32 @@ if ($(".in-index").length){
         .then(loadNews)
 }
 
+
+
+
+if ($(".in-blog").length){
+
+    $('.top-navigation-bar-menu a[target="blank"]').each(function(){
+        var url = $(this).prop("href");
+        var name = $(this).text();
+        $('.content-inner article').append('<section class="blog-section --'+ name +'"><h2>'+ name +'</h2><div class="news-wrapper"></div></section>');
+
+        const loadNews = (html) => {
+            const nodes = new DOMParser().parseFromString(html, 'text/html');
+            const body = nodes.querySelectorAll('.news-wrapper .news-item:nth-child(-n+3)');
+            for(var i = 0; i <= 2; i++) {
+                document.querySelector('.content-inner article .blog-section.--'+ name + ' .news-wrapper').appendChild(body[i]);
+            }
+        };
+        fetch(url)
+            .then((response) => response.text())
+            .then(loadNews)
+    
+
+    });
+
+}
+
 // =============================================================================
 // LOAD NUMBER INPUT
 // =============================================================================
