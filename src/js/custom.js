@@ -77,8 +77,8 @@ if ($(".in-index").length){
 // =============================================================================
 
 if ($(".in-index").length){
-
-    // $(".hp-blog .news-wrapper").load("/blog/ .news-wrapper .news-item:nth-child(-n+3)");
+//var a = performance.now();
+// $(".hp-blog .news-wrapper").load("/automoto/ .news-wrapper .news-item:nth-child(-n+3)");
 
     const loadNews = (html) => {
         const nodes = new DOMParser().parseFromString(html, 'text/html');
@@ -90,6 +90,10 @@ if ($(".in-index").length){
     fetch("https://www.janheder.tk/automoto/")
         .then((response) => response.text())
         .then(loadNews)
+
+
+//var b = performance.now();
+//alert('It took ' + (b - a) + ' ms.');
 }
 
 
