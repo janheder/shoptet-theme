@@ -146,16 +146,17 @@
 
 }
 .in-hodnoceni-obchodu-2 .votes-wrap{
+    /*
     column-count: 3;
     gap: 20px;
+    */
     margin-bottom: 40px;
 }
 .in-hodnoceni-obchodu-2 .vote-wrap{
     background: #f7f7f7;
     padding: 50px 40px;
-    flex-direction: column;
+    box-shadow: none;
     position: relative;
     display: grid;
-    margin-bottom: 20px;
     break-inside: avoid;
 }
