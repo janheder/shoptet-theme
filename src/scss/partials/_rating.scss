@@ -252,8 +252,10 @@
 
 
 
-#ratingWrapper .rate-wrap.col-sm-6:last-child{
-
+#ratingWrapper .rate-wrap .col-sm-6:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
