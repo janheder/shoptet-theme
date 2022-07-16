@@ -139,3 +139,22 @@
     margin-top: -3px;
     margin-right: 6px;
 }
+
+
+
+.in-hodnoceni-obchodu-2{
+
+}
+.in-hodnoceni-obchodu-2 .votes-wrap{
+    column-count: 3;
+    gap: 20px;
+}
+.in-hodnoceni-obchodu-2 .vote-wrap{
+    background: #f7f7f7;
+    padding: 50px 40px;
+    flex-direction: column;
+    position: relative;
+    display: grid;
+    margin-bottom: 20px;
+    break-inside: avoid;
+}
