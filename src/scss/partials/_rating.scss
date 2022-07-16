@@ -149,12 +149,21 @@
         text-align: center;
         margin-top: 80px;
         padding-top: 40px;
+        font-size: 0;
     }
     .content-inner h1::before{
         content: "Nakoupilo u nás už více jak 50 tisíc automobilových nadšenců.";
+        font-size: 36px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
     }
     .content-inner h1::after{
         content: "Tohle o nás řekli";
+        font-size: 36px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
     }
     .votes-wrap{
         /*
@@ -165,7 +174,8 @@
         position: relative;
     }
     .vote-wrap{
-        background: #f7f7f7;
+        background: #fff;
+        border-top: 1px solid $gray-300;
         padding: 50px 40px;
         box-shadow: none;
         display: grid;
@@ -186,7 +196,7 @@
 
 
 #ratingWrapper{
-    background: #f7f7f7;
+
     padding: 50px 40px;
     margin-bottom: 60px; 
 }
