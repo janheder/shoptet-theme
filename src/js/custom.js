@@ -29,7 +29,7 @@ if ($(".cart-header.step-0").length){
     const load404 = (html) => {
         const nodes = new DOMParser().parseFromString(html, 'text/html');
         const body = nodes.querySelector('.site-msg-custom.step-1');
-        document.querySelector('#content .content-inner').prepend(body);
+        document.querySelector('#content').prepend(body);
 
     };
     fetch("https://www.janheder.tk/objednavka/krok-1/")
