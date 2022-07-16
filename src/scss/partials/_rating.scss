@@ -142,6 +142,10 @@
 
 
 .in-hodnoceni-obchodu-2 {
+
+    .breadcrumbs-wrapper{
+        background: #fff;
+    }
     .content-inner header::before{
         content: "";
     }
@@ -153,14 +157,14 @@
     }
     .content-inner h1::before{
         content: "Nakoupilo u nás už více jak 50 tisíc automobilových nadšenců.";
-        font-size: 36px;
+        font-size: 32px;
         display: flex;
         text-align: center;
         justify-content: center;
     }
     .content-inner h1::after{
         content: "Tohle o nás řekli";
-        font-size: 36px;
+        font-size: 32px;
         display: flex;
         text-align: center;
         justify-content: center;
@@ -172,14 +176,23 @@
         */
         margin-bottom: 40px;
         position: relative;
+        background: $gray-100;
+        padding: 80px 0;
+    }
+    .votes-wrap::before{
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        height: 100%;
+        background: #F9f9f9;
+        display: flex;
+        position: absolute;
+        z-index: -1;
     }
     .vote-wrap{
-        background: #fff;
-        border-top: 1px solid $gray-300;
-        padding: 50px 40px;
-        box-shadow: none;
-        display: grid;
-        break-inside: avoid;
 
     }
     .vote-content{
