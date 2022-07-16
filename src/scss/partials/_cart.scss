@@ -187,7 +187,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    font-weight: 600;
+    font-weight: 500;
     color: $gray-800;
     flex-shrink: 0;
 }
@@ -280,7 +280,7 @@
     display: none;
 }
 .p-availability strong{
-    font-weight: 600;
+    font-weight: 500;
 }
 .p-availability .availability-amount{
 
@@ -629,4 +629,11 @@
 
 #checkoutContent .form-group{
     max-width: 520px;
+}
+
+
+.site-msg-custom.step-1{
+    margin-bottom: 30px;
+    background: $green-100;
+    padding: 10px 20px;
 }

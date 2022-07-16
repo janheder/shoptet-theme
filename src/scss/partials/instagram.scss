@@ -57,7 +57,7 @@
 .social-footer a{
     width: 100%;
     display: flex;
-    text-align: center;
+    text-align: left;
     align-items: center;
     justify-content: center;
     padding: 20px;
@@ -76,7 +76,7 @@
 
 @media screen and (max-width: 575px){
     .social-footer{
-        grid-template-columns: 1fr
+
     }
     .social-footer a{
         font-size: 0;
