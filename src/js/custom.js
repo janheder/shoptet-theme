@@ -21,6 +21,22 @@ $('#carousel .item').each(function(){
     $(this).find(".extended-banner-texts").append('<div href="' + $(this).find("a").attr("href") + '" class="btn">Více informací</div>');
 });
 
+// =============================================================================
+// LOAD cart 1 notice
+// =============================================================================
+
+if ($(".cart-header.step-0").length){
+    const load404 = (html) => {
+        const nodes = new DOMParser().parseFromString(html, 'text/html');
+        const body = nodes.querySelector('.site-msg-custom.step-1');
+        document.querySelector('#content .content-inner').prepend(body);
+
+    };
+    fetch("https://www.janheder.tk/objednavka/krok-1/")
+        .then((response) => response.text())
+        .then(load404)
+}
+
 
 // =============================================================================
 // LOAD 404 products
