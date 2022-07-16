@@ -151,12 +151,13 @@
     gap: 20px;
     */
     margin-bottom: 40px;
+    position: relative;
 }
 .in-hodnoceni-obchodu-2 .vote-wrap{
     background: #f7f7f7;
     padding: 50px 40px;
     box-shadow: none;
-    position: relative;
     display: grid;
     break-inside: avoid;
+    position: absolute;
 }
