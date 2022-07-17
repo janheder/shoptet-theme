@@ -266,10 +266,12 @@
     align-items: center;
     max-width: 400px;
     margin: 0 auto;
+    width: 100%;
 }
 #ratingWrapper .rate-list .rate-star{
     display: flex;
     margin-right: 10px;
+    align-items: center;
 }
 
 #ratingWrapper .rate-list .rate-block {
@@ -292,9 +294,12 @@
     position: absolute;
     right: 0;
     top: 0;
+    font-size: 14px;
 }
 #ratingWrapper .rate-list .rate-value{
     display: flex;
+    width: 10px;
+    margin-right: 5px;
 }
 #ratingWrapper .rate-list .star-off{
     background-image: url("../icons/star-full.svg");
