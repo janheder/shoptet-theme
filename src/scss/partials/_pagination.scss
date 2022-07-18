@@ -2,8 +2,22 @@
 
 }
 .pagination-top{
-
+    display: none;
 }
 .pagination{
-    
+    display: flex;
+}
+.pagination a, .pagination strong{
+    height: 46px;
+    width: 46px;
+    background: $gray-100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: $gray-900;
+    margin: 3px;
+}
+.pagination strong{
+    background: $white;
 }
