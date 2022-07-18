@@ -505,8 +505,13 @@ if ($(".pagination").length){
     for(var i = 1; i <= max ; i++) {
         if(i == current){
             $('.pagination').append("<strong class='current'>" + i + "</strong>");
-        }else if((current - i)>3 || (i - current)>3){
-            $('.pagination').append("<a class='hidden' href='../strana-" + i + "'>" + i + "</a>");  
+        }else if( (current - i)>2 || (i - current)>2){
+            if(i == 1  || i == max ){
+                 $('.pagination').append("<a href='../strana-" + i + "'>" + i + "</a>");      
+            }else{
+                 $('.pagination').append("<a class='hidden' href='../strana-" + i + "'>" + i + "</a>");             
+            }
+
         }else{
             $('.pagination').append("<a href='../strana-" + i + "'>" + i + "</a>");  
         }

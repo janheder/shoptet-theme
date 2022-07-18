@@ -26,3 +26,17 @@
 .pagination a.hidden{
     display: none;
 }
+.pagination a.hidden + *{
+    margin-left: 40px;
+    position: relative;
+}
+.pagination a.hidden + *::before{
+    content: "...";
+    height: 46px;
+    width: 40px;
+    position: absolute;
+    left: -43px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
