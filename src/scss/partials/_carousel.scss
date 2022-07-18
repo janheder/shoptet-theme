@@ -172,14 +172,21 @@
     }
     .extended-banner-texts{
         left: 0;
-        position: relative;
         bottom: 0;
         padding: 20px;
         width: 100%;
-        background: #f9f9f9;
+        background: transparent;
+        text-align: left;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
     }
     .extended-banner-text{
-        font-size: 30px;
+        font-size: 22px;
+        color: white;
+        margin: 0;
+    }
+    .extended-banner-texts .btn{
+        display: none;
     }
 }
 
