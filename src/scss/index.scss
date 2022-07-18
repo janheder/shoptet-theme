@@ -211,10 +211,13 @@ b, strong {
         background: $gray-900;
         color: white;
         font-size: 13px;
-        height: 40px;
-        width: 40px;
+        height: 46px;
+        width: 46px;
         border-radius: 50%;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9;
     }
 }
 

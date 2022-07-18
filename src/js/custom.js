@@ -552,3 +552,9 @@ if((windowHeight * multiplier) < docHeight){
         passive: true
     });
 }
+
+
+
+$("#footer .banner h4").click(function(){
+    $(this).toggleClass("--active");
+});

@@ -201,6 +201,15 @@ footer {
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    .custom-footer h4{
+        margin-top: 20px;
+    }
+    .custom-footer h4 ~ * {
+        display: none;
+    }
+    .custom-footer h4.--active ~ * {
+        display: flex;
+    }
 }
 
 
