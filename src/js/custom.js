@@ -35,7 +35,6 @@ if ($(".cart-header.step-0").length){
     fetch("https://www.janheder.tk/objednavka/krok-1/")
         .then((response) => response.text())
         .then(load404)
-}
 
 
 // =============================================================================
@@ -50,9 +49,13 @@ if ($(".id-404").length){
             document.querySelector('#errorProductsWrap').appendChild(body[i]);
         }
     };
+    function loadImg(){
+        $("img").unveil()
+    }
     fetch("https://www.janheder.tk/")
         .then((response) => response.text())
         .then(load404)
+        .then(loadImg)
 }
 
 // =============================================================================

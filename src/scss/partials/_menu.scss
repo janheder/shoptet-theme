@@ -121,17 +121,19 @@
 }
 .menu-level-2 > li .menu-image{
     flex-shrink: 0;
-    height: 80px;
-    width: 110px;
+    height: 60px;
+    width: 100px;
     background-image: url("../img/loading-symbol.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .menu-level-2 > li .menu-image img{
-    height: 80px;
-    width: 110px;
+    height: 60px;
+    width: auto;
 }
 .menu-level-2 > li > div{
     height: 100%;
