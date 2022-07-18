@@ -63,6 +63,7 @@
     .in-index .products.products-block.swiffy-slider .slider-container{
         grid-template-columns: 1fr 1fr;
         grid-auto-columns: auto;
+        scroll-snap-type: none;
     }
 }
 
