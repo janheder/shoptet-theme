@@ -26,7 +26,7 @@
         content: "";
         left: 0;
         top: 0;
-        height: 52px;
+        height: 106px;
         width: 100%;
         background: rgba(black,0.3);
         z-index: 10;
@@ -39,7 +39,7 @@
         backface-visibility: hidden;
     }
     body.--floatSearchActive .header-top::before{
-        height: 106px;
+        height: 52px;
     }
     body.--menuActive .header-top::before, body.--cartActive .header-top::before{
         pointer-events: auto;
