@@ -500,6 +500,11 @@ $(document).ready(function() {
 
 
 
+// =============================================================================
+// REFACTORED PAGIANTION
+// =============================================================================
+
+
 if ($(".pagination").length){
 
     var current = parseInt($(".pagination .current").text());
@@ -528,3 +533,22 @@ if ($(".pagination").length){
     }
 }
 
+
+
+// =============================================================================
+// back to top button
+// =============================================================================
+
+var windowHeight = $(window).height();
+var docHeight = $(document).height();
+var multiplier = 4;
+
+if((windowHeight * multiplier) < docHeight){
+    $("body").append("<div id='backToTop'>Nahoru</div>");
+
+    document.querySelector('#backToTop').addEventListener('click', e => {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    },{
+        passive: true
+    });
+}

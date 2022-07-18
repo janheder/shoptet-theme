@@ -200,7 +200,23 @@ b, strong {
     text-align: center;
 }
 
-
+#backToTop{
+    display: none;
+}
+@media (max-width: 991px){
+    body.--floatSearchActive #backToTop{
+        position: fixed;
+        bottom: 20px;
+        right: 80px;
+        background: $gray-900;
+        color: white;
+        font-size: 13px;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        display: flex;
+    }
+}
 
 @import "partials/**/*";
 
