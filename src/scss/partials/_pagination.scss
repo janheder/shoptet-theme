@@ -6,10 +6,12 @@
 }
 .pagination{
     display: flex;
+    justify-content: center;
 }
 .pagination a, .pagination strong{
-    height: 46px;
-    width: 46px;
+    height: 40px;
+    width: 40px;
+    font-size: 14px;
     background: $gray-100;
     display: flex;
     justify-content: center;
@@ -20,4 +22,7 @@
 }
 .pagination strong{
     background: $white;
+}
+.pagination a.hidden{
+    display: none;
 }
