@@ -183,6 +183,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 30px;
         padding-top: 0;
+        display: block;
     }
     .votes-wrap::before{
         content: "";
@@ -198,7 +199,8 @@
         z-index: -1;
     }
     .vote-wrap{
-
+        width: calc( 33.333% - 20px);
+        margin-bottom: 30px;
     }
     .vote-content{
         height: auto;
