@@ -206,11 +206,11 @@ b, strong {
 @media (max-width: 991px){
     body.--floatSearchActive #backToTop{
         position: fixed;
-        bottom: 20px;
-        right: 80px;
+        bottom: 15px;
+        right: 15px;
         background: $gray-900;
         color: white;
-        font-size: 13px;
+        font-size: 11px;
         height: 46px;
         width: 46px;
         border-radius: 50%;
@@ -218,6 +218,9 @@ b, strong {
         justify-content: center;
         align-items: center;
         z-index: 9;
+    }
+    body.--floatSearchActive #chat-application ~ #backToTop{
+        bottom: 75px;
     }
 }
 

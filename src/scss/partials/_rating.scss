@@ -169,6 +169,7 @@
         display: flex;
         text-align: center;
         justify-content: center;
+        padding-top: 10px;
     }
     .votes-wrap{
         /*
@@ -231,10 +232,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    
 }
 #ratingWrapper .rate-average-inner .rate-average{
     font-weight: 500;
     font-size: 60px;
+    line-height: 1;
+    padding-bottom: 15px;
 }
 #ratingWrapper .rate-average-inner .rate-star-wrap{
     display: flex;
@@ -274,6 +279,7 @@
     max-width: 400px;
     margin: 0 auto;
     width: 100%;
+    padding: 5px 0;
 }
 #ratingWrapper .rate-list .rate-star{
     display: flex;
@@ -321,6 +327,8 @@
     display: flex;
     width: 10px;
     margin-right: 5px;
+    align-items: center;
+    line-height: 1;
 }
 #ratingWrapper .rate-list .star-off{
     background-image: url("../icons/star-full.svg");
