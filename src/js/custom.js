@@ -544,7 +544,7 @@ var docHeight = $(document).height();
 var multiplier = 4;
 
 if((windowHeight * multiplier) < docHeight){
-    $("body").append("<div id='backToTop'>Nahoru</div>");
+    $("body").append("<div id='backToTop' aria-label='Scrollovat nahoru'><img src='../icons/arrow-lft-white.svg'></div>");
 
     document.querySelector('#backToTop').addEventListener('click', e => {
         window.scrollTo({top: 0, behavior: 'smooth'});
@@ -552,6 +552,8 @@ if((windowHeight * multiplier) < docHeight){
         passive: true
     });
 }
+
+
 
 
 
