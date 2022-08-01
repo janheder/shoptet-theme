@@ -516,20 +516,20 @@ if ($(".pagination").length){
             $('.pagination').append("<strong class='current'>" + i + "</strong>");
         }else if( (current - i)>2 || (i - current)>2){
             if(i == 1  || i == max ){
-                 $('.pagination').append("<a href='../strana-" + i + "'>" + i + "</a>");      
+                 $('.pagination').append("<a href='strana-" + i + "'>" + i + "</a>");      
             }else{
-                 $('.pagination').append("<a class='hidden' href='../strana-" + i + "'>" + i + "</a>");             
+                 $('.pagination').append("<a class='hidden' href='strana-" + i + "'>" + i + "</a>");             
             }
 
         }else{
-            $('.pagination').append("<a href='../strana-" + i + "'>" + i + "</a>");  
+            $('.pagination').append("<a href='strana-" + i + "'>" + i + "</a>");  
         }
     }
     if(current != max){
-        $(".pagination").append("<a href='../strana-" + (current + 1) + "' class='next'>></a>");
+        $(".pagination").append("<a href='strana-" + (current + 1) + "' class='next'>></a>");
     }
     if(current != 1){
-        $(".pagination").prepend("<a href='../strana-" + (current - 1) + "' class='previous'><</a>");
+        $(".pagination").prepend("<a href='strana-" + (current - 1) + "' class='previous'><</a>");
     }
 }
 
