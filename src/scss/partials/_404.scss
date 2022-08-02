@@ -6,7 +6,13 @@
 .id-404 main article h1{
     text-align: center;
 }
-
+.id-404 main article h1::before{
+    content: "";
+    height: 260px;
+    width: 260px;
+    background-image: ("../img/404.svg");
+    display: flex;
+}
 
 .error404content{
     text-align: center;
