@@ -10,11 +10,12 @@
     content: "";
     height: 260px;
     width: 260px;
-    background-image: src("../img/404.svg");
+    background-image: url("../img/404.svg");
     display: flex;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .error404content{
