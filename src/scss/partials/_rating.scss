@@ -179,7 +179,7 @@
         margin-bottom: 0px;
         position: relative;
         background: transparent;
-        padding: 80px 0;
+        padding: 80px 0 40px 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
@@ -207,11 +207,12 @@
         height: auto;
     }
     .pagination {
-     
+    position: relative;
+     padding-bottom: 40px;
     }
     .pagination::before{
         content: "";
-        top: 60px;
+        top: 0px;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
