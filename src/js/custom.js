@@ -561,3 +561,23 @@ if((windowHeight * multiplier) < docHeight){
 $("#footer .banner h4").click(function(){
     $(this).toggleClass("--active");
 });
+
+
+
+
+
+
+
+
+// =============================================================================
+// masonry
+// =============================================================================
+
+if ($(".votes-wrap").length){
+    var elem = document.querySelector('.votes-wrap');
+    var msnry = new Masonry( elem, {
+        // options
+        itemSelector: '.vote-wrap',
+        gutter: 30
+    });
+}

@@ -70,6 +70,7 @@
     align-items: flex-start;
     background: $white;
     padding: 40px;
+    max-width: 500px;
 }
 .extended-banner-title{
     line-height: 1.4;
@@ -80,7 +81,6 @@
     color: $gray-900;
     margin-bottom: 10px;
     text-align: left;
-    max-width: 400px;
 }
 
 

@@ -4,7 +4,7 @@
 
 - GENERATE NEW FAVICONS https://www.favicon-generator.org/ 
 
-- EDIT UPUP.MIN.JS FILE AND REPLACE "service-worker-url" WITH YOURS
+- EDIT UPUP.MIN.JS FILE AND CHANGE "service-worker-url" WITH YOUR URL
 
 - IN CLOUDFLARE CREATE 2 NEW WORKERS AND ROUTES
 
@@ -12,9 +12,9 @@ FOR UPUP.JS
 
 WORKER:
 ```javascript
-const DOMAIN = 'www.domain.tld';    //
-const PROXYPATH = 'upup';                // path to be proxied
-const ORIGIN = 'PATH_TO_UPUP_JS_FILE_ON_FTP';         // where to fetch content from
+const DOMAIN = 'www.domain.tld';
+const PROXYPATH = 'upup'; // path to be proxied
+const ORIGIN = 'PATH_TO_UPUP_JS_FILE_ON_FTP'; // where to fetch content from
 
 addEventListener('fetch', event => {
   var url = new URL(event.request.url);
@@ -47,9 +47,9 @@ FOR UPUPSW.JS
 
 WORKER:
 ```javascript
-const DOMAIN = 'www.domain.tld';    //
-const PROXYPATH = 'upupsw';                // path to be proxied
-const ORIGIN = 'PATH_TO_UPUPSW_JS_FILE_ON_FTP';         // where to fetch content from
+const DOMAIN = 'www.domain.tld';
+const PROXYPATH = 'upupsw'; // path to be proxied
+const ORIGIN = 'PATH_TO_UPUPSW_JS_FILE_ON_FTP'; // where to fetch content from
 
 addEventListener('fetch', event => {
   var url = new URL(event.request.url);
