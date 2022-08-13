@@ -70,6 +70,7 @@
 @media screen and (max-width: 500px){
     .products-block{
         grid-template-columns: 1fr 1fr;
+        margin: 0 -10px;
 
         .product {
             width: 100%;
