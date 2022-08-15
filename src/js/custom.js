@@ -153,7 +153,7 @@ $(".in-index .products.products-block").each(function() {
     $(".in-index .products.products-block").attr("data-slider-nav-autoplay-interval","8000");
 
     if($(this).find('.product').length > 4){
-        $(this).addClass("swiffy-slider slider-item-show4 slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round slider-nav-page");
+        $(this).addClass("swiffy-slider slider-item-show4 slider-nav-arrow slider-nav-autopause slider-indicators-round slider-nav-page");
         $(this).wrapInner("<div class='slider-container'></div>");
         $(this).append('<button type="button" class="slider-nav"></button> <button type="button" class="slider-nav slider-nav-next"></button>');
     };
