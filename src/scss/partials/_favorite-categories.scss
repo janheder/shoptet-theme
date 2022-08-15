@@ -58,3 +58,8 @@
     text-align: center;
 }
 
+@media screen and (max-width: 991px){
+    .favoriteCategories .slider-container{
+        scroll-snap-type: none;
+    }
+}

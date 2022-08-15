@@ -329,7 +329,7 @@
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     .swiffy-slider.slider-nav-scrollbar{
-        --swiffy-slider-track-height: 18px;
+        --swiffy-slider-track-height: 6px;
     }
     .swiffy-slider.slider-nav-scrollbar:hover {
     
@@ -338,14 +338,12 @@
     
     }
     .swiffy-slider.slider-nav-scrollbar ::-webkit-scrollbar-track{
-        background: linear-gradient(0deg, white 0%, white 45%, #eee 45%, #eee 55%, white 55%, white 100%);
+        background: #eee;
     }
     .swiffy-slider.slider-nav-scrollbar ::-webkit-scrollbar-thumb:horizontal {
-        background: linear-gradient(0deg, white 0%, white 45%, $gray-900 45%, $gray-900 55%, white 55%, white 100%); 
+        background: $gray-900;
     }
-    .swiffy-slider.slider-nav-scrollbar:hover ::-webkit-scrollbar-thumb:horizontal{
-        background: linear-gradient(0deg, white 0%, white 40%, $gray-900 40%, $gray-900 60%, white 60%, white 100%);
-    }
+
     .swiffy-slider.slider-nav-scrollbar .slider-container{
         padding-bottom: 20px;
     }
