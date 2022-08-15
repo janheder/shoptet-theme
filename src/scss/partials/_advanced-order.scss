@@ -435,6 +435,10 @@ body.--advancedModal{
     }
     .advancedModal__buttons {
         padding: 20px;
+        padding-top: 10px;
+    }
+    .advancedModal__buttons .btn {
+        padding: 0 15px;
     }
 }
 .advancedProduct{
@@ -533,7 +537,11 @@ body.--advancedModal{
         max-height: 140px;
     }
     .advancedProduct-name{
-        font-size: 24px;
+        font-size: 22px;
         padding-bottom: 20px;
+    }
+    .advancedProduct-priceTotal {
+        font-size: 18px;
+        padding-top: 20px;
     }
 }
