@@ -420,7 +420,18 @@ body.--advancedModal{
         padding: 50px 30px;
     }
 }
-
+@media screen and (max-width: 575px){
+    .advancedModal__title {
+        font-size: 30px;
+        padding: 25px 0px 20px 0;
+    }
+    .advancedModal__content {
+        padding: 20px 20px 20px 20px;
+    }
+    .advancedModal__buttons {
+        padding: 20px;
+    }
+}
 .advancedProduct{
     display: flex;
 }
@@ -503,5 +514,18 @@ body.--advancedModal{
     .advancedProduct-content {
         margin-left: 0;
         margin-top: 30px;
+    }
+}
+@media screen and (max-width: 575px){
+    .advancedProduct-img{
+        height: 180px;
+        width: 220px;
+    }
+    .advancedProduct-img img{
+        max-height: 140px;
+    }
+    .advancedProduct-name{
+        font-size: 24px;
+        padding-bottom: 20px;
     }
 }
