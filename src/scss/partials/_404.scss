@@ -40,3 +40,33 @@
     text-align: center;
     padding: 0px 0 30px 0;
 }
+
+@media (max-width: 991px){
+    .empty-content-404{
+        padding: 100px 0;
+    }
+    .id-404 main article h1::before{
+        height: 220px;
+        width: 220px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 575px){
+    .empty-content-404{
+        padding: 80px 0;
+    }
+    .id-404 main article h1::before{
+        height: 180px;
+        width: 180px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .error404content{
+        padding-bottom: 80px;
+    }
+    .error404Products {
+        padding-top: 80px;
+    }
+}
