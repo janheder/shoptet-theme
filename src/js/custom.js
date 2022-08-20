@@ -556,21 +556,18 @@ if((windowHeight * multiplier) < docHeight){
 
 
 
+// =============================================================================
+// FOOTER REVEAL CATEGORIES
+// =============================================================================
 
-
-$("#footer .banner h4").click(function(){
+$("#footer .custom-footer > div h4").click(function(){
     $(this).toggleClass("--active");
 });
 
 
 
-
-
-
-
-
 // =============================================================================
-// masonry
+// VOTE PAGE MASONRY
 // =============================================================================
 
 if ($(".votes-wrap").length){
@@ -581,3 +578,15 @@ if ($(".votes-wrap").length){
         gutter: 30
     });
 }
+
+
+
+// =============================================================================
+// add responsive link into menu
+// =============================================================================
+
+$(".menu-level-1 > li.ext").each(function() {
+    $(this).prepend('<div class="menu-item-responsive"></div>');
+    var catLink = $(this).children('a').prop("href");
+    $(this).find(".menu-level-2").prepend('<a class="menu-item-more" href="' + catLink + '">Zobrazit vše</a>')
+});
