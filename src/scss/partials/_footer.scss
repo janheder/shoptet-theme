@@ -203,12 +203,14 @@ footer {
     }
     .custom-footer h4{
         margin-top: 20px;
+        margin-bottom: 10px;
     }
     .custom-footer h4 ~ * {
         display: none;
     }
     .custom-footer h4.--active ~ * {
         display: flex;
+        flex-direction: column;
     }
 }
 

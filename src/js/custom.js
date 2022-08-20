@@ -435,6 +435,17 @@ $('div.hidden-split-parameter').on('change', function() {
 
 
 // =============================================================================
+// add responsive link into menu
+// =============================================================================
+
+$(".menu-level-1 > li.ext").each(function() {
+    $(this).prepend('<div class="menu-item-responsive"></div>');
+    var catLink = $(this).children('a').prop("href");
+    $(this).find(".menu-level-2").prepend('<a class="menu-item-more" href="' + catLink + '">Zobrazit vše</a>')
+});
+
+
+// =============================================================================
 // RESPONSIVE MENU TOGGLE
 // =============================================================================
 
@@ -582,11 +593,23 @@ if ($(".votes-wrap").length){
 
 
 // =============================================================================
-// add responsive link into menu
+// FAQ
 // =============================================================================
 
-$(".menu-level-1 > li.ext").each(function() {
-    $(this).prepend('<div class="menu-item-responsive"></div>');
-    var catLink = $(this).children('a').prop("href");
-    $(this).find(".menu-level-2").prepend('<a class="menu-item-more" href="' + catLink + '">Zobrazit vše</a>')
+$(document).ready(function() {
+
+    $('#faqSearch').keyup(function(e) {
+        var s = $(this).val().trim();
+        if (s === '') {
+            $('#FaqResult *').show();
+            $('#FaqResult details').attr("open", false);
+            return true;
+        }
+        $('#FaqResult details:not(:contains(' + s + '))').hide();
+        $('#FaqResult h2:not(:contains(' + s + '))').hide();
+        $('#FaqResult details:contains(' + s + ')').show();
+        $('#FaqResult details:contains(' + s + ')').attr("open", true);
+        return true;
+    });
+
 });
