@@ -212,9 +212,9 @@ footer {
         content: "";
         position: absolute;
         right: 0;
-        top: 34px;
-        height: 16px;
-        width: 16px;
+        top: 24px;
+        height: 12px;
+        width: 12px;
         display: flex;
         background-image: url("../icons/arrow-down.svg");
         background-repeat: no-repeat;
@@ -224,6 +224,9 @@ footer {
     }
     .custom-footer h4 ~ * {
         display: none;
+    }
+    .custom-footer h4.--active{
+        padding-bottom: 15px;
     }
     .custom-footer h4.--active ~ * {
         display: flex;
