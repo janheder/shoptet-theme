@@ -175,6 +175,9 @@
 .backSubmenu{
     display: none;
 }
+.menu-item-more{
+    display: none;
+}
 
 #nav-manufacturers{
     display: none;
@@ -390,6 +393,7 @@
         font-weight: 500;
         border-bottom: 1px solid $gray-300;
         background: $white;
+        position: relative;
 
         &::before {
             content: "";
@@ -413,4 +417,13 @@
         pointer-events: auto;
         opacity: 1;
     }   
+    .menu-item-more{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid $gray-300;
+        font-weight: 500;
+        padding-left: 70px;
+    }    
 }
