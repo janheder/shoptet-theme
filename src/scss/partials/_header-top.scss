@@ -336,7 +336,7 @@ body.--searchActive .search{
 }
 
 
-@media screen and (max-width: 992px){
+@media screen and (min-width: 992px){
     body.--searchActive .menu-helper {
         opacity: 1;
         pointer-events: auto;
