@@ -376,8 +376,30 @@ background: transparent;
     #products .p{
 
     }
+    .p-in-in .name{
+        padding-bottom: 2px;
+        line-height: 1.2;
+    }
+    .p .ratings-wrapper{
+        padding-bottom: 2px;
+    }
+    .p .prices {
+        line-height: 1.2;
+    }
+    .p .price-final {
+        font-size: 15px;
+    }
+    .p .prices .price-additional {
+        display: none;
+    }
+    .p .p-tools{
+        padding-top: 10px;
+    }
     .p .p-tools .quantity{
         display: none;
+    }
+    p .p-tools .btn {
+        height: 44px;
     }
 }
 
