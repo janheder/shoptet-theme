@@ -1,8 +1,8 @@
 .ordering-process #navigation, .ordering-process #header::before{
     /*display: none;*/
 }
-.ordering-process #js-userToggle, .ordering-process .search, .ordering-process .nav-search{
-    display: none;
+.ordering-process #js-userToggle, .ordering-process .search, .ordering-process .nav-search, body.--floatSearchActive .nav-search{
+    display: none !important;
 }
 .ordering-process .header-top .contact-box{
     display: flex;
@@ -111,6 +111,16 @@
         .contact-box ul a{
             color: $white;
         }
+    }
+    .contact-box{
+        padding-right: 15px;
+
+    }
+    .contact-box::before{
+        background-image: url("../icons/phone-white.svg")
+    }
+    .contact-box li {
+        line-height: 20px;
     }
 }
 
@@ -630,6 +640,60 @@
 #checkoutContent .form-group{
     max-width: 520px;
 }
+#checkoutContent  h4{
+    border-bottom: 1px solid #F0F0F0;
+    padding-bottom: 15px;
+    margin: 0;
+}
+#checkoutContent  .co-contact-information{
+    margin-bottom: 40px;
+}
+#checkoutContent  .co-contact-information h4 + .form-group{
+    background: #fafafa;
+    max-width: 100%;
+    width: 100%;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 40px 0;
+}
+#checkoutContent  .co-contact-information h4 + .form-group label{
+    font-size: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://janheder.github.io/shoptet-theme/dist/icons/user.svg");
+    background-repeat: no-repeat;
+    padding-left: 80px;
+    background-size: 46px;
+    background-position: center left;
+}
+#checkoutContent  .co-contact-information h4 + .form-group label::before{
+    content: "Už u nás máte zákaznický účet?";
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 2px;
+}
+#checkoutContent  .co-contact-information h4 + .form-group label::after{
+    content: "Nemusíte nic vyplňovat a jednoduše se přihlaste.";
+    font-size: 15px;
+    font-weight: 400;
+    color: #6F6F6F;
+}
+#checkoutContent  .co-contact-information h4 + .form-group a{
+    font-size: 0;
+    background: #C40808;
+}
+#checkoutContent  .co-contact-information h4 + .form-group a::before{
+    content: "Přihlásit se";
+    font-size: 15px;
+}
+
+
+
+
+
+
 
 
 .site-msg-custom.step-1{

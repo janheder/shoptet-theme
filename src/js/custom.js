@@ -208,7 +208,7 @@ $(".cart-count").on('touchstart', function() {
   $("body").toggleClass("--cartActive");
 });
     
-
+/* trigger on backdrop tap */
 $(".menu-helper").click(function(){
     $("body").removeClass("--menuActive --navUserActive --searchActive --cartActive --advancedModal");
 });
@@ -355,12 +355,14 @@ if ($(".type-detail").length){
 
 
 
-
+/* relocate shipping */
 
 $(".shipping-options").insertAfter(".availability-value .availability-label:last-child");
 
 
-
+// -----------------------------------------------------------------------------
+// PRODUCT PAGE URL SHARE
+// -----------------------------------------------------------------------------
 
 /* runs on load checking url */
 
@@ -519,32 +521,45 @@ $(document).ready(function() {
 
 if ($(".pagination").length){
 
-    var current = parseInt($(".pagination .current").text());
-    var max = parseInt($(".pagination > *:last-child").text());
-    $(".pagination *").remove();
+    function refactorPagi(){ 
+        var current = parseInt($(".pagination .current").text());
+        var max = parseInt($(".pagination > *:last-child").text());
+        var currentUrl = window.location.href;
+        var currentUrlS = currentUrl.slice(0, currentUrl.indexOf('/strana'));
 
-    for(var i = 1; i <= max ; i++) {
-        if(i == current){
-            $('.pagination').append("<strong class='current'>" + i + "</strong>");
-        }else if( (current - i)>2 || (i - current)>2){
-            if(i == 1  || i == max ){
-                 $('.pagination').append("<a href='strana-" + i + "'>" + i + "</a>");      
+        $(".pagination *").remove();
+    
+        for(var i = 1; i <= max ; i++) {
+            if(i == current){
+                $('.pagination').append("<strong class='current'>" + i + "</strong>");
+            }else if( (current - i)>2 || (i - current)>2){
+                if(i == 1  || i == max ){
+                     $('.pagination').append("<a href='"+ currentUrlS +"/strana-" + i + "'>" + i + "</a>");      
+                }else{
+                     $('.pagination').append("<a class='hidden' href='"+ currentUrlS +"strana-" + i + "'>" + i + "</a>");             
+                }
+    
             }else{
-                 $('.pagination').append("<a class='hidden' href='strana-" + i + "'>" + i + "</a>");             
+                $('.pagination').append("<a href='"+ currentUrlS +"/strana-" + i + "'>" + i + "</a>");  
             }
-
-        }else{
-            $('.pagination').append("<a href='strana-" + i + "'>" + i + "</a>");  
+        }
+        if(current != max){
+            $(".pagination").append("<a href='"+ currentUrlS +"/strana-" + (current + 1) + "' class='next'>></a>");
+        }
+        if(current != 1){
+            $(".pagination").prepend("<a href='"+ currentUrlS +"/strana-" + (current - 1) + "' class='previous'><</a>");
         }
     }
-    if(current != max){
-        $(".pagination").append("<a href='strana-" + (current + 1) + "' class='next'>></a>");
-    }
-    if(current != 1){
-        $(".pagination").prepend("<a href='strana-" + (current - 1) + "' class='previous'><</a>");
-    }
-}
 
+    refactorPagi();
+
+    document.addEventListener('ShoptetDOMPageContentLoaded', function () {
+        refactorPagi();
+    },{
+        passive: true
+    });
+
+}
 
 
 // =============================================================================
