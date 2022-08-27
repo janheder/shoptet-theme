@@ -19,11 +19,13 @@
     height: 40px;
     font-size: 14px;
     display: inline-flex;
-    width: 240px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
 }
 .filters-unveil-button-wrapper .unveil-button::after {
     content: "";
-    background: url("icons/filter-white.svg");
+    background: url("../icons/filter-white.svg");
     height: 14px;
     width: 14px;
     display: flex;
