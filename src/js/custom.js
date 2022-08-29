@@ -485,6 +485,18 @@ if ($(".cart-header").length){
     $(".cart-header").insertBefore(".content-wrapper-in");
 }
 
+if ($(".contact-box").length){
+
+    const loadFAQ = (html) => {
+        const nodes = new DOMParser().parseFromString(html, 'text/html');
+        const body = nodes.querySelector('#FaqResult');
+        document.querySelector('.checkout-box .contact-box').append(body);
+
+    };
+    fetch("https://www.janheder.tk/vse-o-nakupu/faq--vase-nejcastejsi-dotazy/")
+        .then((response) => response.text())
+        .then(loadFAQ)
+}
 
 
 // =============================================================================
