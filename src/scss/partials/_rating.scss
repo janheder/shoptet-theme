@@ -42,6 +42,11 @@
     margin: 0 -10px;
     width: auto;
 }
+@media screen and (max-width: 1400px){
+    .ratingSection__content .slider-nav{
+        display: none;
+    }
+}
 @media screen and (max-width: 991px){
     .ratingSection{
         padding: 60px 0;
