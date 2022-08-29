@@ -210,7 +210,8 @@ $(".cart-count").on('touchstart', function() {
     
 /* trigger on backdrop tap */
 $(".menu-helper").click(function(){
-    $("body").removeClass("--menuActive --navUserActive --searchActive --cartActive --advancedModal");
+    $("body").removeClass("--menuActive --navUserActive --searchActive --cartActive --advancedModal filters-visible");
+    $("#filters").removeClass("filters");
 });
 
 /* move main navigation */

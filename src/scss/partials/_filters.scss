@@ -57,7 +57,7 @@
     body.filters-visible .filters{
         transform: translateX(0%);
     }
-    body.filters-visible .menu-helper{
+    body.filters-visible .menu-helper, body.filters-visible .header-top::before{
         pointer-events: auto;
         opacity: 1;
     }
