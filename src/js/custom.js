@@ -641,3 +641,14 @@ $(document).ready(function() {
     });
 
 });
+
+
+// =============================================================================
+// SHOW PRICE WITH CODE
+// =============================================================================
+
+var price = $(".price-final-holder").text();
+var priceFormat = parseInt(price.replace(/\D/g,''));
+var saleNum = 10;
+var priceSale = priceFormat * ((100 - saleNum)*0.01);
+$("<span class='price-code-holder'>" + priceSale + " Kč s kódem PROTEBE</span>").insertBefore(".price-final-holder")
