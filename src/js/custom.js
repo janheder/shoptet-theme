@@ -672,3 +672,16 @@ fetch("https://www.janheder.tk/kosik/")
     .then((response) => response.text())
     .then(loadPicImages)
     .then($("img").unveil())
+
+
+// =============================================================================
+// CHECKOUT SIDEBAR MOBILE
+// =============================================================================
+
+
+$("#checkoutContent").prepend('<div class="btn" id="checkoutSidebarToggle">Rekapitulace objednávky</div>');
+
+$("#checkoutSidebarToggle").click(function(){
+    $("body").toggleClass("--checkoutSidebarActive");
+});
+    
