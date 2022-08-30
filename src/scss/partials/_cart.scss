@@ -77,7 +77,14 @@
     body.--checkoutSidebarActive .order-summary{
         transform: translate3d(0, 0, 0);
     }
-
+    .order-summary .order-summary-inner{
+        border: 0;
+        margin-bottom: 0;
+    }
+    body.--checkoutSidebarActive .menu-helper, body.--checkoutSidebarActive .header-top::before{
+        pointer-events: auto;
+        opacity: 1;
+    }
 }
 
 
