@@ -104,6 +104,7 @@ h4.order-delivery, h4.order-payment{
     opacity: 1;
     background: $gray-100;
     cursor: not-allowed;
+    filter: grayscale(1);
 }
 .order-delivery-payment-form .radio-wrapper label.inactive .not-possible-info{
     display: flex;

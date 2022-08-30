@@ -652,3 +652,23 @@ var priceFormat = parseInt(price.replace(/\D/g,''));
 var saleNum = 10;
 var priceSale = priceFormat * ((100 - saleNum)*0.01);
 $("<span class='price-code-holder'>" + priceSale + " Kč s kódem PROTEBE</span>").insertBefore(".price-final-holder")
+
+
+
+// =============================================================================
+// load cart images 
+// =============================================================================
+
+const loadPicImages = (html) => {
+    const nodes = new DOMParser().parseFromString(html, 'text/html');
+    const body = nodes.querySelectorAll('.cart-p-image a');
+    const num = nodes.querySelectorAll('.cart-p-image a').length;
+    for(var i = 0; i < num; i++) {
+        document.querySelector('#checkoutSidebar .cart-item:nth-child('+ (i+1) +')').prepend(body[i]);
+    }
+    $("img").unveil();
+};
+fetch("https://www.janheder.tk/kosik/")
+    .then((response) => response.text())
+    .then(loadPicImages)
+    .then($("img").unveil())
