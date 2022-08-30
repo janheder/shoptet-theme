@@ -52,10 +52,16 @@ body.--navUserActive, body.--cartActive{
     overflow: hidden;
     padding-right: 17px;
 }
+body.mobile.--navUserActive, body.mobile.--cartActive{
+    padding-right: 0px;
+}
 
 @media screen and (max-width: 991px){
     body.--menuActive, body.--searchActive{
         overflow: hidden;
+    }
+    body.--navUserActive, body.--cartActive{
+        padding-right: 0px;
     }
 }
 @media screen and (min-width: 992px){

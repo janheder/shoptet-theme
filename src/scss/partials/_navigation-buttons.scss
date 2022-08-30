@@ -146,6 +146,10 @@
     }
     .nav-user{
         background-image: url($i-user-white);
+
+        &:hover, &:active, &:focus{
+            background-color: transparent;
+        }
     }
     
     .nav-search{

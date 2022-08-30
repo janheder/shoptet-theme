@@ -114,9 +114,8 @@
     }
     .contact-box{
         padding-right: 15px;
-
     }
-    .contact-box::before{
+    .header-top .contact-box::before{
         background-image: url("../icons/phone-white.svg")
     }
     .contact-box li {
