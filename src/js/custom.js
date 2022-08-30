@@ -545,7 +545,7 @@ if ($(".pagination").length){
         for(var i = 1; i <= max ; i++) {
             if(i == current){
                 $('.pagination').append("<strong class='current'>" + i + "</strong>");
-            }else if( (current - i)>2 || (i - current)>2){
+            }else if( (current - i)>2 || (i - current)>1){
                 if(i == 1  || i == max ){
                      $('.pagination').append("<a href='"+ currentUrlS +"/strana-" + i + "'>" + i + "</a>");      
                 }else{

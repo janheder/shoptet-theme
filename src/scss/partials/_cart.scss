@@ -248,8 +248,17 @@
     }
 }
 @media screen and (max-width: 575px){
+    .cart-header {
+        height: 90px;
+    }
     .cart-header .step a, .cart-header .step strong{
         flex-direction: column;
+    }
+    .step strong::before, .step a::before{
+        margin: 0;
+        width: 34px;
+        height: 34px;
+        margin-bottom: 10px;
     }
 }
 
