@@ -98,6 +98,15 @@ h4.order-delivery, h4.order-payment{
     margin-top: 8px;
     font-size: 14px;
     color: $gray-500;
+    display: none;
+}
+.order-delivery-payment-form .radio-wrapper label.inactive {
+    opacity: 1;
+    background: $gray-100;
+    cursor: not-allowed;
+}
+.order-delivery-payment-form .radio-wrapper label.inactive .not-possible-info{
+    display: flex;
 }
 .payment-shipping-price {
     color: $red-500;
