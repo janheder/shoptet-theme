@@ -54,9 +54,9 @@
 }
 
 @media screen and (max-width: 991px){
-    #checkoutSidebar{
+    .order-summary{
         position: fixed;
-        left: 0;
+        right: 0;
         top: 0;
         z-index: 11;
         overflow-y: auto;
@@ -66,16 +66,15 @@
         width: calc(100% - 52px);
         max-width: 400px;
         margin: 0;
-    }
-    #checkoutSidebar .cart-content{
-        padding-left: 0px;
+        transform: translate3d(100%, 0, 0);
+        padding: 0;
     }
     #checkoutSidebarToggle{
         display: flex;
         width: 100%;
         margin-bottom: 20px;
     }
-    body.--checkoutSidebarActive #checkoutSidebar{
+    body.--checkoutSidebarActive .order-summary{
         transform: translate3d(0, 0, 0);
     }
 
