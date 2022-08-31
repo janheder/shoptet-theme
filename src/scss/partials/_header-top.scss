@@ -46,6 +46,9 @@
     body.--floatSearchActive .header-top::before{
         height: 52px;
     }
+    body.ordering-process .header-top::before{
+        height: 52px;
+    }
     body.--menuActive .header-top::before, body.--cartActive .header-top::before{
         pointer-events: auto;
         opacity: 1;
