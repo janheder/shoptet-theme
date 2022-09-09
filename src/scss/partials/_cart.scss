@@ -729,6 +729,8 @@
     padding-left: 80px;
     background-size: 46px;
     background-position: center left;
+    min-height: 46px;
+    justify-content: center;
 }
 #checkoutContent  .co-contact-information h4 + .form-group label::before{
     content: "Už u nás máte zákaznický účet?";
@@ -758,6 +760,7 @@
     #checkoutContent  .co-contact-information h4 + .form-group label{
         padding-left: 60px;
         background-size: 36px;
+        min-height: 36px;
     }
 }
 
@@ -774,6 +777,13 @@
     }
     #checkoutContent  .co-contact-information h4 + .form-group a{
         margin-left: 60px;
+        height: 42px;
+    }
+    #checkoutContent  .co-contact-information h4 + .form-group label::before{
+        font-size: 16px;
+    }
+    #checkoutContent  .co-contact-information h4 + .form-group label::after{
+        content:  none;
     }
 }
 
