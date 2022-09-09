@@ -751,8 +751,28 @@
     font-size: 15px;
 }
 
+@media screen and (max-width: 991px){
+    #checkoutContent .co-contact-information h4+.form-group{
+        padding: 30px 30px;
+    }
+    #checkoutContent  .co-contact-information h4 + .form-group label{
+        padding-left: 60px;
+        background-size: 36px;
+    }
+}
 
-
+@media screen and (max-width: 575px){
+    #checkoutContent .co-contact-information h4+.form-group{
+        padding: 20px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #checkoutContent  .co-contact-information h4 + .form-group label{
+        padding-left: 60px;
+        background-size: 36px;
+        margin-bottom: 20px;
+    }
+}
 
 
 
