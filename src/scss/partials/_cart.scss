@@ -74,7 +74,7 @@
     #checkoutSidebarToggle{
         display: flex;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     body.--checkoutSidebarActive .order-summary{
         transform: translate3d(0, 0, 0);
@@ -770,7 +770,10 @@
     #checkoutContent  .co-contact-information h4 + .form-group label{
         padding-left: 60px;
         background-size: 36px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    #checkoutContent  .co-contact-information h4 + .form-group a{
+        margin-left: 60px;
     }
 }
 
