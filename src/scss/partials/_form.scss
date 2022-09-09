@@ -68,7 +68,7 @@ textarea.form-control{
         pointer-events: none;
         color: $gray-500;
     }
-    &.--activeFocus label, &.--activeFilled label{
+    &.--activeFocus label, &.--activeFilled label, &.populated label{
         background: white;
         transform: translateY(-24px);
         pointer-events: auto;
