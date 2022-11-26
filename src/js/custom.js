@@ -540,7 +540,7 @@ if ($(".contact-box").length){
         document.querySelector('.checkout-box .contact-box').append(body);
 
     };
-    fetch("https://www.janheder.tk/vse-o-nakupu/faq--vase-nejcastejsi-dotazy/")
+    fetch("/faq--vase-nejcastejsi-dotazy/")
         .then((response) => response.text())
         .then(loadFAQ)
 }
@@ -715,7 +715,7 @@ const loadPicImages = (html) => {
     }
     $("img").unveil();
 };
-fetch("https://www.janheder.tk/kosik/")
+fetch("/kosik/")
     .then((response) => response.text())
     .then(loadPicImages)
     .then($("img").unveil())

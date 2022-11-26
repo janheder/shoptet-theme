@@ -245,7 +245,28 @@
         z-index: -1;
     }
 }
-
+@media (max-width: 991px){
+    .in-hodnoceni-obchodu-2 .vote-wrap{
+        width: calc( 50% - 20px);
+        margin-bottom: 30px;
+    }
+    .in-hodnoceni-obchodu-2 .content-inner h1 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .in-hodnoceni-obchodu-2 .content-inner h1::before{
+        font-size: 28px;
+    }
+    .in-hodnoceni-obchodu-2 .content-inner h1::after {
+        font-size: 28px;
+    }
+}
+@media (max-width: 575px){
+    .in-hodnoceni-obchodu-2 .vote-wrap{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
 
 
 
