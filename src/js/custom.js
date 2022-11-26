@@ -532,7 +532,7 @@ if ($(".cart-header").length){
     $(".cart-header").insertBefore(".content-wrapper-in");
 }
 
-if ($(".contact-box").length){
+if ($("#checkoutSidebar .contact-box").length){
 
     const loadFAQ = (html) => {
         const nodes = new DOMParser().parseFromString(html, 'text/html');
