@@ -540,7 +540,7 @@ if ($("#checkoutSidebar .contact-box").length){
         document.querySelector('.checkout-box .contact-box').append(body);
 
     };
-    fetch("/faq--vase-nejcastejsi-dotazy/")
+    fetch("/vse-o-nakupu/faq--vase-nejcastejsi-dotazy/")
         .then((response) => response.text())
         .then(loadFAQ)
 }
